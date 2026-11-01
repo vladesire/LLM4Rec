@@ -1,0 +1,11 @@
+test_ap (test_core.FocusedChecks.test_ap) ... ok
+test_common_fallback_and_ties (test_core.FocusedChecks.test_common_fallback_and_ties) ... ok
+test_interval_cases (test_core.FocusedChecks.test_interval_cases) ... ok
+test_split_crossing (test_core.FocusedChecks.test_split_crossing) ... ok
+test_clipping_examples_and_threshold (test_data_pipeline.JoinIntegrationChecks.test_clipping_examples_and_threshold) ... ok
+test_conflicts_excluded_and_duplicates_removed (test_data_pipeline.JoinIntegrationChecks.test_conflicts_excluded_and_duplicates_removed) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK

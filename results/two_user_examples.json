@@ -1,0 +1,346 @@
+[
+  {
+    "user_id": "8848657562275607589",
+    "training_distinct_items": 73,
+    "held_out_distinct_items": 22,
+    "methods": {
+      "popularity": {
+        "ap_at_5": 0.2,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 4439.0,
+            "eligible_popularity": 4439.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 4177.0,
+            "eligible_popularity": 4177.0,
+            "popularity_backfill": false,
+            "held_out_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 6500479,
+            "title": "'Мир наизнанку'.",
+            "category": "Познавательное",
+            "method_score": 3827.0,
+            "eligible_popularity": 3827.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 3734.0,
+            "eligible_popularity": 3734.0,
+            "popularity_backfill": false,
+            "held_out_relevant": true
+          },
+          {
+            "rank": 5,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 3718.0,
+            "eligible_popularity": 3718.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          }
+        ]
+      },
+      "content": {
+        "ap_at_5": 0.05,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 200337,
+            "title": "'Утро с 'Интером'.",
+            "category": "Развлечения",
+            "method_score": 0.39550358057022095,
+            "eligible_popularity": 2316.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 200477,
+            "title": "'Завтрак. Выходной'.",
+            "category": "Развлечения",
+            "method_score": 0.3936804234981537,
+            "eligible_popularity": 2014.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "method_score": 0.337455153465271,
+            "eligible_popularity": 2901.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 20088,
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения",
+            "method_score": 0.3346043825149536,
+            "eligible_popularity": 2869.0,
+            "popularity_backfill": false,
+            "held_out_relevant": true
+          },
+          {
+            "rank": 5,
+            "item": 500315,
+            "title": "Ток-шоу 'Касается каждого'.",
+            "category": "Развлечения",
+            "method_score": 0.3218642771244049,
+            "eligible_popularity": 2611.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          }
+        ]
+      },
+      "als": {
+        "ap_at_5": 0.2333333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 0.9660412073135376,
+            "eligible_popularity": 4439.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 0.9523845314979553,
+            "eligible_popularity": 3734.0,
+            "popularity_backfill": false,
+            "held_out_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 0.9433876276016235,
+            "eligible_popularity": 4177.0,
+            "popularity_backfill": false,
+            "held_out_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 90079839,
+            "title": "Х/ф 'Забытая женщина', 1 и 2 с.",
+            "category": "Фильмы",
+            "method_score": 0.9412261843681335,
+            "eligible_popularity": 418.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 6500479,
+            "title": "'Мир наизнанку'.",
+            "category": "Познавательное",
+            "method_score": 0.9401288032531738,
+            "eligible_popularity": 3827.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "user_id": "7124081213039446293",
+    "training_distinct_items": 368,
+    "held_out_distinct_items": 101,
+    "methods": {
+      "popularity": {
+        "ap_at_5": 0.71,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 4439.0,
+            "eligible_popularity": 4439.0,
+            "popularity_backfill": false,
+            "held_out_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 4177.0,
+            "eligible_popularity": 4177.0,
+            "popularity_backfill": false,
+            "held_out_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 6500479,
+            "title": "'Мир наизнанку'.",
+            "category": "Познавательное",
+            "method_score": 3827.0,
+            "eligible_popularity": 3827.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 3734.0,
+            "eligible_popularity": 3734.0,
+            "popularity_backfill": false,
+            "held_out_relevant": true
+          },
+          {
+            "rank": 5,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 3718.0,
+            "eligible_popularity": 3718.0,
+            "popularity_backfill": false,
+            "held_out_relevant": true
+          }
+        ]
+      },
+      "content": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 90057357,
+            "title": "Х/ф 'Человек-паук 2'.",
+            "category": "Фильмы",
+            "method_score": 0.31856295466423035,
+            "eligible_popularity": 485.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 90053892,
+            "title": "Х/ф 'Человек-паук'.",
+            "category": "Фильмы",
+            "method_score": 0.3082476854324341,
+            "eligible_popularity": 540.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 90073872,
+            "title": "Премьера. Х/ф 'Первый мститель'.",
+            "category": "Фильмы",
+            "method_score": 0.2940016984939575,
+            "eligible_popularity": 660.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 90067324,
+            "title": "Х/ф 'Беовульф', 1 ч.",
+            "category": "Фильмы",
+            "method_score": 0.2918614149093628,
+            "eligible_popularity": 147.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90049509,
+            "title": "Х/ф 'Мстители'.",
+            "category": "Фильмы",
+            "method_score": 0.2865298092365265,
+            "eligible_popularity": 0.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          }
+        ]
+      },
+      "als": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 90077791,
+            "title": "Х/ф 'РобоКоп'.",
+            "category": "Фильмы",
+            "method_score": 1.2499340772628784,
+            "eligible_popularity": 323.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 90049405,
+            "title": "Премьера. Х/ф 'Западня'.",
+            "category": "Фильмы",
+            "method_score": 1.2431204319000244,
+            "eligible_popularity": 299.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 90066769,
+            "title": "Х/ф 'Запретное царство'.",
+            "category": "Фильмы",
+            "method_score": 1.2338963747024536,
+            "eligible_popularity": 460.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 90071307,
+            "title": "Х/ф 'Человек-волк'.",
+            "category": "Фильмы",
+            "method_score": 1.2186306715011597,
+            "eligible_popularity": 191.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90071783,
+            "title": "Премьера. Х/ф 'Моя ужасная няня 2'.",
+            "category": "Фильмы",
+            "method_score": 1.1987757682800293,
+            "eligible_popularity": 363.0,
+            "popularity_backfill": false,
+            "held_out_relevant": false
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "pdf_sha256": "25bb2c0058b1df0b24093132182e27e37771c463d84cb9ac97f151ed28a8bb19",
+  "markdown_sha256": "67aa9fffa5a629b66588db3bc4b53bdaf2e0638f43275981c8db96c128979dc9",
+  "total_pages": 6,
+  "content_pages_excluding_references": 5,
+  "at_most_five_content_pages": true,
+  "reference_starts_on_page": 6,
+  "out_of_page_text_spans": [],
+  "replacement_glyph_count": 0,
+  "genuine_score_screenshot_present": false,
+  "visual_review_note": "This script checks geometry, extracted text and page count only. Actual agent visual review is recorded separately in pdf_visual_review.json, tied to its PDF checksum. A genuine screenshot requires a new visual review.",
+  "student_must_reinspect_after_final_edits": true,
+  "preview_directory": "/tmp/llm4rec-report-preview",
+  "pages": [
+    {
+      "page": 1,
+      "text_characters": 3159,
+      "embedded_images": 0
+    },
+    {
+      "page": 2,
+      "text_characters": 3163,
+      "embedded_images": 0
+    },
+    {
+      "page": 3,
+      "text_characters": 3372,
+      "embedded_images": 0
+    },
+    {
+      "page": 4,
+      "text_characters": 2914,
+      "embedded_images": 0
+    },
+    {
+      "page": 5,
+      "text_characters": 2559,
+      "embedded_images": 0
+    },
+    {
+      "page": 6,
+      "text_characters": 1021,
+      "embedded_images": 0
+    }
+  ]
+}

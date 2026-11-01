@@ -1,0 +1,27 @@
+{
+  "status": "DRAFT — required student and Kaggle evidence pending",
+  "pending_required_fields": [
+    "github_url",
+    "personal_interpretation",
+    "personal_join_check",
+    "personal_ap_check",
+    "kaggle_submission_id",
+    "kaggle_submission_description",
+    "kaggle_submission_status",
+    "kaggle_private_score",
+    "kaggle_uploaded_csv_sha256",
+    "kaggle_account_behavior",
+    "native_export_filename",
+    "personal_checks_completed",
+    "student_review_complete",
+    "native_format_course_acceptance_confirmed",
+    "genuine private-score screenshot",
+    "uploaded CSV identity confirmation",
+    "Kaggle COMPLETE status"
+  ],
+  "genuine_score_screenshot_present": false,
+  "source": "report/report.md",
+  "pdf": "report/report.pdf",
+  "student_name": "Vladislav Neklyudov",
+  "student_email": "vsneklyudov@edu.hse.ru"
+}

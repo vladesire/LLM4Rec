@@ -1,0 +1,22 @@
+{
+  "student_name": "Vladislav Neklyudov",
+  "student_email": "vsneklyudov@edu.hse.ru",
+  "github_url": "TODO: accessible GitHub repository URL",
+  "personal_interpretation": "TODO: Review the two-user examples and rewrite the interpretation in your own words.",
+  "personal_join_check": "TODO: Personally inspect a raw viewing/schedule overlap and explain your arithmetic.",
+  "personal_ap_check": "TODO: Personally recompute the saved real user's AP@5 and explain your reasoning.",
+  "personal_checks_completed": false,
+  "student_review_complete": false,
+  "kaggle_submission_id": "TODO: designated final submission identifier",
+  "kaggle_submission_description": "TODO: full Russian name and Kaggle username entered on the designated submission",
+  "kaggle_submission_status": "TODO: wait for COMPLETE",
+  "kaggle_private_score": "TODO: genuine returned PRIVATE score",
+  "kaggle_current_quota": "100 submissions shown in Kaggle, reported by the student on 1 November 2026; remaining quota not independently checked",
+  "kaggle_uploaded_csv_sha256": "TODO: checksum of the exact uploaded CSV",
+  "kaggle_account_behavior": "TODO: confirm current Late Submission and private-score availability in your account",
+  "score_screenshot": "assets/kaggle_private_score.png",
+  "native_export_filename": "TODO: basename of unchanged original native session file submitted",
+  "native_export_format": "JSONL",
+  "native_format_course_acceptance_confirmed": false,
+  "audit_export_note": "The student will copy the original native JSONL file unchanged after the documented work. Earlier ChatGPT planning is disclosed separately and is not included in this local session file."
+}

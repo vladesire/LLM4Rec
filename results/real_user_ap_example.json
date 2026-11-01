@@ -1,0 +1,85 @@
+{
+  "user_id": "8848657562275607589",
+  "method": "popularity",
+  "distinct_relevant_ids": [
+    20088,
+    200505,
+    240081,
+    500281,
+    1000289,
+    2400508,
+    2500413,
+    2500507,
+    5800509,
+    5900256,
+    10001499,
+    10003040,
+    12002896,
+    90047342,
+    90052886,
+    90053403,
+    90078684,
+    90079726,
+    90080535,
+    90081663,
+    90081718,
+    90082215
+  ],
+  "number_distinct_relevant": 22,
+  "denominator": 5,
+  "rank_calculation": [
+    {
+      "rank": 1,
+      "item": 2400480,
+      "title": "ТСН. Неделя.",
+      "category": "Инфо",
+      "relevant": false,
+      "hits_so_far": 0,
+      "precision_at_rank": 0.0,
+      "ap_numerator_contribution": 0
+    },
+    {
+      "rank": 2,
+      "item": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "relevant": true,
+      "hits_so_far": 1,
+      "precision_at_rank": 0.5,
+      "ap_numerator_contribution": 0.5
+    },
+    {
+      "rank": 3,
+      "item": 6500479,
+      "title": "'Мир наизнанку'.",
+      "category": "Познавательное",
+      "relevant": false,
+      "hits_so_far": 1,
+      "precision_at_rank": 0.3333333333333333,
+      "ap_numerator_contribution": 0
+    },
+    {
+      "rank": 4,
+      "item": 2400508,
+      "title": "Сегодня. Итоги с Олегом Панютой.",
+      "category": "Инфо",
+      "relevant": true,
+      "hits_so_far": 2,
+      "precision_at_rank": 0.5,
+      "ap_numerator_contribution": 0.5
+    },
+    {
+      "rank": 5,
+      "item": 2400467,
+      "title": "'Викна-Новости'.",
+      "category": "Инфо",
+      "relevant": false,
+      "hits_so_far": 2,
+      "precision_at_rank": 0.4,
+      "ap_numerator_contribution": 0
+    }
+  ],
+  "numerator": 1.0,
+  "ap_at_5": 0.2,
+  "student_personally_verified": false
+}

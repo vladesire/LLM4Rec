@@ -1,0 +1,15 @@
+.venv/
+data/
+cache/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+kaggle.json
+*session*export*
+*audit*log*.json*
+private/
+handin/
+*.jsonl
+.kaggle/
+

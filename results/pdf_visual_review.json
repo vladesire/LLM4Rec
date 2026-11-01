@@ -1,0 +1,11 @@
+{
+  "pdf_sha256": "25bb2c0058b1df0b24093132182e27e37771c463d84cb9ac97f151ed28a8bb19",
+  "reviewer": "local Codex agent",
+  "pages_visually_reviewed": [1, 2, 3, 4, 5, 6],
+  "method": "All six initial draft page renders viewed; page 5 viewed again after quota text update. Pages 1–4 and 6 were verified pixel-identical to their visually reviewed initial renders.",
+  "findings": "Readable body text, tables and Cyrillic programme titles; no observed clipping. Five content pages plus one references page.",
+  "genuine_score_screenshot_present": false,
+  "screenshot_legibility_verified": false,
+  "student_personal_pdf_review_claimed": false,
+  "scope": "This checksum only; rebuilds require renewed inspection, particularly after a real score screenshot and personal text are added."
+}

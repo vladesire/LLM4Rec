@@ -1,0 +1,62 @@
+{
+  "focused_test_process_exit_code": 0,
+  "focused_test_count": 6,
+  "random_interval_pairs_checked_against_scalar_formula": 10000,
+  "training_observations_clipped_at_cutoff": true,
+  "test_viewing_used": false,
+  "nonzero_interaction_items_only": true,
+  "learned_metadata_boundary_verified": true,
+  "small_deterministic_rerun": {
+    "fitting_users": 230,
+    "fitting_interactions": 22850,
+    "evaluation_users": 40,
+    "candidates": 295,
+    "future_metadata_rows_mutated": 17519,
+    "scope": "Small genuine-data probe; three intentionally cold evaluation users. Not a full clean rerun or new model-selection experiment.",
+    "models": {
+      "popularity": {
+        "two_runs_exact_same_top5": true,
+        "two_runs_exact_same_scores": true,
+        "future_metadata_mutation_did_not_change_output": true,
+        "first_fit_seconds": 0.001036499999827356,
+        "second_fit_seconds": 0.0007357499998761341
+      },
+      "content": {
+        "two_runs_exact_same_top5": true,
+        "two_runs_exact_same_scores": true,
+        "future_metadata_mutation_did_not_change_output": true,
+        "first_fit_seconds": 0.014054291001230013,
+        "second_fit_seconds": 0.011357332999978098
+      },
+      "als": {
+        "two_runs_exact_same_top5": true,
+        "two_runs_exact_same_scores": true,
+        "future_metadata_mutation_did_not_change_output": true,
+        "first_fit_seconds": 0.16194974999962142,
+        "second_fit_seconds": 0.12977512500037847
+      }
+    }
+  },
+  "full_entry_point_completed": true,
+  "full_entry_point_command": ".venv/bin/python scripts/run.py",
+  "full_clean_rerun_performed": false,
+  "initial_successful_run_rebuilt_data_without_cache": true,
+  "final_csv": {
+    "passed": true,
+    "rows": 1260,
+    "columns": [
+      "user_id",
+      "tv_show_id"
+    ],
+    "exact_template_user_order": true,
+    "five_distinct_nonzero_integer_ids": true,
+    "eligible_items_only": true,
+    "no_nulls": true,
+    "single_spaces": true,
+    "no_csv_index": true
+  },
+  "csv_sha256_matches_designated_checksum": true,
+  "real_user_ap_recalculation_matches": true,
+  "student_personal_checks_completed": false,
+  "elapsed_verification_seconds": 0.680554625001605
+}

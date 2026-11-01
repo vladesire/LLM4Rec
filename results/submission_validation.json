@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "rows": 1260,
+  "columns": [
+    "user_id",
+    "tv_show_id"
+  ],
+  "exact_template_user_order": true,
+  "five_distinct_nonzero_integer_ids": true,
+  "eligible_items_only": true,
+  "no_nulls": true,
+  "single_spaces": true,
+  "no_csv_index": true,
+  "sha256": "73d71295c19c61c3702a3c8e0fae951f27a307ce9b05cd39fd37e9b93e0996e0",
+  "selected_method": "popularity",
+  "file": "/Users/roark/Exocortex/Education/MiskaRis/submission/final_submission.csv",
+  "production_refit_seconds_including_inference": 0.4765473330007808,
+  "production_model_details": {
+    "fitting_users_with_interactions": 4890,
+    "fitting_unique_user_item_interactions": 949489,
+    "fitting_interaction_items": 4276,
+    "evaluation_warm_users": 1258,
+    "evaluation_cold_users": 2,
+    "candidate_items": 6636,
+    "definition": "Number of distinct fitting users with a retained watched label per programme.",
+    "method_known_candidates": 3073,
+    "method_slots_fraction": 1.0,
+    "users_with_five_method_scored_items": 1260,
+    "users_needing_any_popularity_backfill": 0,
+    "users_needing_full_popularity_backfill": 0,
+    "distinct_recommended_items": 5
+  },
+  "production_fit_seconds": 0.018691833000048064,
+  "production_inference_seconds": 0.45144345900007465
+}

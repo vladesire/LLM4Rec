@@ -1,0 +1,42 @@
+{
+  "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "implicit": "0.7.3",
+    "reportlab": "5.1.0",
+    "pymupdf": "1.28.2"
+  },
+  "seed": 42,
+  "config": {
+    "seed": 42,
+    "validation_days": 28,
+    "watch_threshold_seconds": 300,
+    "als_factors": 32,
+    "als_iterations": 15,
+    "als_regularization": 0.1,
+    "als_confidence_alpha": 10.0,
+    "als_threads": 1,
+    "allow_repeats": true,
+    "chunk_size": 300000
+  },
+  "command_argv": [
+    "scripts/run.py"
+  ],
+  "elapsed_entry_point_seconds": 17.59510549999868,
+  "script_sha256": {
+    "core.py": "2f07d8302ccf19661e7ba24481c6a1cacab0a67c2c5ba7b459cb5ceed8f5ac0f",
+    "data_pipeline.py": "000a9da63d4733d2789565a1e1b21b0f8792d9324c2b953bf1513e02f2c9c152",
+    "models.py": "18777315a3f3ca2634e5070f3826dc304afc42c8869f86a209bc0e0d2ceeffaa",
+    "run.py": "83898b462be6b8e7613c18b1278625764f8ec199986aef716bfdd723d1080215"
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  }
+}
