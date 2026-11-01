@@ -20,6 +20,6 @@ R1 feedback supports the combined personal/completion package over the approxima
 
 R2 selected a 56-day decay and 75% repeat/25% channel-time-habit blend from eleven saved development variants. Primary MAP@5=0.257532 versus R1 0.250764 on identical corrected labels/population. Schedule-rate additions were locally unhelpful and excluded. Target sensitivities retain the gain direction, but development and selection are adaptive. The corrected later audit remains sealed. Exact formulas, ablations, bootstrap limitations, runtime and checks are in `experiments/R2/HANDOFF.md`.
 
-Reproduce R2 with `.venv/bin/python scripts/run_r2.py --reproduce`; verify with `.venv/bin/python scripts/verify_r2.py`. R2 code commit: pending local commit recording. Source/config/contract hashes are in its manifest.
+Reproduce R2 with `.venv/bin/python scripts/run_r2.py --reproduce`; verify with `.venv/bin/python scripts/verify_r2.py`. R2 code commit: `b26d33c6f245083849573d313b4b450286fd6359` (implementation/evidence commit; followed by identity metadata). Source/config/contract hashes are in its manifest.
 
 **STOP: AWAITING_USER_SCORE for R2.** Return public/private scores and comments before R3. R1 remains the best scored incumbent; R2 is an unscored challenger.

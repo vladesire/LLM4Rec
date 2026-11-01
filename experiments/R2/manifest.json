@@ -215,5 +215,6 @@
   "focused_tests_current_version": 4,
   "focused_test_output_provenance": "Current code cached reproduction, after the hand-calculated forecast test was added",
   "verification_source_sha256": "d852871460d89c674246f28301f6b4786cf7eb449a77063938a70ee7406eedba",
-  "focused_test_source_sha256": "7ef9ec628be275046881195c97bbbe6eca3de32248d9a4d95c7ce8ab39ad0c7a"
+  "focused_test_source_sha256": "7ef9ec628be275046881195c97bbbe6eca3de32248d9a4d95c7ce8ab39ad0c7a",
+  "code_commit": "b26d33c6f245083849573d313b4b450286fd6359"
 }
