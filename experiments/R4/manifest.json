@@ -1,0 +1,121 @@
+{
+  "round": "R4",
+  "status": "AWAITING_USER_SCORE",
+  "csv": "submissions/R4_count_distribution.csv",
+  "sha256": "e3e6e7a74d12c3ffb8bc15054b4a5373007d1f1e1eb0e019fbc89c4fa08da2d6",
+  "public_score": null,
+  "private_score": null,
+  "incumbent": "R3",
+  "incumbent_private_score": 0.42671,
+  "selected": {
+    "kappa": 100,
+    "distribution_rule": "D_expected_AP",
+    "challenger": "E_blend_0.1",
+    "development_metrics": {
+      "A_R3": {
+        "map_at_5": 0.2711322751322751,
+        "nonempty_map_at_5": 0.38043058648849293,
+        "five_label_map_at_5": 0.3997040498442368,
+        "users": 1260,
+        "empty_users": 362,
+        "nonempty_users": 898,
+        "five_label_users": 642
+      },
+      "B_mean": {
+        "map_at_5": 0.2539920634920635,
+        "nonempty_map_at_5": 0.35638084632516703,
+        "five_label_map_at_5": 0.3737227414330218,
+        "users": 1260,
+        "empty_users": 362,
+        "nonempty_users": 898,
+        "five_label_users": 642
+      },
+      "C_membership": {
+        "map_at_5": 0.2569440035273368,
+        "nonempty_map_at_5": 0.3605227666419203,
+        "five_label_map_at_5": 0.37870716510903424,
+        "users": 1260,
+        "empty_users": 362,
+        "nonempty_users": 898,
+        "five_label_users": 642
+      },
+      "D_expected_AP": {
+        "map_at_5": 0.2575996472663139,
+        "nonempty_map_at_5": 0.3614427121999505,
+        "five_label_map_at_5": 0.3800934579439252,
+        "users": 1260,
+        "empty_users": 362,
+        "nonempty_users": 898,
+        "five_label_users": 642
+      },
+      "E_blend_0.1": {
+        "map_at_5": 0.27127182539682543,
+        "nonempty_map_at_5": 0.3806263919821826,
+        "five_label_map_at_5": 0.39925752855659397,
+        "users": 1260,
+        "empty_users": 362,
+        "nonempty_users": 898,
+        "five_label_users": 642
+      },
+      "E_blend_0.25": {
+        "map_at_5": 0.2712528659611993,
+        "nonempty_map_at_5": 0.38059978965602576,
+        "five_label_map_at_5": 0.3983333333333334,
+        "users": 1260,
+        "empty_users": 362,
+        "nonempty_users": 898,
+        "five_label_users": 642
+      },
+      "E_blend_0.5": {
+        "map_at_5": 0.26990939153439153,
+        "nonempty_map_at_5": 0.3787147364513734,
+        "five_label_map_at_5": 0.39655763239875397,
+        "users": 1260,
+        "empty_users": 362,
+        "nonempty_users": 898,
+        "five_label_users": 642
+      }
+    },
+    "selection_rule": "Choose kappa on inner membership MAP. Freeze development winner of B/C/D and its three R3 blends. Later audit compares that challenger with R3 once; ship only if audit delta nonnegative and development delta positive.",
+    "frozen_before_late_audit": true
+  },
+  "csv_checks": {
+    "passed": true,
+    "rows": 1260,
+    "columns": [
+      "user_id",
+      "tv_show_id"
+    ],
+    "exact_template_user_order": true,
+    "five_distinct_nonzero_integer_ids": true,
+    "eligible_items_only": true,
+    "no_nulls": true,
+    "single_spaces": true,
+    "no_csv_index": true
+  },
+  "runtime_seconds": 113.58316383300189,
+  "source_sha256": {
+    "run_r4.py": "a00aea9798e8c980b831754024b37638814d600acf7cd59660da650253545b39",
+    "count_r4.py": "e952d1d1aae9a9011940e338d321c089919f21f1de6aa84fb36c1bbb73b9e7c2",
+    "verify_r4.py": "cefdf906f2d5ddefcda0e29a198d41b037b4290d961e220f6a2d2951a84784ad",
+    "diagnose_r4.py": "a2f107914ba5ef0e5a16a7ae58a5fc1f3bf0a42ca082b419ddfbff8763b61038"
+  },
+  "command": ".venv/bin/python scripts/verify_r4.py",
+  "late_audit_used_for_selection": true,
+  "distribution_assumptions": "Beta-binomial, exchangeable independent programme rates; availability is not exposure; pool truncated",
+  "next": "STOP for user R4 scores; only then designate best scored file.",
+  "initial_source_sha256": {
+    "run_r4.py": "07e28047d9fa64e64c26c3f0172c76a6e56dccb7ccb6308f9da0f30abcd69291",
+    "count_r4.py": "e952d1d1aae9a9011940e338d321c089919f21f1de6aa84fb36c1bbb73b9e7c2"
+  },
+  "full_rebuild_command": ".venv/bin/python scripts/run_r4.py --reproduce",
+  "prepared_input_sha256": {
+    "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+    "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+    "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+    "export_arh_31-42-final.csv": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+    "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+  },
+  "sampling_reconstruction_verified": true,
+  "important_limitation": "Tiny selected gain, bootstrap includes zero; distribution-only lists unstable, final blend stable on first30 checked"
+}

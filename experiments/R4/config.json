@@ -1,0 +1,22 @@
+{
+  "kappa_grid": [
+    5,
+    20,
+    100
+  ],
+  "draws": 512,
+  "seed": 42,
+  "model_pool_top_mean": 500,
+  "tail_expansion": 1000,
+  "recommendation_pool": 200,
+  "blend_weights": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "selection": "Choose kappa on inner membership MAP. Freeze development winner of B/C/D and its three R3 blends. Later audit compares that challenger with R3 once; ship only if audit delta nonnegative and development delta positive.",
+  "prior": "user-channel qualifying rate shrunk by 20 available broadcasts toward population channel rate; target-channel mixture; clipped to [1e-6,1-1e-6]",
+  "observation_window": "each user first historical view through cutoff; count all intersected labelled broadcast opportunities; no decay",
+  "sampling": "independent programme Beta/Binomial; separate shared user seed streams, items-first array; B/C/D use identical draws",
+  "late_audit_previously_exposed_corrected": false
+}

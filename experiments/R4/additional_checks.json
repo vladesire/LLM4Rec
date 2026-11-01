@@ -1,0 +1,39 @@
+{
+  "final_10pct_blend_same_list_512_vs_2048_first30": 1.0,
+  "sample_groups": {
+    "known": {
+      "pairs": 31,
+      "mean_prediction": 0.5045149520740062,
+      "mean_observed": 0.4193548262119293,
+      "90pct_interval_coverage": 0.967741935483871,
+      "mean_negative_log_likelihood": 0.5902058150848036
+    },
+    "new": {
+      "pairs": 9969,
+      "mean_prediction": 0.001957905679566664,
+      "mean_observed": 0.0016049754340201616,
+      "90pct_interval_coverage": 0.998896579396128,
+      "mean_negative_log_likelihood": 0.008733211121285092
+    },
+    "high_activity": {
+      "pairs": 4837,
+      "mean_prediction": 0.004814202875207943,
+      "mean_observed": 0.004548273514956236,
+      "90pct_interval_coverage": 0.9983460822824064,
+      "mean_negative_log_likelihood": 0.014713188020177789
+    },
+    "low_activity": {
+      "pairs": 5163,
+      "mean_prediction": 0.002299443332658036,
+      "mean_observed": 0.0013558008940890431,
+      "90pct_interval_coverage": 0.9992252566337401,
+      "mean_negative_log_likelihood": 0.0066221327681812965
+    }
+  },
+  "diagnostic_pairs": 10000,
+  "seed": 42,
+  "greedy_tiny_expected_AP": 0.5618055555555556,
+  "exhaustive_tiny_optimum": 0.5618055555555556,
+  "future_opportunity_violations": 0,
+  "caution": "Uniform pair diagnostics are zero-dominated; neither likelihood nor small gains establish private-score improvement."
+}

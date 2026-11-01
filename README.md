@@ -1,3 +1,5 @@
+**Current state: R4 awaits its score. R3 is incumbent at user-reported private 0.42671. See SUBMISSION_LOG.md and experiments/R4/HANDOFF.md. Older status text below is historical.**
+
 # Individual LLM4Rec/FKN exam project
 
 **Current research state:** R2 returned user-reported private 0.39378 and is the scored incumbent. R3 is awaiting its Kaggle result. Use `SUBMISSION_LOG.md` and `experiments/R3/HANDOFF.md` for the current immutable CSV and corrected completion/frequency contract. Sections below describe historical R0 artifacts; their broad-label 0.595717 is not evidence of Kaggle accuracy. Do not rerun the old entry point to overwrite preserved evidence during these rounds.

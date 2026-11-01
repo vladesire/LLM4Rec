@@ -1,0 +1,225 @@
+{
+  "expanded_pool": {
+    "draws": 512,
+    "seed": 42,
+    "modeling_pool_size_mean": 1017.8666666666667,
+    "empty_draw_fraction": 0.0008463541666666667,
+    "count_diagnostics": [
+      {
+        "covered": 1014,
+        "pairs": 1015,
+        "predicted_total": 53.61558101967754,
+        "observed_total": 22.0,
+        "zero_mass": 0.9799046237156738
+      },
+      {
+        "covered": 1020,
+        "pairs": 1021,
+        "predicted_total": 25.291082345790787,
+        "observed_total": 1.0,
+        "zero_mass": 0.9895025639864892
+      },
+      {
+        "covered": 1012,
+        "pairs": 1020,
+        "predicted_total": 36.93097432656467,
+        "observed_total": 54.0,
+        "zero_mass": 0.9840861381238936
+      },
+      {
+        "covered": 1014,
+        "pairs": 1020,
+        "predicted_total": 29.864832839019357,
+        "observed_total": 36.0,
+        "zero_mass": 0.9878828410059205
+      },
+      {
+        "covered": 1003,
+        "pairs": 1017,
+        "predicted_total": 16.305131893778718,
+        "observed_total": 19.0,
+        "zero_mass": 0.988438981758367
+      },
+      {
+        "covered": 1021,
+        "pairs": 1021,
+        "predicted_total": 4.8013354533728405,
+        "observed_total": 0.0,
+        "zero_mass": 0.9958709091616652
+      },
+      {
+        "covered": 1002,
+        "pairs": 1016,
+        "predicted_total": 36.44730841488324,
+        "observed_total": 69.0,
+        "zero_mass": 0.9813430697753945
+      },
+      {
+        "covered": 1016,
+        "pairs": 1016,
+        "predicted_total": 20.522144322974235,
+        "observed_total": 0.0,
+        "zero_mass": 0.9865386072798806
+      },
+      {
+        "covered": 1013,
+        "pairs": 1013,
+        "predicted_total": 12.342579620837096,
+        "observed_total": 6.0,
+        "zero_mass": 0.9926925272832744
+      },
+      {
+        "covered": 1020,
+        "pairs": 1022,
+        "predicted_total": 15.732162438905002,
+        "observed_total": 0.0,
+        "zero_mass": 0.9923910068796853
+      },
+      {
+        "covered": 1013,
+        "pairs": 1019,
+        "predicted_total": 24.89642017486115,
+        "observed_total": 17.0,
+        "zero_mass": 0.9864030304793208
+      },
+      {
+        "covered": 1015,
+        "pairs": 1017,
+        "predicted_total": 5.5456479313246145,
+        "observed_total": 3.0,
+        "zero_mass": 0.9955837179360454
+      },
+      {
+        "covered": 1018,
+        "pairs": 1019,
+        "predicted_total": 8.025963195584305,
+        "observed_total": 1.0,
+        "zero_mass": 0.9944711077174844
+      },
+      {
+        "covered": 1020,
+        "pairs": 1020,
+        "predicted_total": 9.876971875900914,
+        "observed_total": 0.0,
+        "zero_mass": 0.993655848882138
+      },
+      {
+        "covered": 1000,
+        "pairs": 1014,
+        "predicted_total": 11.393515653599689,
+        "observed_total": 34.0,
+        "zero_mass": 0.9904081703673558
+      },
+      {
+        "covered": 1012,
+        "pairs": 1016,
+        "predicted_total": 7.400352503146354,
+        "observed_total": 5.0,
+        "zero_mass": 0.9932930018355792
+      },
+      {
+        "covered": 1015,
+        "pairs": 1018,
+        "predicted_total": 20.273496552973775,
+        "observed_total": 16.0,
+        "zero_mass": 0.9890057489487946
+      },
+      {
+        "covered": 1016,
+        "pairs": 1020,
+        "predicted_total": 30.290122375705348,
+        "observed_total": 14.0,
+        "zero_mass": 0.9853574378564307
+      },
+      {
+        "covered": 1016,
+        "pairs": 1031,
+        "predicted_total": 169.2503448930852,
+        "observed_total": 162.0,
+        "zero_mass": 0.9627267594602208
+      },
+      {
+        "covered": 1017,
+        "pairs": 1019,
+        "predicted_total": 20.98442209598981,
+        "observed_total": 21.0,
+        "zero_mass": 0.9887154641862426
+      },
+      {
+        "covered": 1012,
+        "pairs": 1017,
+        "predicted_total": 29.032557538896196,
+        "observed_total": 20.0,
+        "zero_mass": 0.9827240898281383
+      },
+      {
+        "covered": 1008,
+        "pairs": 1016,
+        "predicted_total": 17.5466738828125,
+        "observed_total": 16.0,
+        "zero_mass": 0.9865173596778566
+      },
+      {
+        "covered": 1016,
+        "pairs": 1017,
+        "predicted_total": 12.257218744673034,
+        "observed_total": 0.0,
+        "zero_mass": 0.9929210814266706
+      },
+      {
+        "covered": 1013,
+        "pairs": 1019,
+        "predicted_total": 24.918772735631293,
+        "observed_total": 20.0,
+        "zero_mass": 0.9830038325585216
+      },
+      {
+        "covered": 1017,
+        "pairs": 1017,
+        "predicted_total": 7.113536621300665,
+        "observed_total": 1.0,
+        "zero_mass": 0.9944930348975314
+      },
+      {
+        "covered": 1003,
+        "pairs": 1013,
+        "predicted_total": 12.14985646391765,
+        "observed_total": 19.0,
+        "zero_mass": 0.9907072016373925
+      },
+      {
+        "covered": 1014,
+        "pairs": 1019,
+        "predicted_total": 30.82012304965048,
+        "observed_total": 8.0,
+        "zero_mass": 0.9837251935328697
+      },
+      {
+        "covered": 1015,
+        "pairs": 1016,
+        "predicted_total": 31.19770889374154,
+        "observed_total": 10.0,
+        "zero_mass": 0.9832327170307336
+      },
+      {
+        "covered": 996,
+        "pairs": 1011,
+        "predicted_total": 37.35844638405067,
+        "observed_total": 33.0,
+        "zero_mass": 0.978697567097889
+      },
+      {
+        "covered": 1016,
+        "pairs": 1017,
+        "predicted_total": 18.665942546134165,
+        "observed_total": 0.0,
+        "zero_mass": 0.9891742724067364
+      }
+    ],
+    "maximum_membership_change_after_tail_expansion": 0.013671875,
+    "mean_model_expected_AP_of_greedy": 0.5029945927372712
+  },
+  "C_top5_same_512_vs_2048_fraction": 0.43333333333333335,
+  "D_top5_same_512_vs_2048_fraction": 0.4,
+  "limitation": "Finite Monte Carlo and a truncated competitor pool; independent item rates do not learn all behavioral correlations."
+}

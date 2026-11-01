@@ -1,0 +1,16 @@
+{
+  "candidate_diagnostics": {
+    "candidate_size": 200,
+    "micro_recall": 0.853537981269511,
+    "macro_recall_all_users_empty_zero": 0.5999867724867725,
+    "macro_recall_nonempty": 0.8418522642910171,
+    "oracle_map_at_5_ceiling": 0.5999867724867725,
+    "retrieved_labels": 3281,
+    "total_labels": 3844,
+    "nonempty_users_with_all_labels_retrieved": 532,
+    "warning": "Oracle ceiling, not achieved model performance. Complete relevance sets remain in denominators."
+  },
+  "R3_map": 0.2711322751322751,
+  "remaining_oracle_headroom": 0.32885449735449734,
+  "definition": "Micro recall pools labels; oracle MAP averages per-user retrieved/full-relevance fractions and includes empty users as zero."
+}

@@ -1,0 +1,13 @@
+{
+  "paired_development_delta": 0.00013955026455026443,
+  "bootstrap_interval_95": [
+    -0.001467741402116402,
+    0.0018338128306878284
+  ],
+  "replicates": 2000,
+  "users_improve": 34,
+  "users_worsen": 31,
+  "users_unchanged": 1195,
+  "production_users_changed_vs_R3": 328,
+  "caution": "Tiny adaptively selected gain; no temporal-shift or selection correction; exploratory complement, not established superiority."
+}

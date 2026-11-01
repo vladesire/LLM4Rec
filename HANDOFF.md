@@ -1,3 +1,5 @@
+**Current state: R4 awaits its score. R3 is incumbent at user-reported private 0.42671. See SUBMISSION_LOG.md and experiments/R4/HANDOFF.md. Older status text below is historical.**
+
 # Student handoff
 
 **Historical R0 handoff.** Current sequential research instructions, file identity and waiting status are in `SUBMISSION_LOG.md` and `experiments/R3/HANDOFF.md`. The old R0 upload instructions below are archival; do not consume another attempt on R0. The report is still a draft and will be consolidated after all returned round results.
