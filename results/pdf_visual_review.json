@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "1671e67f08c4b04ae0a4f9a80fb45894458d3a1ce2a096ba02170a6d72a30eb1",
+  "pdf_sha256": "a8226bec6ad54010a1308f26dfce9ff2ed3e3163c88beb4a1b1c22dc450dd144",
   "pages_visually_inspected": [
     1,
     2,
@@ -9,8 +9,8 @@
     6
   ],
   "layout": "Legible tables, aligned text, no observed clipping or broken glyphs. Page1 re-inspected after metric definition was added; other pages unchanged.",
-  "screenshot_present": false,
-  "screenshot_legibility_verified": false,
-  "status": "DRAFT: genuine screenshot and student/external fields pending",
+  "screenshot_present": true,
+  "screenshot_legibility_verified": true,
+  "status": "Five content pages plus references; screenshot inspected; personal confirmation/review pending",
   "student_review_claimed": false
 }

@@ -1,10 +1,10 @@
 {
-  "pdf_sha256": "8e4cd8234c1e69d7192d130f2c7e7b8e81405a9df75155c83f0226ee12f8f370",
+  "pdf_sha256": "a8226bec6ad54010a1308f26dfce9ff2ed3e3163c88beb4a1b1c22dc450dd144",
   "markdown_sha256": "d68f33911cc2e38dc0196f5c08ac1bdb9173ec19e29df2a9bf62f575618e7081",
-  "total_pages": 7,
-  "content_pages_excluding_references": 6,
-  "at_most_five_content_pages": false,
-  "reference_starts_on_page": 7,
+  "total_pages": 6,
+  "content_pages_excluding_references": 5,
+  "at_most_five_content_pages": true,
+  "reference_starts_on_page": 6,
   "out_of_page_text_spans": [],
   "replacement_glyph_count": 0,
   "genuine_score_screenshot_present": true,
@@ -34,16 +34,11 @@
     },
     {
       "page": 5,
-      "text_characters": 2614,
+      "text_characters": 2692,
       "embedded_images": 1
     },
     {
       "page": 6,
-      "text_characters": 121,
-      "embedded_images": 0
-    },
-    {
-      "page": 7,
       "text_characters": 1321,
       "embedded_images": 0
     }
