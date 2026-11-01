@@ -1,0 +1,232 @@
+[
+  {
+    "user_id": "8848657562275607589",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 2400508,
+        "title": "Сегодня. Итоги с Олегом Панютой.",
+        "category": "Инфо",
+        "score": 3.24179341960042,
+        "fallback": false
+      },
+      {
+        "rank": 2,
+        "item": 5900256,
+        "title": "Утро с Украиной.",
+        "category": "Инфо",
+        "score": 1.7897509600477282,
+        "fallback": false
+      },
+      {
+        "rank": 3,
+        "item": 5800509,
+        "title": "Реальная мистика.",
+        "category": "Развлечения",
+        "score": 1.1445186729565446,
+        "fallback": false
+      },
+      {
+        "rank": 4,
+        "item": 2500507,
+        "title": "Главная тема.",
+        "category": "Инфо",
+        "score": 0.8240629781768404,
+        "fallback": false
+      },
+      {
+        "rank": 5,
+        "item": 2400467,
+        "title": "'Викна-Новости'.",
+        "category": "Инфо",
+        "score": 0.7220499222141117,
+        "fallback": false
+      }
+    ]
+  },
+  {
+    "user_id": "7124081213039446293",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "score": 13.60986392755512,
+        "fallback": false
+      },
+      {
+        "rank": 2,
+        "item": 200405,
+        "title": "'Мамахохотала-шоу'. Лучшее.",
+        "category": "Развлечения",
+        "score": 5.198178075348919,
+        "fallback": false
+      },
+      {
+        "rank": 3,
+        "item": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "score": 4.95371038752591,
+        "fallback": false
+      },
+      {
+        "rank": 4,
+        "item": 2400480,
+        "title": "ТСН. Неделя.",
+        "category": "Инфо",
+        "score": 4.786957711236392,
+        "fallback": false
+      },
+      {
+        "rank": 5,
+        "item": 1100412,
+        "title": "'Вещественное доказательство'.",
+        "category": "Познавательное",
+        "score": 2.87758158748398,
+        "fallback": false
+      }
+    ]
+  },
+  {
+    "user_id": "16561743585370579180",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 2400480,
+        "title": "ТСН. Неделя.",
+        "category": "Инфо",
+        "score": 0.0,
+        "fallback": true
+      },
+      {
+        "rank": 2,
+        "item": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "score": 0.0,
+        "fallback": true
+      },
+      {
+        "rank": 3,
+        "item": 2400467,
+        "title": "'Викна-Новости'.",
+        "category": "Инфо",
+        "score": 0.0,
+        "fallback": true
+      },
+      {
+        "rank": 4,
+        "item": 2400508,
+        "title": "Сегодня. Итоги с Олегом Панютой.",
+        "category": "Инфо",
+        "score": 0.0,
+        "fallback": true
+      },
+      {
+        "rank": 5,
+        "item": 200344,
+        "title": "'Чистоnews'.",
+        "category": "Развлечения",
+        "score": 0.0,
+        "fallback": true
+      }
+    ]
+  },
+  {
+    "user_id": "16443008025252533026",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 10002253,
+        "title": "Т/с 'Форс-мажоры', 1 сезон, 1 с. 'Пилот - часть 1'.",
+        "category": "Сериалы",
+        "score": 8.738926806573724,
+        "fallback": false
+      },
+      {
+        "rank": 2,
+        "item": 10001336,
+        "title": "Т/с 'Кости', 2 сезон, 2 с. 'Мать и дитя в бухте'.",
+        "category": "Сериалы",
+        "score": 4.980870936295753,
+        "fallback": false
+      },
+      {
+        "rank": 3,
+        "item": 12002262,
+        "title": "М/с 'Бен 10'.",
+        "category": "Детям",
+        "score": 4.669029633811564,
+        "fallback": false
+      },
+      {
+        "rank": 4,
+        "item": 10001261,
+        "title": "Т/с 'Мыслить как преступник', 1 сезон, 1 и 2 с.",
+        "category": "Сериалы",
+        "score": 3.038757814407927,
+        "fallback": false
+      },
+      {
+        "rank": 5,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "score": 2.6039468563533053,
+        "fallback": false
+      }
+    ]
+  },
+  {
+    "user_id": "5024631139882254261",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 12002955,
+        "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+        "category": "Детям",
+        "score": 164.80984661023098,
+        "fallback": false
+      },
+      {
+        "rank": 2,
+        "item": 12002896,
+        "title": "М/с 'Вспыш и чудо-машинки', 1 сезон, 15 с. 'Авто-Рейнджеры'.",
+        "category": "Детям",
+        "score": 92.06716303917048,
+        "fallback": false
+      },
+      {
+        "rank": 3,
+        "item": 12002805,
+        "title": "М/с 'Моланг', 1 сезон, 33 с.",
+        "category": "Детям",
+        "score": 40.02267225420027,
+        "fallback": false
+      },
+      {
+        "rank": 4,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "score": 34.87740914222094,
+        "fallback": false
+      },
+      {
+        "rank": 5,
+        "item": 12002806,
+        "title": "М/с 'Октонавты', 1 сезон.",
+        "category": "Детям",
+        "score": 26.85105923834763,
+        "fallback": false
+      }
+    ]
+  }
+]

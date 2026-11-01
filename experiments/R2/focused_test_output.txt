@@ -1,0 +1,9 @@
+test_forecasts_shrinkage_caps_and_cold_fallback (tests.test_behavioral_r2.BehavioralFeatureChecks.test_forecasts_shrinkage_caps_and_cold_fallback) ... ok
+test_normalized_history_length (tests.test_behavioral_r2.BehavioralFeatureChecks.test_normalized_history_length) ... ok
+test_recency_and_future_guard (tests.test_behavioral_r2.BehavioralFeatureChecks.test_recency_and_future_guard) ... ok
+test_weekday_and_time_cells (tests.test_behavioral_r2.BehavioralFeatureChecks.test_weekday_and_time_cells) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK

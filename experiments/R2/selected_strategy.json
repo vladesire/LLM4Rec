@@ -1,0 +1,10 @@
+{
+  "name": "blend_habit_25",
+  "half_life_days": 56,
+  "components": {
+    "repeat": 0.75,
+    "time_habit": 0.25
+  },
+  "complexity": 3,
+  "stage": "global_blend"
+}

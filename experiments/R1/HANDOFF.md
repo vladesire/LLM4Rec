@@ -1,6 +1,6 @@
 # R1 — completion-aware personal favourites
 
-**Status: AWAITING_USER_SCORE.** Only R1 has been executed. No R2 training, CSV or Kaggle upload was performed.
+**Status: SCORED_USER_REPORTED.** The student returned public 0.39334/private 0.38480 and authorized R2. R1 is the scored incumbent. The original screenshot/submission ID has not been inspected. The following sections preserve R1's preparation evidence; current research state is in `SUBMISSION_LOG.md`.
 
 ## Hypothesis and changes
 

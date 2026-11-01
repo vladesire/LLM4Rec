@@ -1,0 +1,11 @@
+{
+  "round": "R1",
+  "public_score": 0.39334,
+  "private_score": 0.3848,
+  "provenance": "User-reported exact numbers; original screenshot and submission identifier unavailable",
+  "student_comment": "proceed with R2",
+  "incumbent": "R1",
+  "comparison_to_R0": "Improves on approximate 0.27; exact difference from R0 unknown",
+  "interpretation": "Supports the personal/completion package; does not isolate completion, personalization or session handling",
+  "rounds_remaining_in_research_budget_including_R2": 3
+}

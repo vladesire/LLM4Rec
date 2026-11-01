@@ -1,0 +1,219 @@
+{
+  "round": "R2",
+  "status": "AWAITING_USER_SCORE",
+  "csv": "submissions/R2_recency_habit.csv",
+  "sha256": "7fbefef69e439c7a027caf2147ed60ff92086068cc7e9babd3f9565b705afe38",
+  "public_score": null,
+  "private_score": null,
+  "submission_id": null,
+  "comments": null,
+  "incumbent": "R1",
+  "incumbent_private_score": 0.3848,
+  "incumbent_score_provenance": "exact user report; screenshot not inspected",
+  "selected_strategy": "blend_habit_25",
+  "strategy": {
+    "half_life_days": 56,
+    "components": {
+      "repeat": 0.75,
+      "time_habit": 0.25
+    },
+    "complexity": 3,
+    "stage": "global_blend"
+  },
+  "command": ".venv/bin/python scripts/run_r2.py --reproduce",
+  "configuration_sha256": "77cb846cf6f179b37c39f2c9f913c0c55315c2f1e7652028a9964e3428231895",
+  "contract_sha256": "deb03811fc830786d973293ac0669df8753820768cc7455f96f9f2034b1e892e",
+  "source_sha256": {
+    "run_r2.py": "a5d44612f99b084aa906d024c61fd44a027aa5fab57d0019bc600d74e4e2d4b8",
+    "behavioral_r2.py": "a4588e17cc5713577f383f725195f7a25baf3bf24d1d844d7271facb7c38f494",
+    "completion_pipeline.py": "c72703f9d7f0e7588e9aec0bfb4314b2e4fbcf895c3334215c85919639f3f326",
+    "round_models.py": "26b1145fbe76aebee40441ae43da56a0ac1b48e17c666e3f7182fd1ef4195f6f",
+    "core.py": "2f07d8302ccf19661e7ba24481c6a1cacab0a67c2c5ba7b459cb5ceed8f5ac0f"
+  },
+  "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "seed": 42,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1"
+  },
+  "elapsed_round_seconds": 5.026101624998773,
+  "production_details": {
+    "distinct_lists": 1235,
+    "distinct_items": 479,
+    "fallback_users_any": 5,
+    "fallback_users_full": 5,
+    "fallback_slots": 25,
+    "repeat_share": 0.9838095238095237,
+    "ranking_seconds": 0.24601829199855274,
+    "fallback_version": "completion_distinct_user_popularity_v1"
+  },
+  "production_feature_details": {
+    "half_life_days": 56,
+    "effective_history_days": 66.5089700374269,
+    "forecast_days": 84.5,
+    "historical_airings": 236836,
+    "target_airings": 144766,
+    "qualifying_broadcast_watches": 487000,
+    "channel_cells": 196,
+    "channel_time_cells": 1465,
+    "historical_max_airing_start": 1595807700,
+    "qualifying_max_end": 1595807969,
+    "feature_cutoff": 1595808000,
+    "no_future_viewing_used": true,
+    "cold_users": 5,
+    "opportunity_ratio_min": 0.25,
+    "opportunity_ratio_max": 4.0,
+    "fit_feature_seconds": 0.11157129200000782
+  },
+  "future_ambiguity_handling": {
+    "duplicate_rows_removed": 0,
+    "nonpositive_rows_removed": 0,
+    "overlapping_airings_removed": 16,
+    "labelled_overlapping_airings_removed": 8,
+    "overlap_examples": [
+      {
+        "ch": 25,
+        "s": 1598830200,
+        "e": 1598860800,
+        "item": 0,
+        "start": "2020-08-30 23:30:00",
+        "end": "2020-08-31 08:00:00"
+      },
+      {
+        "ch": 25,
+        "s": 1598857200,
+        "e": 1598860800,
+        "item": 0,
+        "start": "2020-08-31 07:00:00",
+        "end": "2020-08-31 08:00:00"
+      },
+      {
+        "ch": 652,
+        "s": 1601269500,
+        "e": 1601273400,
+        "item": 0,
+        "start": "2020-09-28 05:05:00",
+        "end": "2020-09-28 06:10:00"
+      },
+      {
+        "ch": 652,
+        "s": 1601272800,
+        "e": 1601275500,
+        "item": 0,
+        "start": "2020-09-28 06:00:00",
+        "end": "2020-09-28 06:45:00"
+      },
+      {
+        "ch": 803,
+        "s": 1598830200,
+        "e": 1598860800,
+        "item": 0,
+        "start": "2020-08-30 23:30:00",
+        "end": "2020-08-31 08:00:00"
+      },
+      {
+        "ch": 803,
+        "s": 1598857200,
+        "e": 1598860800,
+        "item": 0,
+        "start": "2020-08-31 07:00:00",
+        "end": "2020-08-31 08:00:00"
+      },
+      {
+        "ch": 945,
+        "s": 1601249580,
+        "e": 1601251320,
+        "item": 0,
+        "start": "2020-09-27 23:33:00",
+        "end": "2020-09-28 00:02:00"
+      },
+      {
+        "ch": 945,
+        "s": 1601251200,
+        "e": 1601251800,
+        "item": 0,
+        "start": "2020-09-28 00:00:00",
+        "end": "2020-09-28 00:10:00"
+      },
+      {
+        "ch": 1060,
+        "s": 1601850000,
+        "e": 1601856300,
+        "item": 90081561,
+        "start": "2020-10-04 22:20:00",
+        "end": "2020-10-05 00:05:00"
+      },
+      {
+        "ch": 1060,
+        "s": 1601856000,
+        "e": 1601862600,
+        "item": 90081851,
+        "start": "2020-10-05 00:00:00",
+        "end": "2020-10-05 01:50:00"
+      },
+      {
+        "ch": 1117,
+        "s": 1601874000,
+        "e": 1601883000,
+        "item": 90079423,
+        "start": "2020-10-05 05:00:00",
+        "end": "2020-10-05 07:30:00"
+      },
+      {
+        "ch": 1117,
+        "s": 1601879400,
+        "e": 1601884200,
+        "item": 90059058,
+        "start": "2020-10-05 06:30:00",
+        "end": "2020-10-05 07:50:00"
+      }
+    ]
+  },
+  "future_metadata_used": false,
+  "csv_checks": {
+    "passed": true,
+    "rows": 1260,
+    "columns": [
+      "user_id",
+      "tv_show_id"
+    ],
+    "exact_template_user_order": true,
+    "five_distinct_nonzero_integer_ids": true,
+    "eligible_items_only": true,
+    "no_nulls": true,
+    "single_spaces": true,
+    "no_csv_index": true
+  },
+  "score_to_list_and_csv_parity": true,
+  "late_corrected_audit_inspected": false,
+  "focused_test_exit_code": 0,
+  "hypothesis": "Modest recency/opportunity/habit information improves the completion-aware personal repeat baseline.",
+  "next": "STOP. Wait for R2 feedback and instruction before R3.",
+  "initial_run_source_sha256": {
+    "run_r2.py": "7b7909b079db08d20998a83b5bc59310da860e3ddbfcaecda12f78910850af70",
+    "behavioral_r2.py": "a4588e17cc5713577f383f725195f7a25baf3bf24d1d844d7271facb7c38f494",
+    "completion_pipeline.py": "c72703f9d7f0e7588e9aec0bfb4314b2e4fbcf895c3334215c85919639f3f326",
+    "round_models.py": "26b1145fbe76aebee40441ae43da56a0ac1b48e17c666e3f7182fd1ef4195f6f",
+    "core.py": "2f07d8302ccf19661e7ba24481c6a1cacab0a67c2c5ba7b459cb5ceed8f5ac0f"
+  },
+  "prepared_input_sha256": {
+    "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+    "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+    "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+    "export_arh_31-42-final.csv": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+    "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+  },
+  "reproduction": {
+    "exact_development_predictions_and_ap_match": true,
+    "immutable_csv_unchanged": true,
+    "elapsed_seconds": 4.915710166998906,
+    "original_times_preserved": true,
+    "evidence_directory": "cache/R2_reproduction"
+  },
+  "focused_tests_current_version": 4,
+  "focused_test_output_provenance": "Current code cached reproduction, after the hand-calculated forecast test was added",
+  "verification_source_sha256": "d852871460d89c674246f28301f6b4786cf7eb449a77063938a70ee7406eedba",
+  "focused_test_source_sha256": "7ef9ec628be275046881195c97bbbe6eca3de32248d9a4d95c7ce8ab39ad0c7a"
+}

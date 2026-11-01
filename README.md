@@ -1,6 +1,6 @@
 # Individual LLM4Rec/FKN exam project
 
-**Current research state:** R1 is awaiting the student's Kaggle result. Use `SUBMISSION_LOG.md` and `experiments/R1/HANDOFF.md` for the current immutable CSV and corrected completion/frequency contract. The original comparison and PDF below remain historical R0 draft artifacts; their broad-label 0.595717 is not evidence of Kaggle accuracy. Do not rerun the old entry point to overwrite the preserved R0 evidence during these rounds.
+**Current research state:** R1 returned user-reported private 0.38480 and is the scored incumbent. R2 is awaiting its Kaggle result. Use `SUBMISSION_LOG.md` and `experiments/R2/HANDOFF.md` for the current immutable CSV and corrected completion/frequency contract. Sections below describe historical R0 artifacts; their broad-label 0.595717 is not evidence of Kaggle accuracy. Do not rerun the old entry point to overwrite preserved evidence during these rounds.
 
 Vladislav Neklyudov · vsneklyudov@edu.hse.ru · 1 November 2026.
 

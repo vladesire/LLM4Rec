@@ -1,10 +1,10 @@
 {
   "round": "R1",
-  "status": "AWAITING_USER_SCORE",
+  "status": "SCORED_USER_REPORTED",
   "csv": "submissions/R1_personal_completion.csv",
   "sha256": "95090a22e6eaf0993c3c83512c709393a5ab8daa8439c0a274d955f71ab0ead6",
-  "public_score": null,
-  "private_score": null,
+  "public_score": 0.39334,
+  "private_score": 0.3848,
   "submission_id": null,
   "comments": null,
   "r0_private_score_approximate": 0.27,
@@ -86,5 +86,10 @@
     "uses_preprocessing_cache": true,
     "initial_run_times_preserved": true
   },
-  "code_commit": "9c7b3f72f67b4801ae1a1191c8528b4ffd47410b"
+  "code_commit": "9c7b3f72f67b4801ae1a1191c8528b4ffd47410b",
+  "score_provenance": "Exact numbers reported by the student in this chat; original Kaggle screenshot/submission ID not inspected.",
+  "feedback": "Score: 0.39334; Private score: 0.38480; proceed with R2.",
+  "proceed_to_next_round_authorized": true,
+  "incumbent_at_preparation": "R0 (only scored submission so far; approximate user-reported score)",
+  "incumbent_after_returned_score": "R1"
 }

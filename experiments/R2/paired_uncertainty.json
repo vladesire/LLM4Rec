@@ -1,0 +1,15 @@
+{
+  "selected": "blend_habit_25",
+  "paired_primary_map_delta": 0.006768738977072309,
+  "user_bootstrap_replicates": 2000,
+  "seed": 42,
+  "percentile_interval_95": [
+    0.0037735119047619054,
+    0.009577744708994706
+  ],
+  "development_users_ap_improves": 171,
+  "development_users_ap_worsens": 101,
+  "development_users_ap_unchanged": 988,
+  "production_users_with_changed_ordered_list_vs_R1": 1111,
+  "limitation": "Conditional description of a selected difference; ignores temporal shift and adaptive/multiple development selection. Not an independent significance claim."
+}

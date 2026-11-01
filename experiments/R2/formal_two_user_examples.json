@@ -1,0 +1,1122 @@
+[
+  {
+    "user_id": "8848657562275607589",
+    "relevant_ids": [
+      10003144
+    ],
+    "variants": {
+      "repeat_none": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.6666666666666666,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.6666666666666666,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.3333333333333333,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.3333333333333333,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90079091,
+            "title": "Х/ф 'Фото на недобрую память'.",
+            "category": "Фильмы",
+            "score": 0.3333333333333333,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "repeat_28": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.7012339024604445,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.5720279187280057,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.567465230269049,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.5673652464326295,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90079091,
+            "title": "Х/ф 'Фото на недобрую память'.",
+            "category": "Фильмы",
+            "score": 0.3228061156208906,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "repeat_56": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.6735043452582948,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.6180335104457659,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.4537574073487114,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.4537174309743416,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90079091,
+            "title": "Х/ф 'Фото на недобрую память'.",
+            "category": "Фильмы",
+            "score": 0.34223543664029543,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "schedule_rate": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.6967116109858527,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.6319928196869284,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.5734634035507854,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 90079091,
+            "title": "Х/ф 'Фото на недобрую память'.",
+            "category": "Фильмы",
+            "score": 0.4762624097914285,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.44552713354039875,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "schedule_capped": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.7062412129163994,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.6355793332024096,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 90079091,
+            "title": "Х/ф 'Фото на недобрую память'.",
+            "category": "Фильмы",
+            "score": 0.6339401426720156,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.5737324844324454,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.44514047233187065,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "channel_habit": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.4614569208727647,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.3224163742226639,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.3025770318778363,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "score": 0.2470461516016922,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.22497511116214336,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "channel_time_habit": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.5050483145291862,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.4307943083427282,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.40286317972634783,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 5900256,
+            "title": "Утро с Украиной.",
+            "category": "Инфо",
+            "score": 0.3647692595246587,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 10002893,
+            "title": "Т/с 'Когда мы дома'.",
+            "category": "Сериалы",
+            "score": 0.35656837484482057,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "blend_schedule_25": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.681688562172821,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.6224199661349268,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.4837511766196449,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.4515731913137238,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90079091,
+            "title": "Х/ф 'Фото на недобрую память'.",
+            "category": "Фильмы",
+            "score": 0.4151616131482254,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "blend_schedule_50": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.6898727790873471,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.6268064218240877,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.5137449458905784,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 90079091,
+            "title": "Х/ф 'Фото на недобрую память'.",
+            "category": "Фильмы",
+            "score": 0.4880877896561555,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.44942895165310615,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "blend_habit_10": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.6464402287051002,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.606734990854108,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.4514251187111803,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.42917564513925244,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90079091,
+            "title": "Х/ф 'Фото на недобрую память'.",
+            "category": "Фильмы",
+            "score": 0.3080121813473535,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "blend_habit_25": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.6058440538753082,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.5897872114666209,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.4479866503164382,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.39230300182506395,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 5900256,
+            "title": "Утро с Украиной.",
+            "category": "Инфо",
+            "score": 0.3114538422759579,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "user_id": "7124081213039446293",
+    "relevant_ids": [
+      20088,
+      240081,
+      2400480,
+      12001682,
+      90073541
+    ],
+    "variants": {
+      "repeat_none": {
+        "ap_at_5": 0.52,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 9.666666666666666,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 2.333333333333333,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.0,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.0,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "score": 1.0,
+            "fallback": false,
+            "target_relevant": true
+          }
+        ]
+      },
+      "repeat_28": {
+        "ap_at_5": 0.3,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 8.53063549691408,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.804200488143356,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.7409037383209498,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 1.7272761985394163,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 5,
+            "item": 12002896,
+            "title": "М/с 'Вспыш и чудо-машинки', 1 сезон, 15 с. 'Авто-Рейнджеры'.",
+            "category": "Детям",
+            "score": 1.5429424819186444,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "repeat_56": {
+        "ap_at_5": 0.3333333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 9.051069935466947,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.3977923024571313,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 1.9908237410197622,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.3681888821909591,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 12002896,
+            "title": "М/с 'Вспыш и чудо-машинки', 1 сезон, 15 с. 'Авто-Рейнджеры'.",
+            "category": "Детям",
+            "score": 1.0581420271729214,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "schedule_rate": {
+        "ap_at_5": 0.4,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 8.873477518635962,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 2.0228890921074765,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.0207906832753757,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.6067550101548898,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90074619,
+            "title": "Х/ф 'Голодные игры'.",
+            "category": "Фильмы",
+            "score": 1.5369778067300224,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "schedule_capped": {
+        "ap_at_5": 0.4,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 8.879970816925473,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 2.0342380597781866,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.02707348459765,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 90074619,
+            "title": "Х/ф 'Голодные игры'.",
+            "category": "Фильмы",
+            "score": 1.716730268090417,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.692205716127263,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "channel_habit": {
+        "ap_at_5": 0.3333333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 6.824722482942334,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 12002856,
+            "title": "М/с 'Элвиннн!!! и бурундуки'.",
+            "category": "Детям",
+            "score": 2.2422168630220862,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 1.752527735835242,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 1.7342504760631667,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 1.3839944042167078,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "channel_time_habit": {
+        "ap_at_5": 0.4533333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 6.802759172600697,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 3.0654779123339333,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 1.608687405156017,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 1.186965194355982,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "score": 1.1501897748659362,
+            "fallback": false,
+            "target_relevant": true
+          }
+        ]
+      },
+      "blend_schedule_25": {
+        "ap_at_5": 0.3333333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 9.008295155831577,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.305112597992261,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 2.0016773207093683,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.449193090675035,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90074619,
+            "title": "Х/ф 'Голодные игры'.",
+            "category": "Фильмы",
+            "score": 1.0638717779130076,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "blend_schedule_50": {
+        "ap_at_5": 0.3333333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 8.96552037619621,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.2124328935273905,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 2.0125309003989744,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.530197299159111,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90074619,
+            "title": "Х/ф 'Голодные игры'.",
+            "category": "Фильмы",
+            "score": 1.2814912746388107,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "blend_habit_10": {
+        "ap_at_5": 0.3333333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 8.826238859180323,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.4645608634448113,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 1.9526101074333877,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.2894727041662195,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 12002896,
+            "title": "М/с 'Вспыш и чудо-машинки', 1 сезон, 15 с. 'Авто-Рейнджеры'.",
+            "category": "Детям",
+            "score": 1.0068506727326774,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "blend_habit_25": {
+        "ap_at_5": 0.4533333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 8.488992244750383,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.5647137049263318,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 1.895289657053826,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.1713984371291102,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "score": 1.0290667272483431,
+            "fallback": false,
+            "target_relevant": true
+          }
+        ]
+      }
+    }
+  }
+]
