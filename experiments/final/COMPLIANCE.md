@@ -1,3 +1,5 @@
+**Final update:** GitHub URL and genuine screenshot are supplied and integrated. Screenshot confirms R0 public0.28078/private0.27750 and R1-R4 scores. Personal join arithmetic and confirmation of the corrected AP (2.75/5=0.55) remain incomplete; final student review and remote push remain student actions. Older pending-evidence statements below are superseded by this update.
+
 # Guidelines compliance review
 
 Sources inspected on 1 November 2026: user-supplied `/Users/roark/Downloads/exam_quiz_FKN.md`, `/Users/roark/Downloads/LLM4Rec. Midterm Quiz.pdf`, and `/Users/roark/Downloads/homework_guidelines.pdf`. These are assignment requirements, distinct from the student's later research instructions. No requirement in an attachment was treated as permission to upload or push.

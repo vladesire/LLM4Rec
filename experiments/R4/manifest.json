@@ -119,7 +119,7 @@
   "sampling_reconstruction_verified": true,
   "important_limitation": "Tiny selected gain, bootstrap includes zero; distribution-only lists unstable, final blend stable on first30 checked",
   "code_commit": "e6255ca692a83c642b99d308768ae0709006f6da",
-  "score_provenance": "Exact numbers reported by student; original screenshot/submission identifier not yet inspected.",
+  "score_provenance": "Supplied genuine Kaggle submission-page screenshot inspected; filename, public/private scores and Complete status visible.",
   "feedback": "Score: 0.42890; Private score: 0.42690; stop experimenting and finalize.",
   "incumbent_after_returned_score": "R4"
 }

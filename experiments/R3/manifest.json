@@ -177,7 +177,7 @@
   "focused_test_source_sha256": "b64a23ce14a61b26ebcec96ee6fe79aeebae4872afe36dae1d103d732f94c2e8",
   "focused_test_count": 3,
   "code_commit": "9b2855a12482a28fb9916e9972d761d4f76c0877",
-  "score_provenance": "Exact student report; original screenshot/ID not inspected",
+  "score_provenance": "Supplied genuine Kaggle submission-page screenshot inspected; filename, public/private scores and Complete status visible.",
   "feedback": "Execute R4 count-distribution experiment",
   "incumbent_after_returned_score": "R3"
 }

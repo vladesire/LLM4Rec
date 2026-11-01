@@ -100,8 +100,8 @@ def render(source, destination):
         if image_match:
             image_path = source.parent / image_match.group(2)
             if image_path.exists():
-                picture = Image(str(image_path), kind='proportional')
-                scale = min(width / picture.imageWidth, 220 / picture.imageHeight)
+                picture = Image(str(image_path))
+                scale = min(width / picture.imageWidth, 280 / picture.imageHeight)
                 picture.drawWidth, picture.drawHeight = picture.imageWidth * scale, picture.imageHeight * scale
                 story += [picture, Spacer(1, 7), Paragraph(inline(image_match.group(1)), cell)]
             else:

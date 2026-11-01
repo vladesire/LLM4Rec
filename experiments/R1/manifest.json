@@ -87,7 +87,7 @@
     "initial_run_times_preserved": true
   },
   "code_commit": "9c7b3f72f67b4801ae1a1191c8528b4ffd47410b",
-  "score_provenance": "Exact numbers reported by the student in this chat; original Kaggle screenshot/submission ID not inspected.",
+  "score_provenance": "Supplied genuine Kaggle submission-page screenshot inspected; filename, public/private scores and Complete status visible.",
   "feedback": "Score: 0.39334; Private score: 0.38480; proceed with R2.",
   "proceed_to_next_round_authorized": true,
   "incumbent_at_preparation": "R0 (only scored submission so far; approximate user-reported score)",

@@ -4,7 +4,7 @@
 
 Assignment: LLM4Rec/FKN individual exam
 
-GitHub: TODO: accessible GitHub repository URL
+GitHub: https://github.com/vladesire/LLM4Rec
 
 **DRAFT: required external/personal evidence pending**
 
@@ -86,6 +86,8 @@ The following lookup supplies the title and category for every ID above. Full sc
 | 90079091 | Х/ф 'Фото на недобрую память'. | Фильмы |
 All methods miss this user’s single held-out target. Familiar history is insufficient: this is a concrete cold-item/preference-shift failure, not a useful-discovery success. Missing historical metadata is reported explicitly rather than inferred from future features.
 
+**Personal check disclosure:** Student reasoning: compare viewing time with the original scheduled length; a cutoff limits observations, not programme duration. Numerical arithmetic was not supplied by the student. Agent calculation: broadcast ends21:40:00; overlap8288 seconds; 8288/9600=.863333, qualifying at80%.
+
 An actual preparation error used pandas Series.item as if it were a column value; explicit row["item"] indexing fixed example serialization and the full pipeline/checks passed. Agent checks cover raw-row overlap examples, split clipping, AP examples 11/12 and 8/15, empty labels and duplicate rejection, ALS orientation/repeats, sample expected-AP identity versus exhaustive tiny cases, bounded counts, finite scores, exact CSV schema/order/eligibility and deterministic reconstruction. R1-R3 cached reproductions and R4 full production resampling passed; a second clean-clone full rerun was not performed.
 
 <!-- pagebreak -->
@@ -122,35 +124,33 @@ The following lookup supplies the title and category for every ID above. Full sc
 | 12001734 | М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'. | Детям |
 Compare the children’s-programme training history with the target set and ordered lists. Hits support recurring-preference prediction for this observed period; misses do not demonstrate lack of enjoyment or that a programme was never watched elsewhere.
 
+**Personal check disclosure:** Student correctly identified hits1,2,4, precisions1,1,.75, numerator2.75 and denominator5, but wrote0.45. Agent corrected the division to0.55; student confirmation of the correction remains pending.
+
 Environment:macOS26.6.2 arm64 CPU, Python3.15.0, numpy2.5.4, pandas3.1.0, scipy1.18.1, scikit-learn1.9.1, implicit0.7.3, reportlab5.1.0, pymupdf1.28.2; seed42. Hashes, counts, checks and stage times are saved under results/ and experiments/R1-R4/.
 
 <!-- pagebreak -->
 
 ## 5. Discussion, verification and AI disclosure
 
-**Student interpretation:** TODO: Review the two-user examples and rewrite the interpretation in your own words.
-
-**Personal join reasoning:** TODO: Personally inspect a raw viewing/schedule overlap and explain your arithmetic.
-
-**Personal AP reasoning:** TODO: Personally recompute the saved real user's AP@5 and explain your reasoning.
+**Student interpretation:** R4’s rationale is to model repeat viewing and uncertainty. Popularity’s weak transfer surprised me; the hidden preference definition remains doubtful. Next, calibrate predicted counts on a later holdout.
 
 Agent assessment: choose R4 by the agreed maximum returned private score, while R3 supplies almost all of its ranking. Content/ALS perform worse than completion popularity here; metadata similarity and factor objectives differ from recurring-favourite labels. More detailed behavioral signals improve R1-R3, but the R4 gain is tiny. Sparse labelled schedules, implicit background viewing, ambiguous devices, independent count draws, truncated competitors and unequal availability/exposure limit interpretation. A next improvement is out-of-time calibration on a longer horizon before adding complexity. No A/B, enjoyment or revenue effect was measured.
 | Submission | Public | Private |
 |---|---|---|
-| R0 | not recorded | approximately .27 |
+| R0 | .28078 | .27750 |
 | R1 | .39334 | .38480 |
 | R2 | .39904 | .39378 |
 | R3 | .43102 | .42671 |
 | R4 designated | .42890 | .42690 |
-Scores above are user-reported until supported by the genuine screenshot. Five uploads include four adaptive private-score queries; they are not an untouched test. Original R0 local .595717 used broad five-minute labels and is historical only, not comparable with this table’s development proxy.
+The genuine supplied submission-page screenshot confirms all five scores and COMPLETE status. Five uploads include four adaptive private-score queries; they are not an untouched test. Original R0 local .595717 used broad five-minute labels and is historical only, not comparable with this table’s development proxy.
 
-Designated CSV: submissions/R4_count_distribution.csv; SHA-256: e3e6e7a74d12c3ffb8bc15054b4a5373007d1f1e1eb0e019fbc89c4fa08da2d6. Submission ID/status: TODO: designated final submission identifier / TODO: wait for COMPLETE. Description: TODO: full Russian name and Kaggle username entered on the designated submission.
+Designated CSV: submissions/R4_count_distribution.csv; SHA-256: e3e6e7a74d12c3ffb8bc15054b4a5373007d1f1e1eb0e019fbc89c4fa08da2d6. Submission ID/status: Not available; identified by filename and screenshot / COMPLETE. Description: Неклюдов Владислав (vladislavroark).
 
 ![Genuine R4 submission page showing private score and submission identity](assets/kaggle_private_score.png)
 
 ChatGPT assisted upstream planning and subsequent research plans; local Codex generated/debugged code, searched sources, executed experiments/checks and drafted this report. Python libraries calculated results. Model/app versions not exposed reliably were not invented. Algorithms were reimplemented; no external predictions or classmates’ reports were imported. The proposed rate-model paper could not be retrieved and is not claimed as consulted. Personal statements above are student-supplied only when completed; other checks are agent-executed. Library internals, hidden scorer conventions and transfer assumptions were not independently proven.
 
-Native audit: rollout-2026-11-01T14-39-42-01a196e8-8117-7b61-a05e-d4d86d8f1472.jsonl (original JSONL; guidelines permit tool-native logs although examples use .json). Student copies it unchanged after final work; it excludes earlier ChatGPT activity. No export was reconstructed, converted or sanitized. Personal checks completed: False; student report review: False.
+Original audit: rollout-2026-11-01T14-39-42-01a196e8-8117-7b61-a05e-d4d86d8f1472.jsonl (unchanged native JSONL; tool-native format accepted). It excludes upstream ChatGPT. Personal arithmetic confirmation and final student review remain pending; no completed personal verification is claimed.
 
 <!-- pagebreak -->
 

@@ -1,3 +1,5 @@
+**Screenshot now inspected:** all five returned scores and Complete status confirmed; R0 exact public0.28078/private0.27750. R4 remains designated.
+
 # Submission log - experiments complete
 
 Scores are user-reported; genuine screenshot evidence is tracked separately. No agent Kaggle upload or remote push.

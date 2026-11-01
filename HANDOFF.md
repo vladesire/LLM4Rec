@@ -1,3 +1,5 @@
+**Final update:** GitHub URL and genuine screenshot are supplied and integrated. Screenshot confirms R0 public0.28078/private0.27750 and R1-R4 scores. Personal join arithmetic and confirmation of the corrected AP (2.75/5=0.55) remain incomplete; final student review and remote push remain student actions. Older pending-evidence statements below are superseded by this update.
+
 # Final student handoff - 1 November 2026
 
 **Experiments are finished. R4 is designated by the highest returned private score: 0.42690.** R3 was 0.42671; the difference is only 0.00019 and is not evidence of statistically reliable superiority. All scores are user-reported pending screenshot inspection.

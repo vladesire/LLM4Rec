@@ -217,7 +217,7 @@
   "verification_source_sha256": "d852871460d89c674246f28301f6b4786cf7eb449a77063938a70ee7406eedba",
   "focused_test_source_sha256": "7ef9ec628be275046881195c97bbbe6eca3de32248d9a4d95c7ce8ab39ad0c7a",
   "code_commit": "b26d33c6f245083849573d313b4b450286fd6359",
-  "score_provenance": "Exact numbers reported by student; no original Kaggle screenshot/submission identifier inspected.",
+  "score_provenance": "Supplied genuine Kaggle submission-page screenshot inspected; filename, public/private scores and Complete status visible.",
   "feedback": "Score: 0.39904; Private score: 0.39378; Proceed with R3",
   "proceed_to_next_round_authorized": true,
   "incumbent_after_returned_score": "R2"

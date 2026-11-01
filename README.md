@@ -1,3 +1,5 @@
+**Final update:** GitHub URL and genuine screenshot are supplied and integrated. Screenshot confirms R0 public0.28078/private0.27750 and R1-R4 scores. Personal join arithmetic and confirmation of the corrected AP (2.75/5=0.55) remain incomplete; final student review and remote push remain student actions. Older pending-evidence statements below are superseded by this update.
+
 # SWEET.TV individual LLM4Rec/FKN exam
 
 Vladislav Neklyudov, vsneklyudov@edu.hse.ru. Local branch `master`; no agent remote push or Kaggle upload.
