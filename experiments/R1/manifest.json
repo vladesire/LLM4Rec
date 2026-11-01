@@ -1,0 +1,89 @@
+{
+  "round": "R1",
+  "status": "AWAITING_USER_SCORE",
+  "csv": "submissions/R1_personal_completion.csv",
+  "sha256": "95090a22e6eaf0993c3c83512c709393a5ab8daa8439c0a274d955f71ab0ead6",
+  "public_score": null,
+  "private_score": null,
+  "submission_id": null,
+  "comments": null,
+  "r0_private_score_approximate": 0.27,
+  "incumbent": "R0 (only scored submission so far; approximate user-reported score)",
+  "command": ".venv/bin/python scripts/run_r1.py --reproduce",
+  "configuration_sha256": "9c1da3bb0ac37b067ae06e588558a839e973df4b0e30e13ae361f0a2245360bf",
+  "contract_sha256": "deb03811fc830786d973293ac0669df8753820768cc7455f96f9f2034b1e892e",
+  "source_sha256": {
+    "run_r1.py": "598cd6411693026146647e9409b22bf7012d60b83ba9f84c9866d88664265d72",
+    "completion_pipeline.py": "c72703f9d7f0e7588e9aec0bfb4314b2e4fbcf895c3334215c85919639f3f326",
+    "round_models.py": "26b1145fbe76aebee40441ae43da56a0ac1b48e17c666e3f7182fd1ef4195f6f",
+    "core.py": "2f07d8302ccf19661e7ba24481c6a1cacab0a67c2c5ba7b459cb5ceed8f5ac0f",
+    "models.py": "18777315a3f3ca2634e5070f3826dc304afc42c8869f86a209bc0e0d2ceeffaa",
+    "data_pipeline.py": "000a9da63d4733d2789565a1e1b21b0f8792d9324c2b953bf1513e02f2c9c152"
+  },
+  "seed": 42,
+  "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "implicit": "0.7.3"
+  },
+  "elapsed_round_seconds": 19.008854832998622,
+  "production_model": {
+    "input": "distinct >=80%-continuous-session qualifying broadcast counts",
+    "fitting_users": 4833,
+    "fitting_interactions": 181424,
+    "cold_qualifying_history_users": 5,
+    "candidate_items": 6636,
+    "fallback_version": "completion_distinct_user_popularity_v1",
+    "repeats_allowed": true,
+    "tie_break": "last qualifying overlap end descending, then ID ascending",
+    "fallback_users_any": 27,
+    "fallback_users_full": 6,
+    "fallback_slots": 85,
+    "distinct_recommendation_lists": 1231,
+    "distinct_recommended_items": 454,
+    "qualifying_history_repeat_share": 0.9865079365079366
+  },
+  "csv_checks": {
+    "passed": true,
+    "rows": 1260,
+    "columns": [
+      "user_id",
+      "tv_show_id"
+    ],
+    "exact_template_user_order": true,
+    "five_distinct_nonzero_integer_ids": true,
+    "eligible_items_only": true,
+    "no_nulls": true,
+    "single_spaces": true,
+    "no_csv_index": true
+  },
+  "score_to_list_and_csv_parity_passed": true,
+  "different_from_R0": true,
+  "original_row_examples_checked": 4,
+  "focused_test_process_exit": 0,
+  "late_corrected_audit_inspected": false,
+  "quota": "Not accessible locally; student must confirm four additional attempts remain before R1 upload.",
+  "hypothesis": "Completion-aware personal repetition transfers better than an identical global-reach list; this package does not isolate the two changes.",
+  "main_alternatives": "Preference-proxy error, session/device ambiguity, target ties, sparse usable history, availability and temporal transfer.",
+  "next_round": "STOP. R2 branch is conditional on returned R1 scores and student instruction.",
+  "initial_run_source_sha256": {
+    "run_r1.py": "7c6c3121ca282a70018e16fdd05fb764734da49a2c5cbd50efeb131ed3e9ea61",
+    "completion_pipeline.py": "c72703f9d7f0e7588e9aec0bfb4314b2e4fbcf895c3334215c85919639f3f326",
+    "round_models.py": "26b1145fbe76aebee40441ae43da56a0ac1b48e17c666e3f7182fd1ef4195f6f",
+    "core.py": "2f07d8302ccf19661e7ba24481c6a1cacab0a67c2c5ba7b459cb5ceed8f5ac0f",
+    "models.py": "18777315a3f3ca2634e5070f3826dc304afc42c8869f86a209bc0e0d2ceeffaa",
+    "data_pipeline.py": "000a9da63d4733d2789565a1e1b21b0f8792d9324c2b953bf1513e02f2c9c152"
+  },
+  "reproduction": {
+    "evidence_directory": "cache/R1_reproduction",
+    "exact_development_predictions_and_ap_match": true,
+    "immutable_csv_unchanged": true,
+    "elapsed_seconds": 8.226919333001206,
+    "uses_preprocessing_cache": true,
+    "initial_run_times_preserved": true
+  }
+}

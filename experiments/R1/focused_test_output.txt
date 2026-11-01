@@ -1,0 +1,10 @@
+test_channel_change_breaks_sitting (tests.test_completion.CompletionContractChecks.test_channel_change_breaks_sitting) ... ok
+test_duplicate_overlap_and_switch_clip (tests.test_completion.CompletionContractChecks.test_duplicate_overlap_and_switch_clip) ... ok
+test_full_denominator_at_split_and_two_airings (tests.test_completion.CompletionContractChecks.test_full_denominator_at_split_and_two_airings) ... ok
+test_top_five_ties_and_complete_denominator (tests.test_completion.CompletionContractChecks.test_top_five_ties_and_complete_denominator) ... ok
+test_ap (tests.test_core.FocusedChecks.test_ap) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.019s
+
+OK

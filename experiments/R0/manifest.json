@@ -1,0 +1,13 @@
+{
+  "round": "R0",
+  "csv": "submissions/R0_global_popularity.csv",
+  "sha256": "73d71295c19c61c3702a3c8e0fae951f27a307ce9b05cd39fd37e9b93e0996e0",
+  "code_commit": "6a26a6970dcf59568b1981dae4f46ec12a0d2b58",
+  "public_score": null,
+  "private_score_approximate": 0.27,
+  "private_score_exact": null,
+  "score_provenance": "Student report; no original score evidence inspected",
+  "historical_local_target": "All programmes with a >=300-second user-airing label; old June29–July27 split",
+  "historical_proxy_map_at_5": 0.5957169312169311,
+  "warning": "Historical broad-label proxy result; not comparable numerically with corrected-target metrics."
+}

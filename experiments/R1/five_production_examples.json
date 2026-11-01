@@ -1,0 +1,257 @@
+[
+  {
+    "user_id": "8848657562275607589",
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 2400508,
+        "title": "Сегодня. Итоги с Олегом Панютой.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 4,
+        "last_qualifying_end": "2020-07-24 09:30:00",
+        "fallback": false
+      },
+      {
+        "rank": 2,
+        "item": 5900256,
+        "title": "Утро с Украиной.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 2,
+        "last_qualifying_end": "2020-07-24 09:00:00",
+        "fallback": false
+      },
+      {
+        "rank": 3,
+        "item": 2400467,
+        "title": "'Викна-Новости'.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 2,
+        "last_qualifying_end": "2020-05-18 14:50:00",
+        "fallback": false
+      },
+      {
+        "rank": 4,
+        "item": 5800509,
+        "title": "Реальная мистика.",
+        "category": "Развлечения",
+        "qualifying_historical_broadcast_count": 1,
+        "last_qualifying_end": "2020-07-24 10:40:00",
+        "fallback": false
+      },
+      {
+        "rank": 5,
+        "item": 2500507,
+        "title": "Главная тема.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 1,
+        "last_qualifying_end": "2020-07-11 21:00:00",
+        "fallback": false
+      }
+    ],
+    "true_future_preferences_available": false
+  },
+  {
+    "user_id": "7124081213039446293",
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 34,
+        "last_qualifying_end": "2020-07-09 14:10:00",
+        "fallback": false
+      },
+      {
+        "rank": 2,
+        "item": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 10,
+        "last_qualifying_end": "2020-07-14 13:19:54",
+        "fallback": false
+      },
+      {
+        "rank": 3,
+        "item": 2400480,
+        "title": "ТСН. Неделя.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 7,
+        "last_qualifying_end": "2020-07-20 20:30:00",
+        "fallback": false
+      },
+      {
+        "rank": 4,
+        "item": 200405,
+        "title": "'Мамахохотала-шоу'. Лучшее.",
+        "category": "Развлечения",
+        "qualifying_historical_broadcast_count": 6,
+        "last_qualifying_end": "2020-07-18 18:40:00",
+        "fallback": false
+      },
+      {
+        "rank": 5,
+        "item": 12001734,
+        "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 6,
+        "last_qualifying_end": "2020-05-24 17:35:00",
+        "fallback": false
+      }
+    ],
+    "true_future_preferences_available": false
+  },
+  {
+    "user_id": "16561743585370579180",
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 2400480,
+        "title": "ТСН. Неделя.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 0,
+        "last_qualifying_end": null,
+        "fallback": true
+      },
+      {
+        "rank": 2,
+        "item": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 0,
+        "last_qualifying_end": null,
+        "fallback": true
+      },
+      {
+        "rank": 3,
+        "item": 2400467,
+        "title": "'Викна-Новости'.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 0,
+        "last_qualifying_end": null,
+        "fallback": true
+      },
+      {
+        "rank": 4,
+        "item": 2400508,
+        "title": "Сегодня. Итоги с Олегом Панютой.",
+        "category": "Инфо",
+        "qualifying_historical_broadcast_count": 0,
+        "last_qualifying_end": null,
+        "fallback": true
+      },
+      {
+        "rank": 5,
+        "item": 200344,
+        "title": "'Чистоnews'.",
+        "category": "Развлечения",
+        "qualifying_historical_broadcast_count": 0,
+        "last_qualifying_end": null,
+        "fallback": true
+      }
+    ],
+    "true_future_preferences_available": false
+  },
+  {
+    "user_id": "16443008025252533026",
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 10002253,
+        "title": "Т/с 'Форс-мажоры', 1 сезон, 1 с. 'Пилот - часть 1'.",
+        "category": "Сериалы",
+        "qualifying_historical_broadcast_count": 8,
+        "last_qualifying_end": "2020-07-21 22:40:00",
+        "fallback": false
+      },
+      {
+        "rank": 2,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 7,
+        "last_qualifying_end": "2020-05-18 21:45:00",
+        "fallback": false
+      },
+      {
+        "rank": 3,
+        "item": 12001732,
+        "title": "М/с 'Пингвины из 'Мадагаскара'.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 6,
+        "last_qualifying_end": "2020-04-15 16:44:00",
+        "fallback": false
+      },
+      {
+        "rank": 4,
+        "item": 12002262,
+        "title": "М/с 'Бен 10'.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 5,
+        "last_qualifying_end": "2020-07-13 21:00:00",
+        "fallback": false
+      },
+      {
+        "rank": 5,
+        "item": 10001336,
+        "title": "Т/с 'Кости', 2 сезон, 2 с. 'Мать и дитя в бухте'.",
+        "category": "Сериалы",
+        "qualifying_historical_broadcast_count": 4,
+        "last_qualifying_end": "2020-07-21 21:15:00",
+        "fallback": false
+      }
+    ],
+    "true_future_preferences_available": false
+  },
+  {
+    "user_id": "5024631139882254261",
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 12002955,
+        "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 268,
+        "last_qualifying_end": "2020-07-26 00:35:00",
+        "fallback": false
+      },
+      {
+        "rank": 2,
+        "item": 12002896,
+        "title": "М/с 'Вспыш и чудо-машинки', 1 сезон, 15 с. 'Авто-Рейнджеры'.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 180,
+        "last_qualifying_end": "2020-07-26 01:45:00",
+        "fallback": false
+      },
+      {
+        "rank": 3,
+        "item": 12002805,
+        "title": "М/с 'Моланг', 1 сезон, 33 с.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 78,
+        "last_qualifying_end": "2020-07-13 00:22:00",
+        "fallback": false
+      },
+      {
+        "rank": 4,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 60,
+        "last_qualifying_end": "2020-07-07 23:40:00",
+        "fallback": false
+      },
+      {
+        "rank": 5,
+        "item": 12002201,
+        "title": "М/с 'Маша и Медведь', 46 с.",
+        "category": "Детям",
+        "qualifying_historical_broadcast_count": 57,
+        "last_qualifying_end": "2020-05-03 17:27:00",
+        "fallback": false
+      }
+    ],
+    "true_future_preferences_available": false
+  }
+]

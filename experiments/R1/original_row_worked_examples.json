@@ -1,0 +1,198 @@
+[
+  {
+    "case": "qualifying single fragment",
+    "user_id": "17226860011138219284",
+    "channel": 6,
+    "item": 400361,
+    "session_id": 1550,
+    "airing_id": 10389,
+    "session_start": "2020-04-25 19:21:52",
+    "session_end": "2020-04-25 21:41:16",
+    "original_broadcast_duration_seconds": 9600,
+    "overlap_seconds": 8288,
+    "completion_fraction": 0.8633333333333333,
+    "fitting_side_seconds_at_june1": 8288,
+    "target_side_seconds_at_june1": 0,
+    "fitting_completion_full_denominator": 0.8633333333333333,
+    "target_completion_full_denominator": 0.0,
+    "original_view_csv_records": [
+      {
+        "zero_based_record": 2897529,
+        "record": {
+          "user_id": "17226860011138219284",
+          "vsetv_id": "6",
+          "start_time": "2020-04-25 19:21:52",
+          "stop_time": "2020-04-25 21:41:16",
+          "duraton": "8364"
+        }
+      }
+    ],
+    "original_schedule_file": "export_arh_11-20-final.csv",
+    "original_schedule_zero_based_record": 5636,
+    "original_schedule_record": {
+      "channel_id": "6",
+      "channel_title": "СТБ",
+      "start_time": "25.04.2020 19:00:00",
+      "duration": "9600",
+      "tv_show_title": "'МастерШеф. Профессионалы', 2 сезон, 9 эп.",
+      "tv_show_id": "400361",
+      "tv_show_category": "Познавательное",
+      "tv_show_genre_1": "кулинария",
+      "tv_show_genre_2": "",
+      "tv_show_genre_3": "",
+      "year_of_production": "2011-",
+      "director": "",
+      "actors": ""
+    }
+  },
+  {
+    "case": "partial overlap",
+    "user_id": "3398461054087191302",
+    "channel": 6,
+    "item": 500332,
+    "session_id": 6,
+    "airing_id": 9687,
+    "session_start": "2020-03-11 07:36:14",
+    "session_end": "2020-03-11 07:39:42",
+    "original_broadcast_duration_seconds": 6900,
+    "overlap_seconds": 208,
+    "completion_fraction": 0.030144927536231884,
+    "fitting_side_seconds_at_june1": 208,
+    "target_side_seconds_at_june1": 0,
+    "fitting_completion_full_denominator": 0.030144927536231884,
+    "target_completion_full_denominator": 0.0,
+    "original_view_csv_records": [
+      {
+        "zero_based_record": 119567,
+        "record": {
+          "user_id": "3398461054087191302",
+          "vsetv_id": "6",
+          "start_time": "2020-03-11 07:36:14",
+          "stop_time": "2020-03-11 07:39:42",
+          "duraton": "208"
+        }
+      }
+    ],
+    "original_schedule_file": "export_arh_11-20-final.csv",
+    "original_schedule_zero_based_record": 4934,
+    "original_schedule_record": {
+      "channel_id": "6",
+      "channel_title": "СТБ",
+      "start_time": "11.03.2020 07:00:00",
+      "duration": "6900",
+      "tv_show_title": "'Все будет хорошо'.",
+      "tv_show_id": "500332",
+      "tv_show_category": "Познавательное",
+      "tv_show_genre_1": "взаимоотношения",
+      "tv_show_genre_2": "быт",
+      "tv_show_genre_3": "мода",
+      "year_of_production": "2012",
+      "director": "",
+      "actors": ""
+    }
+  },
+  {
+    "case": "session spans broadcasts",
+    "user_id": "3398461054087191302",
+    "channel": 6,
+    "item": 2400467,
+    "session_id": 330,
+    "airing_id": 10323,
+    "session_start": "2020-04-21 22:09:46",
+    "session_end": "2020-04-21 23:05:10",
+    "original_broadcast_duration_seconds": 2700,
+    "overlap_seconds": 2114,
+    "completion_fraction": 0.782962962962963,
+    "fitting_side_seconds_at_june1": 2114,
+    "target_side_seconds_at_june1": 0,
+    "fitting_completion_full_denominator": 0.782962962962963,
+    "target_completion_full_denominator": 0.0,
+    "original_view_csv_records": [
+      {
+        "zero_based_record": 2697144,
+        "record": {
+          "user_id": "3398461054087191302",
+          "vsetv_id": "6",
+          "start_time": "2020-04-21 22:09:46",
+          "stop_time": "2020-04-21 23:05:10",
+          "duraton": "3324"
+        }
+      }
+    ],
+    "original_schedule_file": "export_arh_11-20-final.csv",
+    "original_schedule_zero_based_record": 5570,
+    "original_schedule_record": {
+      "channel_id": "6",
+      "channel_title": "СТБ",
+      "start_time": "21.04.2020 22:00:00",
+      "duration": "2700",
+      "tv_show_title": "'Викна-Новости'.",
+      "tv_show_id": "2400467",
+      "tv_show_category": "Инфо",
+      "tv_show_genre_1": "информация (комплексная)",
+      "tv_show_genre_2": "общество и политика",
+      "tv_show_genre_3": "финансы и экономика",
+      "year_of_production": "1995-",
+      "director": "",
+      "actors": ""
+    },
+    "all_intersections_for_session": [
+      {
+        "airing": 10323,
+        "item": 2400467,
+        "seconds": 2114
+      },
+      {
+        "airing": 10325,
+        "item": 10002443,
+        "seconds": 610
+      }
+    ]
+  },
+  {
+    "case": "development-cutoff crossing",
+    "user_id": "7258237474378888639",
+    "channel": 6,
+    "item": 400356,
+    "session_id": 96292,
+    "airing_id": 10911,
+    "session_start": "2020-05-31 22:40:02",
+    "session_end": "2020-06-01 01:50:33",
+    "original_broadcast_duration_seconds": 8100,
+    "overlap_seconds": 6298,
+    "completion_fraction": 0.7775308641975308,
+    "fitting_side_seconds_at_june1": 4798,
+    "target_side_seconds_at_june1": 1500,
+    "fitting_completion_full_denominator": 0.5923456790123457,
+    "target_completion_full_denominator": 0.18518518518518517,
+    "original_view_csv_records": [
+      {
+        "zero_based_record": 4317860,
+        "record": {
+          "user_id": "7258237474378888639",
+          "vsetv_id": "6",
+          "start_time": "2020-05-31 22:40:02",
+          "stop_time": "2020-06-01 01:50:33",
+          "duraton": "11431"
+        }
+      }
+    ],
+    "original_schedule_file": "export_arh_21-30-final.csv",
+    "original_schedule_zero_based_record": 4955,
+    "original_schedule_record": {
+      "channel_id": "6",
+      "channel_title": "СТБ",
+      "start_time": "31.05.2020 22:10:00",
+      "duration": "8100",
+      "tv_show_title": "'Я стесняюсь своего тела', 6 сезон, 1 эп., 1 ч.",
+      "tv_show_id": "400356",
+      "tv_show_category": "Познавательное",
+      "tv_show_genre_1": "здоровье и фитнес",
+      "tv_show_genre_2": "медицина и психология",
+      "tv_show_genre_3": "реальные истории",
+      "year_of_production": "2014-",
+      "director": "",
+      "actors": ""
+    }
+  }
+]

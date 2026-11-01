@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "rows": 1260,
+  "columns": [
+    "user_id",
+    "tv_show_id"
+  ],
+  "exact_template_user_order": true,
+  "five_distinct_nonzero_integer_ids": true,
+  "eligible_items_only": true,
+  "no_nulls": true,
+  "single_spaces": true,
+  "no_csv_index": true,
+  "independent_dataframe_score_to_list_parity": true,
+  "sha256_matches": true,
+  "r0_original_csv_and_executed_sources_unchanged": true,
+  "raw_timestamp_and_schedule_examples_checked": 4,
+  "real_user_ap_arithmetic_checked": true,
+  "late_corrected_audit_remains_sealed": true,
+  "no_additional_model_fitting": true,
+  "kaggle_upload_executed": false
+}

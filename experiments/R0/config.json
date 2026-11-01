@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "validation_days": 28,
+  "watch_threshold_seconds": 300,
+  "als_factors": 32,
+  "als_iterations": 15,
+  "als_regularization": 0.1,
+  "als_confidence_alpha": 10.0,
+  "als_threads": 1,
+  "allow_repeats": true,
+  "chunk_size": 300000
+}

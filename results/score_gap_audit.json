@@ -1,0 +1,104 @@
+{
+  "reported_private_score": 0.27,
+  "private_score_provenance": "Reported by student; exact score screenshot/submission identifier not yet inspected.",
+  "submission_sha256": "73d71295c19c61c3702a3c8e0fae951f27a307ce9b05cd39fd37e9b93e0996e0",
+  "identical_recommendation_lists_in_csv": 1,
+  "submitted_programmes": [
+    {
+      "item": 2400480,
+      "title": "ТСН. Неделя.",
+      "category": "Инфо",
+      "fit_distinct_users": 4439,
+      "production_distinct_users": 4521,
+      "validation_template_user_reach": 971,
+      "validation_template_user_reach_fraction": 0.7706349206349207
+    },
+    {
+      "item": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "fit_distinct_users": 4177,
+      "production_distinct_users": 4294,
+      "validation_template_user_reach": 894,
+      "validation_template_user_reach_fraction": 0.7095238095238096
+    },
+    {
+      "item": 6500479,
+      "title": "'Мир наизнанку'.",
+      "category": "Познавательное",
+      "fit_distinct_users": 3827,
+      "production_distinct_users": 3998,
+      "validation_template_user_reach": 773,
+      "validation_template_user_reach_fraction": 0.6134920634920635
+    },
+    {
+      "item": 2400467,
+      "title": "'Викна-Новости'.",
+      "category": "Инфо",
+      "fit_distinct_users": 3718,
+      "production_distinct_users": 3910,
+      "validation_template_user_reach": 733,
+      "validation_template_user_reach_fraction": 0.5817460317460318
+    },
+    {
+      "item": 2400508,
+      "title": "Сегодня. Итоги с Олегом Панютой.",
+      "category": "Инфо",
+      "fit_distinct_users": 3734,
+      "production_distinct_users": 3910,
+      "validation_template_user_reach": 749,
+      "validation_template_user_reach_fraction": 0.5944444444444444
+    }
+  ],
+  "held_out_distinct_relevance_quantiles_template_users": {
+    "0.0": 0.0,
+    "0.1": 23.0,
+    "0.25": 39.0,
+    "0.5": 62.5,
+    "0.75": 94.0,
+    "0.9": 129.0,
+    "1.0": 359.0
+  },
+  "template_users_with_at_least_five_labels": 1227,
+  "mean_held_out_distinct_labels": 70.66746031746031,
+  "sensitivity_to_unverified_relevance_definitions": {
+    "all_watched_labels": {
+      "popularity": 0.5957169312169311,
+      "content": 0.17791534391534392,
+      "als": 0.1579761904761905
+    },
+    "top_20_by_retained_watched_seconds": {
+      "popularity": 0.3036058201058201,
+      "content": 0.09289153439153439,
+      "als": 0.08133862433862435
+    },
+    "top_10_by_retained_watched_seconds": {
+      "popularity": 0.1938068783068783,
+      "content": 0.05977248677248677,
+      "als": 0.04861640211640211
+    },
+    "top_5_by_retained_watched_seconds": {
+      "popularity": 0.12437037037037038,
+      "content": 0.03632010582010582,
+      "als": 0.030502645502645507
+    }
+  },
+  "warning": "Top-N-by-seconds definitions are diagnostic hypotheses, not verified competition rules. Original reported results are unchanged.",
+  "submitted_order_on_original_holdout": {
+    "submitted_final_order": 0.5955707671957671
+  },
+  "recommendation_slot_fraction_previously_watched_in_fitting": {
+    "popularity": 0.8826984126984128,
+    "content": 0.7422222222222221,
+    "als": 0.5365079365079365
+  },
+  "twelve_week_historical_horizon_probe": {
+    "map_at_5": 0.7804100529100529,
+    "cutoff": "2020-05-04 00:00:00",
+    "end": "2020-07-27 00:00:00",
+    "fitting_interactions": 458758,
+    "candidate_items": 7049,
+    "same_watch_threshold_and_population_policy": true,
+    "purpose": "Historical horizon sensitivity diagnosis, not future-score tuning or an unbiased new test."
+  }
+}

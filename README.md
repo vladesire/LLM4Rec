@@ -1,5 +1,7 @@
 # Individual LLM4Rec/FKN exam project
 
+**Current research state:** R1 is awaiting the student's Kaggle result. Use `SUBMISSION_LOG.md` and `experiments/R1/HANDOFF.md` for the current immutable CSV and corrected completion/frequency contract. The original comparison and PDF below remain historical R0 draft artifacts; their broad-label 0.595717 is not evidence of Kaggle accuracy. Do not rerun the old entry point to overwrite the preserved R0 evidence during these rounds.
+
 Vladislav Neklyudov · vsneklyudov@edu.hse.ru · 1 November 2026.
 
 The genuine local implementation compares popularity, sparse content filtering and implicit ALS on one fixed temporal hold-out. **Popularity wins: MAP@5 0.5957169312**, versus 0.1779153439 (content) and 0.1579761905 (ALS). No tuning or hybrid was run. The exact designated output is `submission/final_submission.csv`. The code never uploads or submits anything.

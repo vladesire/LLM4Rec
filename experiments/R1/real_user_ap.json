@@ -1,0 +1,51 @@
+{
+  "user_id": "8377619604347126107",
+  "relevant_ids": [
+    20088,
+    240081,
+    2400480,
+    2400508,
+    12002896
+  ],
+  "denominator": 5,
+  "rank_calculation": [
+    {
+      "rank": 1,
+      "item": 2400480,
+      "hit": true,
+      "precision": 1.0,
+      "contribution": 1.0
+    },
+    {
+      "rank": 2,
+      "item": 240081,
+      "hit": true,
+      "precision": 1.0,
+      "contribution": 1.0
+    },
+    {
+      "rank": 3,
+      "item": 12002955,
+      "hit": false,
+      "precision": 0.6666666666666666,
+      "contribution": 0
+    },
+    {
+      "rank": 4,
+      "item": 2400508,
+      "hit": true,
+      "precision": 0.75,
+      "contribution": 0.75
+    },
+    {
+      "rank": 5,
+      "item": 200338,
+      "hit": false,
+      "precision": 0.6,
+      "contribution": 0
+    }
+  ],
+  "numerator": 2.75,
+  "ap_at_5": 0.55,
+  "student_personally_verified": false
+}
