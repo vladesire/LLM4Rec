@@ -1,0 +1,257 @@
+[
+  {
+    "user_id": "8848657562275607589",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 2400508,
+        "title": "Сегодня. Итоги с Олегом Панютой.",
+        "category": "Инфо",
+        "method_score": 0.32102996290698094,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 2,
+        "item": 5900256,
+        "title": "Утро с Украиной.",
+        "category": "Инфо",
+        "method_score": 0.15370081607637825,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 3,
+        "item": 5800509,
+        "title": "Реальная мистика.",
+        "category": "Развлечения",
+        "method_score": 0.07046223695835979,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 4,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "method_score": 0.04778805712457656,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 5,
+        "item": 2400480,
+        "title": "ТСН. Неделя.",
+        "category": "Инфо",
+        "method_score": 0.03941710328181287,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      }
+    ]
+  },
+  {
+    "user_id": "16561743585370579180",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 2400480,
+        "title": "ТСН. Неделя.",
+        "category": "Инфо",
+        "method_score": 0.00704414110847865,
+        "popularity_backfill": true,
+        "previously_qualified": false
+      },
+      {
+        "rank": 2,
+        "item": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "method_score": 0.009291719555207892,
+        "popularity_backfill": true,
+        "previously_qualified": false
+      },
+      {
+        "rank": 3,
+        "item": 2400467,
+        "title": "'Викна-Новости'.",
+        "category": "Инфо",
+        "method_score": 0.0021863717171175055,
+        "popularity_backfill": true,
+        "previously_qualified": false
+      },
+      {
+        "rank": 4,
+        "item": 2400508,
+        "title": "Сегодня. Итоги с Олегом Панютой.",
+        "category": "Инфо",
+        "method_score": 0.0062345227481172966,
+        "popularity_backfill": true,
+        "previously_qualified": false
+      },
+      {
+        "rank": 5,
+        "item": 200344,
+        "title": "'Чистоnews'.",
+        "category": "Развлечения",
+        "method_score": 0.0005923613703684202,
+        "popularity_backfill": true,
+        "previously_qualified": false
+      }
+    ]
+  },
+  {
+    "user_id": "5024631139882254261",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 12002896,
+        "title": "М/с 'Вспыш и чудо-машинки', 1 сезон, 15 с. 'Авто-Рейнджеры'.",
+        "category": "Детям",
+        "method_score": 0.7503924359721547,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 2,
+        "item": 12002955,
+        "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+        "category": "Детям",
+        "method_score": 0.7154838474957151,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 3,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "method_score": 0.5434088273603344,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 4,
+        "item": 2400480,
+        "title": "ТСН. Неделя.",
+        "category": "Инфо",
+        "method_score": 0.47515147701054666,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 5,
+        "item": 12002805,
+        "title": "М/с 'Моланг', 1 сезон, 33 с.",
+        "category": "Детям",
+        "method_score": 0.44451442520842743,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      }
+    ]
+  },
+  {
+    "user_id": "7785185119601227370",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "method_score": 0.6109066861505523,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 2,
+        "item": 2400480,
+        "title": "ТСН. Неделя.",
+        "category": "Инфо",
+        "method_score": 0.5635079500447767,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 3,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "method_score": 0.17380382035562028,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 4,
+        "item": 2400508,
+        "title": "Сегодня. Итоги с Олегом Панютой.",
+        "category": "Инфо",
+        "method_score": 0.17040664890540283,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 5,
+        "item": 10001223,
+        "title": "Т/с 'Анатомия страсти', 14 сезон, 13 с. 'Я в твоих руках'.",
+        "category": "Сериалы",
+        "method_score": 0.10288838886125465,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      }
+    ]
+  },
+  {
+    "user_id": "7124081213039446293",
+    "true_future_labels_available": false,
+    "recommendations": [
+      {
+        "rank": 1,
+        "item": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "method_score": 0.47540653140489847,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 2,
+        "item": 2400480,
+        "title": "ТСН. Неделя.",
+        "category": "Инфо",
+        "method_score": 0.3515165329267511,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 3,
+        "item": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "method_score": 0.321708739823543,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 4,
+        "item": 2400508,
+        "title": "Сегодня. Итоги с Олегом Панютой.",
+        "category": "Инфо",
+        "method_score": 0.1541595668872627,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      },
+      {
+        "rank": 5,
+        "item": 12001734,
+        "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+        "category": "Детям",
+        "method_score": 0.10415735972537384,
+        "popularity_backfill": false,
+        "previously_qualified": true
+      }
+    ]
+  }
+]

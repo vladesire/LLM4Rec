@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "rows": 1260,
+  "columns": [
+    "user_id",
+    "tv_show_id"
+  ],
+  "exact_template_user_order": true,
+  "five_distinct_nonzero_integer_ids": true,
+  "eligible_items_only": true,
+  "no_nulls": true,
+  "single_spaces": true,
+  "no_csv_index": true,
+  "independent_dataframe_ranking_matches": true,
+  "saved_model_predict_proba_reproduced_exactly": true,
+  "previous_CSVs_unchanged": true,
+  "R2_reference_predictions_and_AP_unchanged": true,
+  "candidate_pool_distinct_and_eligible": true,
+  "full_relevance_denominator_metric_recomputed": true,
+  "chronological_training_and_early_stopping_boundaries_passed": true,
+  "production_has_no_labels_or_future_viewing": true,
+  "corrected_late_audit_sealed": true,
+  "no_additional_fitting": true,
+  "no_kaggle_upload": true
+}

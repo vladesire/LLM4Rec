@@ -1,0 +1,11 @@
+{
+  "round": "R2",
+  "public_score": 0.39904,
+  "private_score": 0.39378,
+  "delta_public_vs_R1": 0.0057,
+  "delta_private_vs_R1": 0.00898,
+  "provenance": "Student-reported exact numbers; no original screenshot/ID inspected",
+  "student_comment": "Proceed with R3",
+  "incumbent": "R2",
+  "interpretation": "Both scores improve; supports the selected recency/habit package without isolating its ingredients."
+}

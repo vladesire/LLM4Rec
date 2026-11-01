@@ -1,6 +1,6 @@
 # R2 — recency and channel/time habit blend
 
-**Status: AWAITING_USER_SCORE.** R2 only; no R3 training, candidate experiments or CSV have been run. The corrected late audit remains sealed.
+**Status: SCORED_USER_REPORTED.** The student returned public 0.39904/private 0.39378 and authorized R3. R2 is the scored incumbent. The following sections preserve R2 preparation evidence; current state is in `SUBMISSION_LOG.md`. The corrected late audit remains sealed.
 
 ## Feedback and hypothesis
 

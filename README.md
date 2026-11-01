@@ -1,6 +1,8 @@
 # Individual LLM4Rec/FKN exam project
 
-**Current research state:** R1 returned user-reported private 0.38480 and is the scored incumbent. R2 is awaiting its Kaggle result. Use `SUBMISSION_LOG.md` and `experiments/R2/HANDOFF.md` for the current immutable CSV and corrected completion/frequency contract. Sections below describe historical R0 artifacts; their broad-label 0.595717 is not evidence of Kaggle accuracy. Do not rerun the old entry point to overwrite preserved evidence during these rounds.
+**Current research state:** R2 returned user-reported private 0.39378 and is the scored incumbent. R3 is awaiting its Kaggle result. Use `SUBMISSION_LOG.md` and `experiments/R3/HANDOFF.md` for the current immutable CSV and corrected completion/frequency contract. Sections below describe historical R0 artifacts; their broad-label 0.595717 is not evidence of Kaggle accuracy. Do not rerun the old entry point to overwrite preserved evidence during these rounds.
+
+For a fresh checkout without caches, bootstrap into ignored output locations: `.venv/bin/python scripts/run.py --output-dir cache/bootstrap_R0_results --submission-dir cache/bootstrap_R0_submission`, then run `scripts/run_r1.py --reproduce`, `scripts/run_r2.py --reproduce`, and `scripts/run_r3.py --reproduce` with `.venv/bin/python`. This preserves committed R0 evidence while recreating caches. The current session verified cached round reproductions; a second clean-clone run was not performed.
 
 Vladislav Neklyudov · vsneklyudov@edu.hse.ru · 1 November 2026.
 

@@ -1,0 +1,8 @@
+test_late_audit_guard_runs_before_loading (tests.test_rerank_r3.RerankerBoundaryChecks.test_late_audit_guard_runs_before_loading) ... ok
+test_oracle_keeps_unretrievable_labels_and_empty_users (tests.test_rerank_r3.RerankerBoundaryChecks.test_oracle_keeps_unretrievable_labels_and_empty_users) ... ok
+test_pool_is_distinct_eligible_and_target_independent (tests.test_rerank_r3.RerankerBoundaryChecks.test_pool_is_distinct_eligible_and_target_independent) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

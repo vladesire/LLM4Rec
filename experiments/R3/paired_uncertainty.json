@@ -1,0 +1,13 @@
+{
+  "paired_development_delta_vs_R2": 0.013599867724867723,
+  "bootstrap_replicates": 2000,
+  "seed": 42,
+  "percentile_interval_95": [
+    0.008099735449735449,
+    0.019160289902998225
+  ],
+  "users_ap_improves": 293,
+  "users_ap_worsens": 195,
+  "users_ap_unchanged": 772,
+  "limitation": "Selected local difference; temporal shift and adaptive configuration/family selection are not corrected."
+}

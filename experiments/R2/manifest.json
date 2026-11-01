@@ -1,10 +1,10 @@
 {
   "round": "R2",
-  "status": "AWAITING_USER_SCORE",
+  "status": "SCORED_USER_REPORTED",
   "csv": "submissions/R2_recency_habit.csv",
   "sha256": "7fbefef69e439c7a027caf2147ed60ff92086068cc7e9babd3f9565b705afe38",
-  "public_score": null,
-  "private_score": null,
+  "public_score": 0.39904,
+  "private_score": 0.39378,
   "submission_id": null,
   "comments": null,
   "incumbent": "R1",
@@ -216,5 +216,9 @@
   "focused_test_output_provenance": "Current code cached reproduction, after the hand-calculated forecast test was added",
   "verification_source_sha256": "d852871460d89c674246f28301f6b4786cf7eb449a77063938a70ee7406eedba",
   "focused_test_source_sha256": "7ef9ec628be275046881195c97bbbe6eca3de32248d9a4d95c7ce8ab39ad0c7a",
-  "code_commit": "b26d33c6f245083849573d313b4b450286fd6359"
+  "code_commit": "b26d33c6f245083849573d313b4b450286fd6359",
+  "score_provenance": "Exact numbers reported by student; no original Kaggle screenshot/submission identifier inspected.",
+  "feedback": "Score: 0.39904; Private score: 0.39378; Proceed with R3",
+  "proceed_to_next_round_authorized": true,
+  "incumbent_after_returned_score": "R2"
 }

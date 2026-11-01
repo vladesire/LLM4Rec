@@ -1,0 +1,87 @@
+{
+  "development": {
+    "candidate_size": 200,
+    "micro_recall": 0.853537981269511,
+    "macro_recall_all_users_empty_zero": 0.5999867724867725,
+    "macro_recall_nonempty": 0.8418522642910171,
+    "oracle_map_at_5_ceiling": 0.5999867724867725,
+    "retrieved_labels": 3281,
+    "total_labels": 3844,
+    "nonempty_users_with_all_labels_retrieved": 532,
+    "warning": "Oracle ceiling, not achieved model performance. Complete relevance sets remain in denominators."
+  },
+  "inner": {
+    "candidate_size": 200,
+    "micro_recall": 0.8513829372808727,
+    "macro_recall_all_users_empty_zero": 0.7706084656084656,
+    "macro_recall_nonempty": 0.8327329902801601,
+    "oracle_map_at_5_ceiling": 0.7706084656084656,
+    "retrieved_labels": 4371,
+    "total_labels": 5134,
+    "nonempty_users_with_all_labels_retrieved": 679,
+    "warning": "Oracle ceiling, not achieved model performance. Complete relevance sets remain in denominators."
+  },
+  "training": [
+    {
+      "candidate_size": 200,
+      "micro_recall": 0.9165622202327663,
+      "macro_recall_all_users_empty_zero": 0.8660582010582009,
+      "macro_recall_nonempty": 0.9078480310593455,
+      "oracle_map_at_5_ceiling": 0.8660582010582009,
+      "retrieved_labels": 5119,
+      "total_labels": 5585,
+      "nonempty_users_with_all_labels_retrieved": 852,
+      "warning": "Oracle ceiling, not achieved model performance. Complete relevance sets remain in denominators."
+    },
+    {
+      "candidate_size": 200,
+      "micro_recall": 0.8919263714233643,
+      "macro_recall_all_users_empty_zero": 0.8362169312169311,
+      "macro_recall_nonempty": 0.8817015341701535,
+      "oracle_map_at_5_ceiling": 0.8362169312169311,
+      "retrieved_labels": 4894,
+      "total_labels": 5487,
+      "nonempty_users_with_all_labels_retrieved": 795,
+      "warning": "Oracle ceiling, not achieved model performance. Complete relevance sets remain in denominators."
+    }
+  ],
+  "source_provider_development_metrics": {
+    "personal": {
+      "map_at_5": 0.2507636684303351,
+      "nonempty_map_at_5": 0.3518510269735214,
+      "five_label_map_at_5": 0.3661318795430945,
+      "users": 1260,
+      "empty_users": 362,
+      "nonempty_users": 898,
+      "five_label_users": 642
+    },
+    "als": {
+      "map_at_5": 0.15201256613756614,
+      "nonempty_map_at_5": 0.21329157386785452,
+      "five_label_map_at_5": 0.20258047767393564,
+      "users": 1260,
+      "empty_users": 362,
+      "nonempty_users": 898,
+      "five_label_users": 642
+    },
+    "content": {
+      "map_at_5": 0.18733223104056437,
+      "nonempty_map_at_5": 0.2628492328631527,
+      "five_label_map_at_5": 0.2661838006230529,
+      "users": 1260,
+      "empty_users": 362,
+      "nonempty_users": 898,
+      "five_label_users": 642
+    },
+    "R2": {
+      "map_at_5": 0.2575324074074074,
+      "nonempty_map_at_5": 0.36134836674090565,
+      "five_label_map_at_5": 0.3790031152647975,
+      "users": 1260,
+      "empty_users": 362,
+      "nonempty_users": 898,
+      "five_label_users": 642
+    }
+  },
+  "candidate_labels_injected": false
+}

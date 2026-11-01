@@ -1,6 +1,6 @@
 # Student handoff
 
-**Historical R0 handoff.** Current sequential research instructions, file identity and waiting status are in `SUBMISSION_LOG.md` and `experiments/R2/HANDOFF.md`. The old R0 upload instructions below are archival; do not consume another attempt on R0. The report is still a draft and will be consolidated after all returned round results.
+**Historical R0 handoff.** Current sequential research instructions, file identity and waiting status are in `SUBMISSION_LOG.md` and `experiments/R3/HANDOFF.md`. The old R0 upload instructions below are archival; do not consume another attempt on R0. The report is still a draft and will be consolidated after all returned round results.
 
 **Deadline: 1 November 2026, 19:00 Europe/Moscow.** Code, recorded comparison, valid CSV and draft report are ready. Personal and external requirements remain below.
 
