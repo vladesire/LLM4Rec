@@ -1,0 +1,17 @@
+{
+  "status": "DRAFT: required external/personal evidence pending",
+  "pending": [
+    "github_url",
+    "personal_interpretation",
+    "personal_join_check",
+    "personal_ap_check",
+    "kaggle_submission_id",
+    "kaggle_submission_description",
+    "kaggle_submission_status",
+    "kaggle_uploaded_csv_sha256",
+    "personal checks",
+    "student report review",
+    "genuine private-score screenshot",
+    "uploaded identity confirmation"
+  ]
+}

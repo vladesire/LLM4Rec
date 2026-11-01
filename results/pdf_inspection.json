@@ -1,6 +1,6 @@
 {
-  "pdf_sha256": "25bb2c0058b1df0b24093132182e27e37771c463d84cb9ac97f151ed28a8bb19",
-  "markdown_sha256": "67aa9fffa5a629b66588db3bc4b53bdaf2e0638f43275981c8db96c128979dc9",
+  "pdf_sha256": "1671e67f08c4b04ae0a4f9a80fb45894458d3a1ce2a096ba02170a6d72a30eb1",
+  "markdown_sha256": "33e4fc3a213fe3f38752c7451708d511467df111dddbf3d3ae9e8712f30bc9b6",
   "total_pages": 6,
   "content_pages_excluding_references": 5,
   "at_most_five_content_pages": true,
@@ -14,32 +14,32 @@
   "pages": [
     {
       "page": 1,
-      "text_characters": 3159,
+      "text_characters": 4545,
       "embedded_images": 0
     },
     {
       "page": 2,
-      "text_characters": 3163,
+      "text_characters": 3998,
       "embedded_images": 0
     },
     {
       "page": 3,
-      "text_characters": 3372,
+      "text_characters": 2504,
       "embedded_images": 0
     },
     {
       "page": 4,
-      "text_characters": 2914,
+      "text_characters": 2357,
       "embedded_images": 0
     },
     {
       "page": 5,
-      "text_characters": 2559,
+      "text_characters": 3031,
       "embedded_images": 0
     },
     {
       "page": 6,
-      "text_characters": 1021,
+      "text_characters": 1321,
       "embedded_images": 0
     }
   ]

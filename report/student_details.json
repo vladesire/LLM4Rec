@@ -10,13 +10,14 @@
   "kaggle_submission_id": "TODO: designated final submission identifier",
   "kaggle_submission_description": "TODO: full Russian name and Kaggle username entered on the designated submission",
   "kaggle_submission_status": "TODO: wait for COMPLETE",
-  "kaggle_private_score": "TODO: genuine returned PRIVATE score",
+  "kaggle_private_score": "0.42690 (user-reported)",
   "kaggle_current_quota": "100 submissions shown in Kaggle, reported by the student on 1 November 2026; remaining quota not independently checked",
   "kaggle_uploaded_csv_sha256": "TODO: checksum of the exact uploaded CSV",
   "kaggle_account_behavior": "TODO: confirm current Late Submission and private-score availability in your account",
   "score_screenshot": "assets/kaggle_private_score.png",
-  "native_export_filename": "TODO: basename of unchanged original native session file submitted",
+  "native_export_filename": "rollout-2026-11-01T14-39-42-01a196e8-8117-7b61-a05e-d4d86d8f1472.jsonl",
   "native_export_format": "JSONL",
   "native_format_course_acceptance_confirmed": false,
-  "audit_export_note": "The student will copy the original native JSONL file unchanged after the documented work. Earlier ChatGPT planning is disclosed separately and is not included in this local session file."
+  "audit_export_note": "The student will copy the original native JSONL file unchanged after the documented work. Earlier ChatGPT planning is disclosed separately and is not included in this local session file.",
+  "native_format_note": "Guidelines section 4.1 explicitly accepts tool-native format; the original is JSONL while naming examples use .json. Preserve bytes and extension."
 }

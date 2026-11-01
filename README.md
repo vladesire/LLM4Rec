@@ -1,84 +1,61 @@
-**Current state: R4 awaits its score. R3 is incumbent at user-reported private 0.42671. See SUBMISSION_LOG.md and experiments/R4/HANDOFF.md. Older status text below is historical.**
+# SWEET.TV individual LLM4Rec/FKN exam
 
-# Individual LLM4Rec/FKN exam project
+Vladislav Neklyudov, vsneklyudov@edu.hse.ru. Local branch `master`; no agent remote push or Kaggle upload.
 
-**Current research state:** R2 returned user-reported private 0.39378 and is the scored incumbent. R3 is awaiting its Kaggle result. Use `SUBMISSION_LOG.md` and `experiments/R3/HANDOFF.md` for the current immutable CSV and corrected completion/frequency contract. Sections below describe historical R0 artifacts; their broad-label 0.595717 is not evidence of Kaggle accuracy. Do not rerun the old entry point to overwrite preserved evidence during these rounds.
+**Final designation: R4, user-reported private MAP@5 0.42690, public 0.42890.** Exact file: `submissions/R4_count_distribution.csv`; identity in `submission/DESIGNATED_FINAL.json`. Experiments are finished. R3 private0.42671 was almost identical; no significance claim is made.
 
-For a fresh checkout without caches, bootstrap into ignored output locations: `.venv/bin/python scripts/run.py --output-dir cache/bootstrap_R0_results --submission-dir cache/bootstrap_R0_submission`, then run `scripts/run_r1.py --reproduce`, `scripts/run_r2.py --reproduce`, and `scripts/run_r3.py --reproduce` with `.venv/bin/python`. This preserves committed R0 evidence while recreating caches. The current session verified cached round reproductions; a second clean-clone run was not performed.
+**The report remains a draft while required student/external details are pending.** Follow `HANDOFF.md`. The historical file `submission/final_submission.csv` remains R0 unchanged and is not the designated file.
 
-Vladislav Neklyudov · vsneklyudov@edu.hse.ru · 1 November 2026.
+## Setup
 
-The genuine local implementation compares popularity, sparse content filtering and implicit ALS on one fixed temporal hold-out. **Popularity wins: MAP@5 0.5957169312**, versus 0.1779153439 (content) and 0.1579761905 (ALS). No tuning or hybrid was run. The exact designated output is `submission/final_submission.csv`. The code never uploads or submits anything.
-
-**The report is a draft** until the student supplies GitHub/Kaggle evidence, personally checks the worked examples, rewrites their interpretation, and resolves native JSONL audit acceptance. See `HANDOFF.md`.
-
-## Setup and data
-
-Verified environment: Python 3.15.0, macOS arm64; other platforms were not run. CPU implicit 0.7.3 built successfully with the installed Apple compiler. PDF rendering needs Arial on macOS or DejaVu Sans on Linux.
+Verified: macOS26.6.2 arm64, Python3.15.0; packages pinned in requirements.txt. Other platforms were not run. Arial (macOS) or DejaVu Sans (Linux) is needed for the PDF.
 
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 ```
 
-Sign in to the [competition data page](https://www.kaggle.com/competitions/sweettv-tv-program-recommender/data), accept its rules yourself, and download/extract these files into `data/`:
+Accept the competition rules in your own account, download from https://www.kaggle.com/competitions/sweettv-tv-program-recommender/data and extract into `data/`: dataset11-30.csv, export_arh_11-20-final.csv, export_arh_21-30-final.csv, export_arh_31-42-final.csv, submission.csv. Raw data, caches, credentials and private native logs are ignored by git. Input SHA-256s are saved in round manifests/data audits.
 
-- `dataset11-30.csv`
-- `export_arh_11-20-final.csv`
-- `export_arh_21-30-final.csv`
-- `export_arh_31-42-final.csv`
-- `submission.csv` (official template, unchanged)
+## Evidence and reproducibility
 
-Raw files total approximately 890 MB. Data, cache and credentials are ignored by git. Exact input byte counts and SHA-256 hashes are in `results/data_audit.json`; actual package versions, seed and parameters are saved in `results/environment.json` and `config.json`.
+`experiments/EVALUATION_CONTRACT.md` fixes the >=80% continuous-session qualifying-broadcast count proxy and June1-June29 development split. All1,260 users remain, including empty targets scored0; repeats allowed; scheduled nonzero candidates; common qualifying distinct-user popularity fallback. `experiments/R1` independently evaluates popularity, content, ALS and personal frequency. R2 adds recency/habit; R3 a chronological boosted reranker; R4 a small count-distribution blend. No future viewing features are used. The later corrected audit is used for R4 selection, not claimed independent.
 
-## Run and reproduce
+| Artifact | Purpose |
+|---|---|
+| SUBMISSION_LOG.md | All returned scores, immutable files and selection |
+| experiments/R0-R4/ | Original configurations, comparisons, checks, times and source/code identities |
+| experiments/final/two_user_examples.json | Same two users across all methods, ordered IDs/titles/categories/scores/AP |
+| experiments/final/PERSONAL_REVIEW.md | Readable examples for student interpretation |
+| experiments/R1/worked_completion_checks.md | Actual original-row joins and cutoff example |
+| experiments/R1/real_user_ap.json | Real metric hand-check |
+| report/student_details.json | Personal statements, GitHub, submission evidence |
+| report/report.md, report/report.pdf | Consolidated report source/PDF |
+| HANDOFF.md | Remaining course hand-in actions |
 
-From the repository root:
+Round runners preserve original evidence by default. Cached reconstruction commands:
 
 ```sh
-.venv/bin/python scripts/run.py
-.venv/bin/python scripts/verify.py
+.venv/bin/python scripts/run_r1.py --reproduce
+.venv/bin/python scripts/run_r2.py --reproduce
+.venv/bin/python scripts/run_r3.py --reproduce
+.venv/bin/python scripts/run_r4.py --reproduce
+```
+
+For a fresh checkout without caches, first bootstrap into ignored locations (avoids overwriting historical R0 outputs), then use the four commands above:
+
+```sh
+.venv/bin/python scripts/run.py --output-dir cache/bootstrap_R0_results --submission-dir cache/bootstrap_R0_submission
+```
+
+R4 reproduction replays the frozen procedure including its already-used audit; it is not a new untouched validation. Original pipeline and cached R1-R3 reproductions plus R4 production resampling ran; a second clean-clone full rerun did not. CPU timings exclude dependency installation unless explicitly stated.
+
+For final read-only checks and PDF rebuild:
+
+```sh
+.venv/bin/python scripts/final_checks.py
 .venv/bin/python scripts/build_report.py
 .venv/bin/python scripts/inspect_pdf.py
 ```
 
-The entry point joins data, evaluates each method, selects the highest held-out MAP@5, refits that strategy on all eligible pre-test history, and writes/validates the CSV. Input/code/config fingerprints govern preprocessing-cache reuse. Model fitting runs again each time. To force a cache rebuild, use `.venv/bin/python scripts/run.py --rebuild-data`.
-
-The first successful entry-point run here had no cache and rebuilt all data. A later small genuine-data probe reran each method twice; a second full clean rerun is **not** claimed. Saved fit/inference times are actual measurements, excluding installation and exploratory runs. The optional `--hybrid` flag exists but was not run or evaluated for this handoff.
-
-## Construction and evaluation
-
-- Explicitly parse naive wall-clock timestamps. Schedule duration is seconds; viewing `duraton` is never programme length. Use timestamp interval endpoints where viewing-duration values disagree.
-- Remove duplicate views, union intervals within user/channel, and remove nonpositive or ambiguous overlapping schedule rows. A channel-wise sorted half-open interval join computes `max(0,min(view_end,airing_end)-max(view_start,airing_start))`, including multiple airings per view.
-- Exclude `tv_show_id=0`. Require at least 300 watched seconds per user-airing after union and clipping, then sum retained seconds per user-programme.
-- Fit before **2020-06-29 00:00:00**; validate on **[2020-06-29,2020-07-27)**. Clip crossing intervals before label construction. No test viewing is used.
-- Fit vocabulary, IDF, profiles and ALS only on the prefix. Test schedule reading is restricted to programme-ID/channel/time/duration availability. Unknown items/users receive documented common popularity backfill.
-- Every method uses the same target-window nonzero scheduled candidates, permits repeats and emits five distinct IDs. Popularity is the number of distinct fitting users with a watched label. Integer ID breaks ties.
-- MAP@5 sums precision at relevant ranks and divides by `min(5,distinct relevant items)`. Average over all 1,260 template users, retaining 22 empty-relevance users as zero and six cold users. Current server metric convention is not independently verified.
-
-## Saved evidence
-
-| Artifact | Purpose |
-|---|---|
-| `results/metrics.json`, `comparison.csv`, `comparison.md` | Actual comparison and selection |
-| `results/data_audit.json` | Fingerprints, parsing, dates, coverage, duplicate/join/threshold counts and stage times |
-| `results/environment.json` | Actual environment, command, seed, source hashes and parameters |
-| `results/validation_predictions.json` | All held-out Top-5 outputs and per-user AP |
-| `results/two_user_examples.json`, `.md`, `two_user_histories.csv` | Same two users; IDs, titles, categories, scores and actual histories |
-| `results/worked_checks.md`, `real_user_ap_example.json` | Readable joins and actual AP@5 example for student verification |
-| `results/verification.json`, `focused_test_output.txt` | Checks actually run; small deterministic rerun scope |
-| `results/submission_validation.json` | Production refit, CSV validation and identity |
-| `results/experiment_notes.md`, `session_setup.md` | Real failure/fix, access/export facts; not an audit export |
-| `report/report.md`, `report/report.pdf` | Generated report source and PDF draft |
-| `report/student_details.json` | Student text, GitHub, Kaggle and original-audit details |
-| `results/report_build.json`, `pdf_inspection.json`, `pdf_visual_review.json` | Remaining fields, automated PDF checks and actual visual review |
-
-## Report and native audit
-
-Edit `report/student_details.json`, save the genuine score screenshot at `report/assets/kaggle_private_score.png`, and run the build/inspection commands above. Previews go to `/tmp/llm4rec-report-preview/`. Inspect every final PDF page yourself; geometry checks cannot certify screenshot truth or legibility. The maximum is five content pages, excluding references.
-
-`build_report.py` regenerates Markdown from evidence and the JSON, preserving personal text stored in that JSON. For direct Markdown edits, render with `.venv/bin/python scripts/render_report.py`; a subsequent build would overwrite direct Markdown changes.
-
-Earlier ChatGPT planning is disclosed separately from local Codex work. The student chose to copy the original native file under `~/.codex` unchanged after work finishes. Its extension is **.jsonl**, not one-document **.json**; course acceptance remains to be confirmed. No conversion, reconstructed transcript or project note is an original export. The exact native path and final actions are in `HANDOFF.md`.
-
-The local branch is `master`. The exact final CSV is in git; raw data/cache/credentials/private session files are excluded. No remote push or Kaggle upload was executed by the agent.
+Put the genuine R4 score screenshot at `report/assets/kaggle_private_score.png`, update student_details.json, then rebuild and inspect every page. No screenshot or personal verification is fabricated. Earlier ChatGPT planning is disclosed separately from local Codex. The original native session is JSONL; homework section4.1 accepts tool-native format, while its naming examples use .json. Preserve the original unchanged, not a converted transcript.

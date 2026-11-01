@@ -1,0 +1,878 @@
+[
+  {
+    "user_id": "8848657562275607589",
+    "relevant_ids": [
+      10003144
+    ],
+    "training_items": 13,
+    "training_broadcasts": 15,
+    "methods": {
+      "r0_strategy": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 4393.0,
+            "fallback": false,
+            "completion_popularity": 3677.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 4118.0,
+            "fallback": false,
+            "completion_popularity": 3438.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 6500479,
+            "title": "'Мир наизнанку'.",
+            "category": "Познавательное",
+            "method_score": 3694.0,
+            "fallback": false,
+            "completion_popularity": 1366.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 3669.0,
+            "fallback": false,
+            "completion_popularity": 2263.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 3614.0,
+            "fallback": false,
+            "completion_popularity": 2492.0,
+            "target_relevant": false
+          }
+        ]
+      },
+      "completion_popularity": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 3677.0,
+            "fallback": false,
+            "completion_popularity": 3677.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 3438.0,
+            "fallback": false,
+            "completion_popularity": 3438.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 2492.0,
+            "fallback": false,
+            "completion_popularity": 2492.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 2263.0,
+            "fallback": false,
+            "completion_popularity": 2263.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 20088,
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения",
+            "method_score": 1994.0,
+            "fallback": false,
+            "completion_popularity": 1994.0,
+            "target_relevant": false
+          }
+        ]
+      },
+      "content": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 0.6580182313919067,
+            "fallback": false,
+            "completion_popularity": 2263.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 5900256,
+            "title": "Утро с Украиной.",
+            "category": "Инфо",
+            "method_score": 0.6517390012741089,
+            "fallback": false,
+            "completion_popularity": 538.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 5900275,
+            "title": "'Утро России'.",
+            "category": "Инфо",
+            "method_score": 0.6497039794921875,
+            "fallback": false,
+            "completion_popularity": 0.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 0.6072879433631897,
+            "fallback": false,
+            "completion_popularity": 2492.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 5900484,
+            "title": "Премьера. 'С бодрым утром!'.",
+            "category": "Инфо",
+            "method_score": 0.5582063794136047,
+            "fallback": false,
+            "completion_popularity": 0.0,
+            "target_relevant": false
+          }
+        ]
+      },
+      "als": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 1.055643916130066,
+            "fallback": false,
+            "completion_popularity": 3438.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 1.0447485446929932,
+            "fallback": false,
+            "completion_popularity": 3677.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 1.0069997310638428,
+            "fallback": false,
+            "completion_popularity": 2263.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 1.001250982284546,
+            "fallback": false,
+            "completion_popularity": 2492.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 20088,
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения",
+            "method_score": 0.9330613613128662,
+            "fallback": false,
+            "completion_popularity": 1994.0,
+            "target_relevant": false
+          }
+        ]
+      },
+      "personal_frequency": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 2.0,
+            "fallback": false,
+            "completion_popularity": 2492.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 2.0,
+            "fallback": false,
+            "completion_popularity": 2263.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "method_score": 1.0,
+            "fallback": false,
+            "completion_popularity": 611.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "method_score": 1.0,
+            "fallback": false,
+            "completion_popularity": 1609.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 90079091,
+            "title": "Х/ф 'Фото на недобрую память'.",
+            "category": "Фильмы",
+            "method_score": 1.0,
+            "fallback": false,
+            "completion_popularity": 25.0,
+            "target_relevant": false
+          }
+        ]
+      },
+      "R2": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "score": 0.6058440538753082,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "score": 0.5897872114666209,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 0.4479866503164382,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "score": 0.39230300182506395,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 5900256,
+            "title": "Утро с Украиной.",
+            "category": "Инфо",
+            "score": 0.3114538422759579,
+            "fallback": false,
+            "target_relevant": false
+          }
+        ]
+      },
+      "R3": {
+        "ap_at_5": 0.0,
+        "score_definition": "binary preference probability",
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "relevant": false,
+            "method_score": 0.21409322794509267,
+            "popularity_backfill": false,
+            "fallback_popularity": 2263.0
+          },
+          {
+            "rank": 2,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "relevant": false,
+            "method_score": 0.16368693513728158,
+            "popularity_backfill": false,
+            "fallback_popularity": 1609.0
+          },
+          {
+            "rank": 3,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "relevant": false,
+            "method_score": 0.1397061836078212,
+            "popularity_backfill": false,
+            "fallback_popularity": 3677.0
+          },
+          {
+            "rank": 4,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "relevant": false,
+            "method_score": 0.10964832486094439,
+            "popularity_backfill": false,
+            "fallback_popularity": 611.0
+          },
+          {
+            "rank": 5,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "relevant": false,
+            "method_score": 0.10796556451462948,
+            "popularity_backfill": false,
+            "fallback_popularity": 2492.0
+          }
+        ]
+      },
+      "R4": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 0.01636700158646219,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "method_score": 0.016054590570719604,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 0.01577825159914712,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 12002955,
+            "title": "М/с 'Свинка Пеппа', 1 с. 'Лужи'.",
+            "category": "Детям",
+            "method_score": 0.015625,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 0.015485498108448929,
+            "target_relevant": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "user_id": "7124081213039446293",
+    "relevant_ids": [
+      20088,
+      240081,
+      2400480,
+      12001682,
+      90073541
+    ],
+    "training_items": 76,
+    "training_broadcasts": 129,
+    "methods": {
+      "r0_strategy": {
+        "ap_at_5": 0.4,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 4393.0,
+            "fallback": false,
+            "completion_popularity": 3677.0,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 4118.0,
+            "fallback": false,
+            "completion_popularity": 3438.0,
+            "target_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 6500479,
+            "title": "'Мир наизнанку'.",
+            "category": "Познавательное",
+            "method_score": 3694.0,
+            "fallback": false,
+            "completion_popularity": 1366.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 3669.0,
+            "fallback": false,
+            "completion_popularity": 2263.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 3614.0,
+            "fallback": false,
+            "completion_popularity": 2492.0,
+            "target_relevant": false
+          }
+        ]
+      },
+      "completion_popularity": {
+        "ap_at_5": 0.52,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 3677.0,
+            "fallback": false,
+            "completion_popularity": 3677.0,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 3438.0,
+            "fallback": false,
+            "completion_popularity": 3438.0,
+            "target_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 2492.0,
+            "fallback": false,
+            "completion_popularity": 2492.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 2263.0,
+            "fallback": false,
+            "completion_popularity": 2263.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 20088,
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения",
+            "method_score": 1994.0,
+            "fallback": false,
+            "completion_popularity": 1994.0,
+            "target_relevant": true
+          }
+        ]
+      },
+      "content": {
+        "ap_at_5": 0.3,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "method_score": 0.39846593141555786,
+            "fallback": false,
+            "completion_popularity": 1609.0,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "method_score": 0.30383700132369995,
+            "fallback": false,
+            "completion_popularity": 707.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "method_score": 0.3035169243812561,
+            "fallback": false,
+            "completion_popularity": 819.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 0.2847369313240051,
+            "fallback": false,
+            "completion_popularity": 3438.0,
+            "target_relevant": true
+          },
+          {
+            "rank": 5,
+            "item": 400357,
+            "title": "'Холостяк', 10 сезон, 1 эп., 1 ч.",
+            "category": "Развлечения",
+            "method_score": 0.26923784613609314,
+            "fallback": false,
+            "completion_popularity": 675.0,
+            "target_relevant": false
+          }
+        ]
+      },
+      "als": {
+        "ap_at_5": 0.0,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 1000723,
+            "title": "Т/с 'Охотники за древностями', 3 сезон, 14 и 15 с.",
+            "category": "Сериалы",
+            "method_score": 1.5882607698440552,
+            "fallback": false,
+            "completion_popularity": 284.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 2,
+            "item": 1000381,
+            "title": "Т/с 'CSI: Место преступления', 7 сезон, 6 и 7 с.",
+            "category": "Сериалы",
+            "method_score": 1.1984422206878662,
+            "fallback": false,
+            "completion_popularity": 323.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 2500430,
+            "title": "'Затерянный мир'.",
+            "category": "Познавательное",
+            "method_score": 1.1475112438201904,
+            "fallback": false,
+            "completion_popularity": 416.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 10002451,
+            "title": "Т/с 'Великолепный век', 39 и 40 с.",
+            "category": "Сериалы",
+            "method_score": 1.0939034223556519,
+            "fallback": false,
+            "completion_popularity": 744.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "method_score": 1.083338975906372,
+            "fallback": false,
+            "completion_popularity": 707.0,
+            "target_relevant": false
+          }
+        ]
+      },
+      "personal_frequency": {
+        "ap_at_5": 0.52,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "method_score": 29.0,
+            "fallback": false,
+            "completion_popularity": 1609.0,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 7.0,
+            "fallback": false,
+            "completion_popularity": 3438.0,
+            "target_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "method_score": 6.0,
+            "fallback": false,
+            "completion_popularity": 819.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 4,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "method_score": 3.0,
+            "fallback": false,
+            "completion_popularity": 707.0,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 3.0,
+            "fallback": false,
+            "completion_popularity": 3677.0,
+            "target_relevant": true
+          }
+        ]
+      },
+      "R2": {
+        "ap_at_5": 0.4533333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "score": 8.488992244750383,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "score": 2.5647137049263318,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 3,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "score": 1.895289657053826,
+            "fallback": false,
+            "target_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 700389,
+            "title": "Кто сверху?, 6 сезон, 7 эп.",
+            "category": "Развлечения",
+            "score": 1.1713984371291102,
+            "fallback": false,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "score": 1.0290667272483431,
+            "fallback": false,
+            "target_relevant": true
+          }
+        ]
+      },
+      "R3": {
+        "ap_at_5": 0.76,
+        "score_definition": "binary preference probability",
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "relevant": true,
+            "method_score": 0.7153928621809716,
+            "popularity_backfill": false,
+            "fallback_popularity": 1609.0
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "relevant": true,
+            "method_score": 0.2829186348201727,
+            "popularity_backfill": false,
+            "fallback_popularity": 3438.0
+          },
+          {
+            "rank": 3,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "relevant": true,
+            "method_score": 0.2773370364763796,
+            "popularity_backfill": false,
+            "fallback_popularity": 3677.0
+          },
+          {
+            "rank": 4,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "relevant": false,
+            "method_score": 0.19645648052043677,
+            "popularity_backfill": false,
+            "fallback_popularity": 819.0
+          },
+          {
+            "rank": 5,
+            "item": 20088,
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения",
+            "relevant": true,
+            "method_score": 0.18028956788356065,
+            "popularity_backfill": false,
+            "fallback_popularity": 1994.0
+          }
+        ]
+      },
+      "R4": {
+        "ap_at_5": 0.76,
+        "recommendations": [
+          {
+            "rank": 1,
+            "item": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "method_score": 0.01639344262295082,
+            "target_relevant": true
+          },
+          {
+            "rank": 2,
+            "item": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 0.016129032258064516,
+            "target_relevant": true
+          },
+          {
+            "rank": 3,
+            "item": 2400480,
+            "title": "ТСН. Неделя.",
+            "category": "Инфо",
+            "method_score": 0.015824175824175824,
+            "target_relevant": true
+          },
+          {
+            "rank": 4,
+            "item": 12001734,
+            "title": "М/с 'Волшебные покровители', 161 с. 'Женат на мамочке'.",
+            "category": "Детям",
+            "method_score": 0.015649801587301587,
+            "target_relevant": false
+          },
+          {
+            "rank": 5,
+            "item": 20088,
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения",
+            "method_score": 0.015408653846153846,
+            "target_relevant": true
+          }
+        ]
+      }
+    }
+  }
+]

@@ -80,7 +80,7 @@ def render(source, destination):
             if columns == 6:
                 fractions = [0.16, 0.13, 0.14, 0.16, 0.24, 0.17]
             elif columns == 4:
-                fractions = [0.15, 0.57, 0.14, 0.14]
+                fractions = [0.23, 0.20, 0.32, 0.25]
             elif columns == 3:
                 fractions = [0.18, 0.66, 0.16]
             elif columns == 5:
@@ -93,7 +93,7 @@ def render(source, destination):
                                        ('VALIGN', (0, 0), (-1, -1), 'TOP'), ('LINEBELOW', (0, 0), (-1, 0), 0.6, colors.HexColor('#6b7a90')),
                                        ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor('#f6f8fa')]),
                                        ('LEFTPADDING', (0, 0), (-1, -1), 5), ('RIGHTPADDING', (0, 0), (-1, -1), 5),
-                                       ('TOPPADDING', (0, 0), (-1, -1), 5), ('BOTTOMPADDING', (0, 0), (-1, -1), 5)]))
+                                       ('TOPPADDING', (0, 0), (-1, -1), 3), ('BOTTOMPADDING', (0, 0), (-1, -1), 3)]))
             story += [table, Spacer(1, 6)]
             continue
         image_match = re.fullmatch(r'!\[([^\]]*)\]\(([^)]+)\)', line)
@@ -101,14 +101,14 @@ def render(source, destination):
             image_path = source.parent / image_match.group(2)
             if image_path.exists():
                 picture = Image(str(image_path), kind='proportional')
-                scale = min(width / picture.imageWidth, 340 / picture.imageHeight)
+                scale = min(width / picture.imageWidth, 220 / picture.imageHeight)
                 picture.drawWidth, picture.drawHeight = picture.imageWidth * scale, picture.imageHeight * scale
                 story += [picture, Spacer(1, 7), Paragraph(inline(image_match.group(1)), cell)]
             else:
                 placeholder = Table([[Paragraph('<b>REQUIRED GENUINE SCREENSHOT PENDING</b><br/><br/>'
                                                'Insert the designated COMPLETE Kaggle submission page showing its private score. '
                                                'No score image has been fabricated.<br/><br/>' + inline(str(image_path)), body)]],
-                                    colWidths=[width], rowHeights=[240])
+                                    colWidths=[width], rowHeights=[190])
                 placeholder.setStyle(TableStyle([('BOX', (0, 0), (-1, -1), 1, colors.HexColor('#9a4b32')),
                                                  ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor('#fff5ef')),
                                                  ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'), ('LEFTPADDING', (0, 0), (-1, -1), 18),

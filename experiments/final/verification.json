@@ -1,0 +1,26 @@
+{
+  "R0_sha256": "73d71295c19c61c3702a3c8e0fae951f27a307ce9b05cd39fd37e9b93e0996e0",
+  "R1_sha256": "95090a22e6eaf0993c3c83512c709393a5ab8daa8439c0a274d955f71ab0ead6",
+  "R2_sha256": "7fbefef69e439c7a027caf2147ed60ff92086068cc7e9babd3f9565b705afe38",
+  "R3_sha256": "64e45fc3fc75a6bbd5481a441e37ba1fd139608863cd42862fed1d687df2935b",
+  "R4_sha256": "e3e6e7a74d12c3ffb8bc15054b4a5373007d1f1e1eb0e019fbc89c4fa08da2d6",
+  "designated_csv": {
+    "passed": true,
+    "rows": 1260,
+    "columns": [
+      "user_id",
+      "tv_show_id"
+    ],
+    "exact_template_user_order": true,
+    "five_distinct_nonzero_integer_ids": true,
+    "eligible_items_only": true,
+    "no_nulls": true,
+    "single_spaces": true,
+    "no_csv_index": true
+  },
+  "designated_round": "R4",
+  "highest_returned_private_score": true,
+  "metric_hand_examples_pass": true,
+  "previous_files_unchanged": true,
+  "no_training_or_upload": true
+}

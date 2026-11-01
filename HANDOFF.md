@@ -1,89 +1,40 @@
-**Current state: R4 awaits its score. R3 is incumbent at user-reported private 0.42671. See SUBMISSION_LOG.md and experiments/R4/HANDOFF.md. Older status text below is historical.**
+# Final student handoff - 1 November 2026
 
-# Student handoff
+**Experiments are finished. R4 is designated by the highest returned private score: 0.42690.** R3 was 0.42671; the difference is only 0.00019 and is not evidence of statistically reliable superiority. All scores are user-reported pending screenshot inspection.
 
-**Historical R0 handoff.** Current sequential research instructions, file identity and waiting status are in `SUBMISSION_LOG.md` and `experiments/R3/HANDOFF.md`. The old R0 upload instructions below are archival; do not consume another attempt on R0. The report is still a draft and will be consolidated after all returned round results.
+## Finish these before 19:00 Europe/Moscow
 
-**Deadline: 1 November 2026, 19:00 Europe/Moscow.** Code, recorded comparison, valid CSV and draft report are ready. Personal and external requirements remain below.
+1. Answer the personal verification/interpretation questions. Read `experiments/final/PERSONAL_REVIEW.md`, `experiments/R1/worked_completion_checks.md` and the two users' histories. Personally recompute one original-row join, one actual AP@5, and explain an assumption. Write the discussion in your own words. The agent must not claim these happened until you confirm them.
+2. Save the genuine **R4** submission-page screenshot to `report/assets/kaggle_private_score.png`. It must identify the submission and show its **private 0.42690**. Supply ID, COMPLETE status and the actual description (full Russian name and Kaggle username). Confirm the uploaded CSV identity. Do not resubmit the CSV.
+3. Create/push your GitHub remote on `master` and provide the accessible URL. Implementation and the exact R4 CSV must be included; raw data, cache, credentials and the private session must not be included. The agent does not push.
+4. Fill the supplied personal/external fields in `report/student_details.json`, rebuild, and personally inspect all PDF pages. A report with unresolved required placeholders is a **draft**. Do not mark `student_review_complete` until you have read the final report.
+5. After the final work, copy the **original native session unchanged** using your genuine ~/.codex mechanism. Located source: `/Users/roark/.codex/sessions/2026/11/01/rollout-2026-11-01T14-39-42-01a196e8-8117-7b61-a05e-d4d86d8f1472.jsonl`. Do not edit, convert, sanitize or recreate it. The guidelines section4.1 says tool-native format is accepted, though its example name is session.json. Ours is JSONL; preserve its native extension and flag that distinction if the course upload requires .json. Earlier ChatGPT planning is separate and not covered by the local export. Do not copy the still-growing log before the work it should cover finishes.
+6. Submit **exactly two course files** using the announced channel: final report PDF and original native AI-session export. Suggested report name: `Vladislav_Neklyudov_FKN_exam_report.pdf`. Preserve the native log unchanged with its native filename/format, or use a permitted filename-only rename if required. CSVs go to Kaggle/GitHub, not as extra course attachments.
 
-## What ran
+## Exact designated file
 
-The full `.venv/bin/python scripts/run.py` entry point completed without a prior cache, comparing all three individual methods and refitting the measured winner. Popularity MAP@5 is **0.595717**, content **0.177915**, ALS **0.157976**. Fit/inference times are 0.015/0.252 s, 0.186/0.467 s, and 3.962/0.303 s respectively. Exact saved numbers are in `results/metrics.json`; the comparison includes all 1,260 official-template users.
+`submissions/R4_count_distribution.csv`
 
-`.venv/bin/python scripts/verify.py` passed six focused tests, 10,000 scalar-reference interval comparisons, leakage-boundary checks, exact CSV validation and a small genuine-data deterministic rerun of every method. A second full clean rerun is not claimed. The actual pandas example-serialization failure, fix and confirming run are documented. There was no tuning, hybrid or score fishing.
+SHA-256 `e3e6e7a74d12c3ffb8bc15054b4a5373007d1f1e1eb0e019fbc89c4fa08da2d6`
 
-## 1. Upload the one designated CSV
+`submission/DESIGNATED_FINAL.json` records selection and identity. **`submission/final_submission.csv` is the historical R0 file**, retained unchanged for reproducibility; it is NOT the designated final file. All immutable round CSVs and original metrics remain intact.
 
-**File:** `submission/final_submission.csv`
+## Rebuild after inserting details/screenshot
 
-**SHA-256:** `73d71295c19c61c3702a3c8e0fae951f27a307ce9b05cd39fd37e9b93e0996e0`
-
-```sh
-shasum -a 256 submission/final_submission.csv
-```
-
-The student authorized one smoke submission, then chose to upload it personally. They reported Kaggle showing **100 submissions**, versus five in historical instructions; remaining quota was not independently checked. The agent has not submitted anything, and local CLI authentication is absent. Use signed-in **Late Submission**, entering your full Russian name and Kaggle username in the description. A successful smoke submission can remain the designated final submission; no additional uploads are needed for this handoff.
-
-Wait for **COMPLETE**, record the identifier/description and returned **private** score, and save a genuine submission-page screenshot at `report/assets/kaggle_private_score.png`. If late submission/private-score visibility is unavailable, record the actual behavior and contact the course channel immediately; do not invent a result.
-
-## 2. Personally check and interpret
-
-Read `results/worked_checks.md` and inspect the raw viewing/schedule rows. Recompute at least one join and the actual AP@5 example personally. User `8848657562275607589` has 22 relevant IDs and hits at ranks 2 and 4: `(1/2+2/4)/5=0.2`. The complete relevance set is in `results/real_user_ap_example.json`.
-
-Review both example users' actual fitting/held-out histories and all three lists. Rewrite the interpretation in your own words, explaining the evidence and limitations. Update the personal text/check/review fields in `report/student_details.json` only after doing these checks. Agent verification is not student verification.
-
-## 3. Push the prepared repository
-
-The local branch is `master`; the student creates and pushes the remote. For example:
-
-```sh
-git remote add origin YOUR_ACCESSIBLE_GITHUB_REPOSITORY_URL
-git push -u origin master
-```
-
-Keep raw data, cache, credentials and private native session files outside git. The exact final CSV belongs in GitHub. Insert the accessible repository URL into `report/student_details.json`.
-
-## 4. Finalize and inspect the report
-
-Identity is already Vladislav Neklyudov, vsneklyudov@edu.hse.ru. Fill all `TODO:` fields in `report/student_details.json`, add the genuine private-score screenshot, record the uploaded CSV hash and actual account behavior/quota, and complete personal review. Disclose earlier ChatGPT planning separately from local Codex work.
+From the repository root:
 
 ```sh
 .venv/bin/python scripts/build_report.py
 .venv/bin/python scripts/inspect_pdf.py
+.venv/bin/python scripts/final_checks.py
 ```
 
-Open and inspect `report/report.pdf`. The inspected draft has **five content pages plus one references page**, readable Cyrillic and tables, and no observed clipping. Genuine screenshot legibility remains unchecked until inserted. The inspection script checks bounds/page count but does not visually review for you. If personal text or the screenshot adds a page, shorten the text. `results/report_build.json` lists unresolved requirements. Until they are resolved, the PDF is a **draft**.
+PDF: `report/report.pdf`. Source: `report/report.md`. Preview images: `/tmp/llm4rec-report-preview/page-1.png` etc. Check five content pages maximum (references excluded), no clipping, correct lists/tables, and readable score screenshot. Long personal text may need concise editing to preserve the page cap. JSON edits preserve personal text across builds; direct Markdown edits are overwritten by build_report.py. Required open fields are machine-listed in `report/pending_requirements.json`.
 
-For direct Markdown edits, render with `.venv/bin/python scripts/render_report.py`; rebuilding from JSON overwrites direct Markdown changes.
+## What actually ran
 
-## 5. Copy the original native session unchanged
+Original pipeline completed from raw files; independent content and genuine ALS plus popularity were evaluated. R1/R2/R3 cached reproductions passed; R4 full production resampling matched its immutable CSV. R4 distribution and expected-AP mathematical checks passed. Final read-only checks validate all five hashes, R4 schema/user order/eligible five distinct IDs and highest returned private score. Two R4 formal examples were reconstructed from the fixed seed and checked against saved predictions. No second full clean-clone rerun is claimed. PDF geometry/glyph/page checks and visual review are recorded separately and tied to the current PDF hash.
 
-The student selected the native-file route. The genuine located original is:
+The corrected June development task differs from historical R0 broad five-minute labels. R4 opened the corrected later audit and used it for selection; four adaptive private-score queries are not an independent test. The report preserves negative results and count-model limitations. No further experiments or uploads are needed.
 
-```text
-/Users/roark/.codex/sessions/2026/11/01/rollout-2026-11-01T14-39-42-01a196e8-8117-7b61-a05e-d4d86d8f1472.jsonl
-```
-
-It is **JSONL**, not a single JSON document. Confirm course acceptance of that format; changing a suffix or converting does not create an original export. The agent has not copied, reconstructed, edited, sanitized or simulated this original. Project results/notes are not audit substitutes. Earlier ChatGPT planning is not covered by this local file.
-
-Enter the native filename and confirmed format status in the report before its final rebuild. After this chat's final response and all work/checks finish, copy the original unchanged outside git. Student-run example:
-
-```sh
-mkdir -p "$HOME/LLM4Rec-handin"
-cp -p /Users/roark/.codex/sessions/2026/11/01/rollout-2026-11-01T14-39-42-01a196e8-8117-7b61-a05e-d4d86d8f1472.jsonl "$HOME/LLM4Rec-handin/"
-cp report/report.pdf "$HOME/LLM4Rec-handin/report.pdf"
-```
-
-If Codex performs more work after the copy, take a fresh unchanged copy at the end so it includes that work.
-
-## 6. Hand in exactly two course files
-
-Submit **the finalized report PDF and original unmodified local AI-session export** through the course's announced channel before **19:00 Europe/Moscow**. The CSV goes to Kaggle and GitHub, not as a third course attachment.
-
-## Still unresolved
-
-- Kaggle COMPLETE/private score, identifier/description, screenshot and actual private-score behavior.
-- GitHub remote push and accessible URL.
-- Student personal join/AP checks, rewritten interpretation and final PDF review.
-- Native JSONL course acceptance and final unchanged original copy.
-- The three named assignment sources were absent; work followed the self-contained brief and actual data.
+See `experiments/final/COMPLIANCE.md` for requirements versus current evidence. This file and the PDF are deliverables/evidence notes, not substitutes for the original audit log.

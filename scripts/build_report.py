@@ -1,129 +1,81 @@
 #!/usr/bin/env python3
-"""Generate an evidence-backed report source and PDF; preserves personal edits in JSON."""
-from __future__ import annotations
-
+"""Render final consolidated evidence; personal statements are supplied in student_details.json."""
 import json
 from pathlib import Path
-
-from data_pipeline import dump
+import pandas as pd
 from render_report import render
 
-
-def read(path):
-    return json.loads(Path(path).read_text())
-
-
+def read(p):return json.loads(Path(p).read_text())
 def main():
-    m, a = read('results/metrics.json'), read('results/data_audit.json')
-    v, e = read('results/verification.json'), read('results/environment.json')
-    examples = read('results/two_user_examples.json')
-    ap = read('results/real_user_ap_example.json')
-    final = read('results/submission_validation.json')
-    s = read('report/student_details.json')
-    history = __import__('pandas').read_csv('results/two_user_histories.csv', dtype={'user_id': str})
-    required = ['github_url', 'personal_interpretation', 'personal_join_check', 'personal_ap_check',
-                'kaggle_submission_id', 'kaggle_submission_description', 'kaggle_submission_status',
-                'kaggle_private_score', 'kaggle_current_quota', 'kaggle_uploaded_csv_sha256',
-                'kaggle_account_behavior', 'native_export_filename']
-    pending = [key for key in required if not str(s.get(key, '')).strip() or str(s[key]).startswith('TODO:')]
-    for flag in ['personal_checks_completed', 'student_review_complete', 'native_format_course_acceptance_confirmed']:
-        if not s.get(flag):
-            pending.append(flag)
-    screenshot = Path('report') / s['score_screenshot']
-    if not screenshot.exists():
-        pending.append('genuine private-score screenshot')
-    if s['kaggle_uploaded_csv_sha256'] != final['sha256']:
-        pending.append('uploaded CSV identity confirmation')
-    if s['kaggle_submission_status'] != 'COMPLETE':
-        pending.append('Kaggle COMPLETE status')
-    status = 'DRAFT — required student and Kaggle evidence pending' if pending else 'Final student-reviewed report'
-    fmt = lambda x: f'{x:,}'
-    p, c, als = (m['models'][name] for name in ['popularity', 'content', 'als'])
-    full_label_fraction = (a['fit_join']['labelled_matched_seconds'] + a['validation_join']['labelled_matched_seconds']) / (a['fit_join']['view_seconds'] + a['validation_join']['view_seconds'])
-    lines = [
-        '# Temporal TV Programme Recommendation',
-        f"**{s['student_name']}** · {s['student_email']}",
-        '**Individual LLM4Rec/FKN assignment · 1 November 2026**',
-        f"GitHub repository: {s['github_url']}",
-        f'**{status}**',
-        '', '## Abstract',
-        f"This work predicts five television programme IDs per user from implicit viewing logs and broadcast schedules. I compare distinct-user popularity, sparse TF-IDF content filtering, and confidence-weighted implicit ALS on a chronological four-week hold-out. Half-open interval overlap, a five-minute per-airing threshold, and prefix-only learning produce {fmt(m['fitting_interactions'])} fitting user–programme pairs. Popularity achieves MAP@5 of {p['map_at_5']:.6f} across all {fmt(m['evaluation_users'])} official-template users, outperforming both personalized methods. It is therefore refitted on eligible pre-test history for the designated CSV. The result supports a simple recurring-programme baseline for these labels; it does not establish individual enjoyment. Private-score evidence and the student's personal review remain pending in this draft.",
-        '', '## 1. Introduction and related work',
-        'The task is to rank programmes that will actually air. For example, a viewer who repeatedly watches a news programme could receive its next scheduled occurrence. Programme IDs recur across broadcasts, so previously watched items remain eligible. Availability, channel changes, and unlabelled airtime make a direct viewing-log-to-item mapping unreliable.',
-        'The supplied competition files [1] provide implicit feedback rather than ratings. Hu, Koren and Volinsky [2] motivate separating binary preference from confidence in an observation. Content filtering instead compares a profile of consumed attributes with programme features. I use sparse TF-IDF as documented by scikit-learn [3], and the CPU implicit implementation [4] for a genuine factor model. No language model or deep neural recommender is trained.',
-        '', '## 2. Data and label construction',
-        f"The viewing CSV contains {fmt(a['viewing']['raw_rows'])} rows and {fmt(a['viewing']['raw_users'])} users, from {a['viewing']['min_start']} to {a['viewing']['max_stop']}. All CSVs use comma delimiters and UTF-8-compatible text. User IDs are preserved as strings, including values above signed 64-bit range. Schedule dates use day.month.year; viewing dates use year-month-day. Both are parsed onto the same naive wall-clock axis; the files do not establish a timezone.",
-        f"Schedule duration is in seconds (first-file median {a['schedules']['export_arh_11-20-final.csv']['duration_seconds_quantiles']['0.5']:.0f}); viewing duraton is an interval length, not programme length. {a['viewing']['duraton_timestamp_mismatch_rows']} values disagree with timestamp subtraction, so start/stop timestamps define the joins. Direct vsetv_id=channel_id matching leaves five observed channels unmapped: 149, 1174, 1508, 1509 and 1510. No invented remapping is used.",
-        f"Nonzero-ID row coverage is {100*a['schedules']['export_arh_11-20-final.csv']['nonzero_fraction']:.2f}% in the first schedule and {100*a['schedules']['export_arh_21-30-final.csv']['nonzero_fraction']:.2f}% in the second. Zero IDs are excluded from matrices and recommendations. {a['viewing']['exact_duplicate_intervals_removed']} duplicate viewing intervals are removed; overlapping/adjacent intervals within each user/channel are unioned ({fmt(a['viewing']['overlapping_or_adjacent_intervals_merged'])} merges). The schedule has {a['canonical_schedule']['nonpositive_rows_removed']} nonpositive-duration row and {a['canonical_schedule']['overlapping_airings_removed']} conflicting airings; all are removed, including {a['canonical_schedule']['labelled_overlapping_airings_removed']} labelled airing. This conservative policy prevents duplicate coverage.",
-        '', '<!-- pagebreak -->', '', '## 3. Method and leakage controls',
-        'For viewing [v_start,v_end) and airing [a_start,a_end), overlap is max(0, min(v_end,a_end) − max(v_start,a_start)). A channel-wise sorted interval join advances each viewing through every intersected broadcast. It is not a Cartesian join, and a long viewing may yield several labels. Visits to the same airing are summed after interval union.',
-        f"A watched label requires at least {a['fit_labels']['threshold_seconds']} seconds per user–airing. This absolute threshold was chosen after inspecting viewing lengths (full-data median {a['viewing']['timestamp_interval_seconds_quantiles']['0.5']:.0f} seconds), to reduce brief zapping without requiring completion. It is not tuned. Retained airings are aggregated into user–programme seconds. Unlabelled airtime is missing information, not a dislike.",
-        'Fitting uses observations before 29 June 2020 00:00; validation is [29 June,27 July 2020 00:00). Viewing is clipped at the cutoff before overlap and thresholding, so crossing intervals cannot leak future seconds. Four late weeks provide forward prediction with substantial history. This is shorter than the future schedule [27 July,19 October 2020 12:00), which limits horizon comparability. These dates come from parsed rows, not filename week numbers.',
-        'All methods rank the same nonzero IDs scheduled in the target window. Repeats are allowed. Positive, finite method scores are sorted descending; integer programme ID breaks ties. Missing or insufficient method scores use the same prefix-popularity order, without duplicates. Unseen programmes with zero popularity are deterministic ID-tie backfill candidates, rather than inferred dislikes.',
-        'Popularity scores each programme by the number of distinct fitting users with a retained label. This definition also supplies every fallback. It uses neither held-out viewing nor future metadata.',
-        'Content filtering uses one earliest available metadata row per nonzero programme before the fitting cutoff. Features are title word tokens, category and three genres (field tokens repeated twice), year, director, and up to 20 actor names. Prefix-only vocabulary and smoothed IDF produce L2-normalized sparse item vectors. A user profile is the L2-normalized weighted mean with weight log1p(retained seconds/300). Cosine similarity ranks candidates with prefix metadata; items without that metadata receive no content score. No held-out or test metadata enters vocabulary, IDF, or profiles.',
-        'ALS minimizes sum_ui c_ui(p_ui − x_u·y_i)^2 + λ(sum_u ||x_u||² + sum_i ||y_i||²). Observed pairs have p_ui=1 and c_ui=1+10 log1p(retained seconds/300); unobserved pairs have p_ui=0,c_ui=1. Settings are 32 factors, 15 exact ALS iterations, λ=0.1, seed 42, float32 and one CPU thread; implicit alpha=1 avoids a second confidence scaling. Unknown items and cold users use the common fallback. It is matrix factorization, not nearest-neighbour similarity.',
-        f"The installed environment is {e['machine']} {e['platform'].split('-')[0]}, Python {e['python'].split()[0]}, NumPy {e['packages']['numpy']}, pandas {e['packages']['pandas']}, SciPy {e['packages']['scipy']}, scikit-learn {e['packages']['scikit-learn']} and implicit {e['packages']['implicit']}. Sparse matrices and a fingerprinted local preprocessing cache keep the pipeline small. Exact package versions, input SHA-256 values, parameters and stage timings are saved.",
-        '', '<!-- pagebreak -->', '', '## 4. Experiments, checks and discussion',
-        f"Fitting contains {fmt(m['fitting_users'])} labelled users, {fmt(m['fitting_interactions'])} distinct user–programme pairs and {fmt(p['fitting_interaction_items'])} interacted items. Validation has {fmt(m['held_out_interactions_all_log_users'])} labelled pairs across log users; {fmt(m['held_out_interactions_template_users'])} belong to the {fmt(m['evaluation_users'])} official-template users used for primary evaluation. There are {fmt(m['candidate_items'])} available candidate items.",
-        'AP@5 sums precision at each relevant recommendation rank and divides by min(5, number of distinct relevant items). The primary MAP averages over every template user. Empty relevance contributes zero; relevance sets and outputs are distinct, and duplicate predictions are rejected. This follows the supplied brief. Current authenticated Kaggle metric/account behavior was unavailable, so exact server convention remains to be confirmed rather than assumed identical.',
-        f"The population includes {p['empty_relevance_users_included_as_zero']} users without held-out labels and {p['cold_users']} users without fitting labels. No unreachable relevant user–item labels are removed ({m['unreachable_distinct_user_item_labels']} observed). Secondary nonempty-user MAP is {p['map_at_5_nonempty_secondary']:.6f} for popularity; warm/cold MAP is {p['warm_map_at_5']:.6f}/{p['cold_map_at_5']:.6f}. All comparisons below use the identical split and policy.",
-        '', '| Method | MAP@5 | Fit (s) | Infer (s) | Scored-slot coverage | Distinct Top-5 IDs |', '|---|---:|---:|---:|---:|---:|'
-    ]
-    for name, row in m['models'].items():
-        lines.append(f"| {name.title()} | {row['map_at_5']:.6f} | {row['fit_seconds']:.3f} | {row['inference_seconds']:.3f} | {100*row['method_slots_fraction']:.2f}% | {row['distinct_recommended_items']} |")
-    lines += [
-        '', f"Content has metadata for {c['method_known_candidates']}/{m['candidate_items']} candidates; ALS has fitted factors for {als['method_known_candidates']}/{m['candidate_items']}. Both use full popularity fallback for the six cold users. Preparation took {a['stage_seconds']['total_preparation_including_fingerprints']:.3f} s and the successful entry point {e['elapsed_entry_point_seconds']:.3f} s in this installed environment, excluding setup and exploratory runs. These are observations, not runtime guarantees.",
-        f"Only one configuration of each individual method was compared; there was no hyperparameter search, hybrid or Kaggle score tuning. The same hold-out selected popularity, so results are selection-biased rather than an independent final evaluation. The production refit uses {fmt(a['production_labels']['unique_user_item_interactions'])} pre-test pairs and {fmt(a['candidate_policy']['test_items'])} future candidates. Its validation score is not recomputed on refitted history.",
-        f"The join assigns {100*a['fit_join']['labelled_seconds_fraction']:.2f}% of fitting and {100*a['validation_join']['labelled_seconds_fraction']:.2f}% of held-out viewing seconds to labelled airings ({100*full_label_fraction:.2f}% overall). It drops {fmt(a['fit_labels']['user_airings_dropped_below_threshold'])}/{fmt(a['validation_labels']['user_airings_dropped_below_threshold'])} below-threshold fitting/held-out user–airings. Missing schedules and unlabelled broadcasts limit observed relevance. Background viewing, unequal exposure, and the shorter validation horizon further limit interpretation.",
-        'Popularity wins under these broad recurring-TV labels but recommends just five distinct IDs to the whole population. Personalized content and ALS spread exposure more widely and score worse; their similarity/confidence objectives do not directly optimize this AP@5 target. Retaining the measured winner is a practical mitigation, not a claim that diversity or personal preference has been solved. No live A/B, enjoyment, retention or revenue result is claimed.',
-        f"An actual preparation failure occurred when pandas Series.item resolved to a method during example serialization. Explicit column indexing fixed it; the added integration check and completed full entry point confirmed the repair. {v['focused_test_count']} focused tests passed. A scalar reference checked {fmt(v['random_interval_pairs_checked_against_scalar_formula'])} interval pairs. A {v['small_deterministic_rerun']['fitting_users']}-user, {fmt(v['small_deterministic_rerun']['fitting_interactions'])}-pair probe produced identical scores and Top-5 twice for all three methods, including when {fmt(v['small_deterministic_rerun']['future_metadata_rows_mutated'])} post-cutoff metadata rows were replaced. This is a small rerun, not a second full clean run.",
-        '', '<!-- pagebreak -->', '', '## 5. The same two users across all methods',
-        'Examples use observed validation viewing; true test-period viewing is unavailable. Histories and all ordered Top-5 IDs, titles, categories, method scores and fallback flags are saved in results/two_user_examples.json and results/two_user_histories.csv. The users are chosen near the 10th and 90th percentiles of fitting history length among evaluable template users, rather than selected for model wins.'
-    ]
-    for index, ex in enumerate(examples, 1):
-        lines += ['', f"### User {index}: {ex['user_id']}",
-                  f"Fitting history: {ex['training_distinct_items']} distinct programmes; held-out history: {ex['held_out_distinct_items']}.",
-                  '', '| Method | Ordered Top-5 programme IDs | AP@5 |', '|---|---|---:|']
-        for name, result in ex['methods'].items():
-            ids = ' → '.join(str(r['item']) for r in result['recommendations'])
-            lines.append(f"| {name.title()} | {ids} | {result['ap_at_5']:.6f} |")
-        summaries = []
-        for phase, title in [('fitting', 'Fitting'), ('held_out', 'Held-out')]:
-            subset = history.loc[(history.user_id == ex['user_id']) & (history.phase == phase)].head(2)
-            summaries.append(title + ': ' + '; '.join(f"{r.title} (ID {r.item}, {int(r.watched_seconds):,} s)" for r in subset.itertuples(index=False)))
-        lines += ['', ' '.join(summaries)]
-    lines += ['', '### Baseline titles, scores and actual relevance',
-              'The ordered popularity list is shared by the two users. Scores are distinct fitting-user counts; Y/N indicates held-out relevance for user 1/user 2.',
-              '', '| ID | Programme title | Category | Score | Relevant 1/2 |', '|---:|---|---|---:|---|']
-    for one, two in zip(examples[0]['methods']['popularity']['recommendations'], examples[1]['methods']['popularity']['recommendations']):
-        lines.append(f"| {one['item']} | {one['title'].replace('|', '/')} | {one['category']} | {one['method_score']:.0f} | {'Y' if one['held_out_relevant'] else 'N'}/{'Y' if two['held_out_relevant'] else 'N'} |")
-    lines += ['', f"For user {ap['user_id']}, the saved real AP@5 example has {ap['number_distinct_relevant']} distinct relevant IDs and hits at ranks 2 and 4: (1/2+2/4)/5={ap['ap_at_5']:.6f}. This matches the recorded result. Student personal verification remains pending unless completed below.",
-              'Agent-observed interpretation: ALS slightly improves on popularity for user 1; both personalized lists score zero for user 2. High fitting history volume alone therefore does not guarantee a useful forward ranking. The measured evidence supports the aggregate baseline choice while retaining individual failure examples.',
-              f"**Student interpretation:** {s['personal_interpretation']}",
-              f"**Personal join check:** {s['personal_join_check']}", f"**Personal AP@5 check:** {s['personal_ap_check']}",
-              '', '<!-- pagebreak -->', '', '## 6. External validation and AI disclosure',
-              f"**Kaggle submission:** {s['kaggle_submission_id']}. Status: {s['kaggle_submission_status']}. Private score: {s['kaggle_private_score']}.",
-              f"Description: {s['kaggle_submission_description']}. Observed quota: {s['kaggle_current_quota']}. Current account behavior: {s['kaggle_account_behavior']}.",
-              f"The designated file is submission/final_submission.csv ({final['rows']} rows, exact template order and schema). SHA-256: {final['sha256']}. Uploaded identity: {s['kaggle_uploaded_csv_sha256']}.",
-              '', f"![Genuine designated final Kaggle submission, including PRIVATE score and submission identity]({s['score_screenshot']})", '',
-              'ChatGPT assisted with planning before the local implementation session. That upstream activity is disclosed separately and is not represented as part of the local Codex audit. In this genuine local session, Codex inspected data, wrote and debugged code, ran joins/models/checks, selected the recorded baseline, and drafted documentation and this PDF. Web browsing consulted the sources below; Python libraries generated numerical outputs and the PDF. No subagents or other model APIs were used.',
-              f"The agent ran the checks recorded in results/verification.json. Student personal checks completed: {s['personal_checks_completed']}; full report review completed: {s['student_review_complete']}. Library implementations and source descriptions were trusted within the documented checks; the competition server metric, account quota and private-score behavior were not verified by the agent. Numerical results come from saved outputs, not generated prose.",
-              f"Original local audit reference: {s['native_export_filename']}. Native format: {s['native_export_format']}. {s['audit_export_note']} The located native session is rollout-2026-11-01T14-39-42-01a196e8-8117-7b61-a05e-d4d86d8f1472.jsonl. This is JSONL, not a single JSON document; course acceptance confirmed: {s['native_format_course_acceptance_confirmed']}. The agent has not copied, reconstructed, edited, sanitized, simulated or converted that original. Saved chat history is distinct from earlier external planning [5].",
-              '', '<!-- pagebreak -->', '', '## References',
-              '[1] sweet.tv, “sweet.tv – TV program recommender,” Kaggle, competition data. [Competition data page](https://www.kaggle.com/competitions/sweettv-tv-program-recommender/data), accessed Nov. 1, 2026. Local downloaded CSVs were inspected; the public page exposed no readable metric details.',
-              '[2] Y. Hu, Y. Koren, and C. Volinsky, “Collaborative Filtering for Implicit Feedback Datasets,” in Proc. IEEE ICDM, 2008, pp. 263–272, doi: 10.1109/ICDM.2008.22. [Author-hosted paper](https://yifanhu.net/PUB/cf.pdf), consulted Nov. 1, 2026.',
-              '[3] scikit-learn developers, “Feature extraction,” scikit-learn documentation. [Official feature-extraction documentation](https://scikit-learn.org/stable/modules/feature_extraction.html), consulted Nov. 1, 2026.',
-              '[4] B. Frederickson and implicit contributors, “AlternatingLeastSquares,” Implicit 0.7.2 API documentation. [CPU ALS documentation](https://benfred.github.io/implicit/api/models/cpu/als.html), consulted Nov. 1, 2026. Installed library version: 0.7.3.',
-              '[5] OpenAI, “Projects and chats,” ChatGPT/Codex documentation. [Official chat documentation](https://learn.chatgpt.com/docs/projects), consulted Nov. 1, 2026. It describes saved transcripts; it does not establish a JSON export mechanism for this session.', '']
-    Path('report/report.md').write_text('\n\n'.join(lines).replace('\n\n|', '\n|').replace('|\n\n', '|\n'))
-    render('report/report.md', 'report/report.pdf')
-    dump('results/report_build.json', {'status': status, 'pending_required_fields': list(dict.fromkeys(pending)),
-                                       'genuine_score_screenshot_present': screenshot.exists(),
-                                       'source': 'report/report.md', 'pdf': 'report/report.pdf',
-                                       'student_name': s['student_name'], 'student_email': s['student_email']})
-    print('Built report/report.md and report/report.pdf;', status)
-
-
-if __name__ == '__main__':
-    main()
+ s=read('report/student_details.json');f=read('submission/DESIGNATED_FINAL.json');r1=read('experiments/R1/metrics.json')['models'];r4=read('experiments/R4/manifest.json');examples=read('experiments/final/two_user_examples.json')
+ needed=['github_url','personal_interpretation','personal_join_check','personal_ap_check','kaggle_submission_id','kaggle_submission_description','kaggle_submission_status','kaggle_uploaded_csv_sha256']
+ pending=[k for k in needed if not s.get(k) or str(s[k]).startswith('TODO:')]
+ if not s.get('personal_checks_completed'):pending.append('personal checks')
+ if not s.get('student_review_complete'):pending.append('student report review')
+ if not (Path('report')/s['score_screenshot']).exists():pending.append('genuine private-score screenshot')
+ if s.get('kaggle_uploaded_csv_sha256')!=f['sha256']:pending.append('uploaded identity confirmation')
+ status='DRAFT: required external/personal evidence pending' if pending else 'Student-reviewed final report'
+ L=[]
+ def add(*x):L.extend(x)
+ add('# Completion-Aware Television Recommendation',f"**{s['student_name']} | Individual | {s['student_email']} | 2026-11-01**",'Assignment: LLM4Rec/FKN individual exam',f"GitHub: {s['github_url']}",f'**{status}**','## Abstract',
+ 'This study predicts five preferred television programme IDs for each of 1,260 SWEET.TV users from sparse viewing logs and broadcast schedules. It compares popularity, content filtering, implicit matrix factorization and completion-aware behavioral models, then combines a chronological boosted reranker with a small sampled count-distribution ranking. The designated R4 file obtained a user-reported private MAP@5 of 0.42690; its corrected development proxy MAP@5 was 0.271272. Personalized recurring preferences improved the recorded results, while the final distributional addition produced only a very small gain and does not establish reliable superiority.',
+ '## 1. Introduction and related work',
+ 'The service needs recommendations for programmes that will actually air: a regular news viewer might receive the next occurrence of a familiar programme, while a children’s-TV household has different recurring preferences. The contribution is an auditable log-to-broadcast pipeline and a comparison that preserves eligibility, repeats and evaluation users across methods. Sparse programme labels and an unspecified hidden preference construction make accurate target reconstruction essential.',
+ 'The dataset and competition define ranked five-ID predictions [1]. Implicit ALS separates positive preference from confidence [2,4]; content filtering uses sparse TF-IDF attributes [3]. A historical participant describes completion and frequency targets [5,6], motivating our explicit proxy rather than proving the hidden evaluator. A compact histogram boosted classifier [7] combines temporal signals. Association rules and PageRank were considered but deferred because content filtering and genuine ALS already satisfy the two-method requirement; further graph infrastructure would consume time without diagnosed benefit.',
+ '## 2. Method: observations, targets and leakage',
+ 'The five CSVs contain 5,821,987 viewing rows from 4,914 users. Viewing duraton and schedule duration are seconds; timestamp subtraction defines viewing intervals where 117 recorded durations disagree. User IDs remain exact strings. Dates share the dataset’s naive clock; no timezone correction was invented. Matching uses vsetv_id=channel_id and half-open overlap max(0,min(view_end,airing_end)-max(view_start,airing_start)), with a sorted channel join covering every intersected broadcast.',
+ 'Only 10.762% and 11.309% of rows in the two historical schedules have nonzero programme IDs. Zero IDs are missing labels, not dislikes. Canonicalization removes one nonpositive and ten conflicting schedule rows, including one labelled row. Seventeen duplicate views are removed; 311,644 same-channel fragments merge. A later different-channel record interrupts the previous session: 351,499 sessions lose overlapping coverage. No device ID exists, making this a conservative single-stream assumption. Labelled broadcasts cover 52.71% of retained session seconds.',
+ 'A qualifying watch covers at least 80% of the ORIGINAL broadcast duration in one uninterrupted channel session; each user-airing contributes at most once. Clipping at a split retains that full denominator. Labels are each user’s up-to-five programme IDs with highest qualifying broadcast frequency, ties ascending integer ID. This is a declared proxy; hidden thresholds, continuity and ties remain uncertain. Aggregate-sitting and alternate-tie sensitivities are separate.',
+ 'Development fits before 1 June 2020 and predicts [1 June,29 June); all 1,260 template users remain, including 362 empty-target users scored zero. There are 898 nonempty and 642 five-label users, 3,929 eligible candidates, 4,745 fitting users and 109,256 user-programme pairs from 299,059 qualifying user-airings. AP@5 sums precision at each relevant recommended rank and divides by min(5, the complete distinct relevance-set size); empty relevance scores zero. Unreachable labels remain in the denominator. Every model permits repeats and ranks only target-scheduled nonzero IDs. Missing scores use the same qualifying distinct-user popularity fallback, then ID ties, without duplicates. Vectorizers and learned features use only each cutoff’s past; future schedules supply availability, channel, time and duration, never viewing or learned future metadata.',
+ '<!-- pagebreak -->','## 3. Models, selection and experiments',
+ 'Content uses category, genres, production year, director, actors and title tokens with prefix-only TF-IDF; a normalized log(1+qualifying count)-weighted user profile ranks cosine similarity. Unseen metadata items have no content score and use fallback. CPU ALS has 32 factors, 15 iterations, regularization 0.1, seed 42 and one thread; observed confidence is 1+10 log(1+count), unobserved confidence 1, library alpha=1. Factor orientation/mapping was checked and repeat filtering explicitly disabled.',
+ 'R1 ranks personal qualifying counts, breaking ties by latest qualified end then ID. R2 uses 56-day decay and 75% repeat/25% pooled channel/time-habit forecast; coarse weekday/weekend six-hour cells shrink by 20 opportunities. No/28/56-day decay and a small blend grid were compared; pure opportunity adjustment failed locally. R3 generates 200 candidates (personal100, R2new50, ALS30, content15, popularity5, then fill) and ranks 23 features with HistGradientBoostingClassifier: binary log-loss, 31 leaves, L2=5, learning rate .05, 160 trees, minimum leaf100, bins63. Counts are per-week/share normalized and history length is explicit. ALS/content supply candidates, but removing their numeric scores improved development MAP.',
+ 'R3 training examples forecast March23-April20 and April6-May4 using only earlier histories; these target windows overlap. The May4-June1 inner window selects two compact configurations with chronological early stopping checks; both reach the 160-tree cap. Development labels never fit its evaluated model. Production adds eligible earlier training examples, while features refit before July27. The production schedule is July27-October19 noon (84.5 days), much longer than development.',
+ '| Method, identical June proxy | MAP@5 | Fit / infer seconds | Cold / lists |', '|---|---:|---|---|')
+ names={'r0_strategy':'R0 strategy replay','completion_popularity':'Completion popularity','content':'Content','als':'ALS','personal_frequency':'R1 personal'}
+ for n,label in names.items():
+  q=r1[n];add(f"| {label} | {q['map_at_5']:.6f} | {q['fit_seconds']:.3f} / {q['inference_seconds']:.3f} | {q['fallback_users_full']} full fallback / {q['distinct_recommendation_lists']} |")
+ q=read('experiments/R2/metrics.json')['models']['blend_habit_25']
+ add(f"| R2 | {q['map_at_5']:.6f} | {q['feature_seconds']:.3f} features / {q['ranking_seconds']:.3f} rank | 17 / 1219 |",'| R3 | 0.271132 | 15.679 combined development fit/predict | 17 cold histories |','| R4 mean / membership / expected AP | 0.253992 / 0.256944 / 0.257600 | 113.583 s whole R4 round | Same population/pool |','| R4 final 90/10 blend | 0.271272 | Included in whole-round time | 1191 production lists; 5 fallback users |',
+ 'R3 pool micro recall is 3281/3844=0.853538, oracle MAP@5=0.599987, actual R3=0.271132. Recall pools labels; oracle averages per-user attainable AP including empty users, so these are different quantities. The oracle is a ceiling, not achieved performance. R3 without schedule/habit features scores .264500; full29 features .269543; R3/R2 blends .265066/.269370.',
+ 'R4 uses Beta-Binomial counts: a=100*mu+n, b=100*(1-mu)+A-n, N~BetaBinomial(M,a,b). Historical opportunity A spans each user’s observed history; n<=A is checked; M counts future available airings. User-channel priors shrink20 toward historical population rates, never R3 probabilities. Kappa5/20/100 is selected on the inner window. Seed42, 512 independent programme draws form positive-count Top-5 sets with the declared ties; a larger modeling pool includes scheduled personal history, top500 means and the unchanged rec200. Greedy expected-AP ranking uses exact sampled marginal/pair moments and the actual sampled set-size denominator. Final score is .9/(60+R3 rank)+.1/(60+distribution rank).',
+ 'The frozen R4 shortlist opened the later June29-July27 corrected audit once: R3 .331066, blend .331476. That audit was used for selection; old broad labels had already exposed the period. Development delta .000140 has paired-bootstrap95% interval [-.001468,.001834]; 34 users improve,31 worsen. Pure distributions lose to R3; blend stability held for30 checked users, while pure distribution lists were unstable. No independent final-test claim is made.',
+ '<!-- pagebreak -->')
+ aliases={'r0_strategy':'R0 replay','completion_popularity':'Popularity','content':'Content','als':'ALS','personal_frequency':'R1','R2':'R2','R3':'R3','R4':'R4'}
+ for j,e in enumerate(examples):
+  add(f"## 4.{j+1}. Same-user recommendation evidence",f"**User {e['user_id']}**: {e['training_items']} fitting programmes and {e['training_broadcasts']} qualifying broadcasts. The same users were selected for contrasting history lengths, near low/high percentiles in the initial protocol. Corrected proxy histories are supplied in experiments/R1/formal_two_user_histories.csv. Target IDs: {', '.join(map(str,e['relevant_ids']))}.",
+  '| Method | Ordered Top-5 IDs (left to right) | AP@5 |','|---|---|---:|')
+  meta={}
+  for n,v in e['methods'].items():
+   add(f"| {aliases[n]} | {' '.join(str(r['item']) for r in v['recommendations'])} | {v['ap_at_5']:.3f} |")
+   for r in v['recommendations']:meta[int(r['item'])]=(r['title'],r['category'])
+  add('The following lookup supplies the title and category for every ID above. Full scores and ordered records are in experiments/final/two_user_examples.json. Titles describe one observed metadata record of a recurring programme ID, not necessarily the exact future episode.', '| ID | Programme title | Category |','|---|---|---|')
+  for i,(t,c) in sorted(meta.items()):add(f"| {i} | {t.replace('|','/')} | {c} |")
+  if j==0:add('All methods miss this user’s single held-out target. Familiar history is insufficient: this is a concrete cold-item/preference-shift failure, not a useful-discovery success. Missing historical metadata is reported explicitly rather than inferred from future features.')
+  else:add('Compare the children’s-programme training history with the target set and ordered lists. Hits support recurring-preference prediction for this observed period; misses do not demonstrate lack of enjoyment or that a programme was never watched elsewhere.')
+  if j==0:add('An actual preparation error used pandas Series.item as if it were a column value; explicit row["item"] indexing fixed example serialization and the full pipeline/checks passed. Agent checks cover raw-row overlap examples, split clipping, AP examples 11/12 and 8/15, empty labels and duplicate rejection, ALS orientation/repeats, sample expected-AP identity versus exhaustive tiny cases, bounded counts, finite scores, exact CSV schema/order/eligibility and deterministic reconstruction. R1-R3 cached reproductions and R4 full production resampling passed; a second clean-clone full rerun was not performed.',)
+  else:add('Environment:macOS26.6.2 arm64 CPU, Python3.15.0, numpy2.5.4, pandas3.1.0, scipy1.18.1, scikit-learn1.9.1, implicit0.7.3, reportlab5.1.0, pymupdf1.28.2; seed42. Hashes, counts, checks and stage times are saved under results/ and experiments/R1-R4/.')
+  add('<!-- pagebreak -->')
+ add('## 5. Discussion, verification and AI disclosure',
+ f"**Student interpretation:** {s['personal_interpretation']}",f"**Personal join reasoning:** {s['personal_join_check']}",f"**Personal AP reasoning:** {s['personal_ap_check']}",
+ 'Agent assessment: choose R4 by the agreed maximum returned private score, while R3 supplies almost all of its ranking. Content/ALS perform worse than completion popularity here; metadata similarity and factor objectives differ from recurring-favourite labels. More detailed behavioral signals improve R1-R3, but the R4 gain is tiny. Sparse labelled schedules, implicit background viewing, ambiguous devices, independent count draws, truncated competitors and unequal availability/exposure limit interpretation. A next improvement is out-of-time calibration on a longer horizon before adding complexity. No A/B, enjoyment or revenue effect was measured.',
+ '| Submission | Public | Private |','|---|---|---|','| R0 | not recorded | approximately .27 |','| R1 | .39334 | .38480 |','| R2 | .39904 | .39378 |','| R3 | .43102 | .42671 |','| R4 designated | .42890 | .42690 |',
+ 'Scores above are user-reported until supported by the genuine screenshot. Five uploads include four adaptive private-score queries; they are not an untouched test. Original R0 local .595717 used broad five-minute labels and is historical only, not comparable with this table’s development proxy.',
+ f"Designated CSV: {f['csv']}; SHA-256: {f['sha256']}. Submission ID/status: {s['kaggle_submission_id']} / {s['kaggle_submission_status']}. Description: {s['kaggle_submission_description']}.",
+ f"![Genuine R4 submission page showing private score and submission identity]({s['score_screenshot']})",
+ 'ChatGPT assisted upstream planning and subsequent research plans; local Codex generated/debugged code, searched sources, executed experiments/checks and drafted this report. Python libraries calculated results. Model/app versions not exposed reliably were not invented. Algorithms were reimplemented; no external predictions or classmates’ reports were imported. The proposed rate-model paper could not be retrieved and is not claimed as consulted. Personal statements above are student-supplied only when completed; other checks are agent-executed. Library internals, hidden scorer conventions and transfer assumptions were not independently proven.',
+ f"Native audit: {s['native_export_filename']} (original JSONL; guidelines permit tool-native logs although examples use .json). Student copies it unchanged after final work; it excludes earlier ChatGPT activity. No export was reconstructed, converted or sanitized. Personal checks completed: {s['personal_checks_completed']}; student report review: {s['student_review_complete']}.",
+ '<!-- pagebreak -->','## References',
+ '[1] sweet.tv, “sweet.tv - TV program recommender,” Kaggle, 2020. [Competition and data](https://www.kaggle.com/competitions/sweettv-tv-program-recommender/data). Accessed 2026-11-01: downloaded CSVs and student-provided evaluation description inspected; public page did not expose readable metric details.',
+ '[2] Y. Hu, Y. Koren, and C. Volinsky, “Collaborative Filtering for Implicit Feedback Datasets,” Proc. IEEE ICDM, pp.263-272, 2008, doi:10.1109/ICDM.2008.22. [Author-hosted paper](https://yifanhu.net/PUB/cf.pdf). Consulted 2026-11-01.',
+ '[3] Scikit-learn developers, “Feature extraction,” official documentation. [Feature extraction](https://scikit-learn.org/stable/modules/feature_extraction.html). Consulted 2026-11-01.',
+ '[4] B. Frederickson and implicit contributors, “AlternatingLeastSquares,” Implicit API documentation. [CPU ALS](https://benfred.github.io/implicit/api/models/cpu/als.html). Consulted 2026-11-01; documentation 0.7.2, installed library0.7.3.',
+ '[5] N. Melentev, “Two-layered recommender system methodology: A prize-winning solution,” Towards Data Science/Medium. [Participant article](https://medium.com/data-science/two-layered-recommender-system-methodology-a-prize-winning-solution-c4bdb815b156). Consulted 2026-11-01; methodological lead, not our results.',
+ '[6] ndmel, “2nd_place_recsys_cinema_challenge_2020: utils.py,” GitHub source. [Target construction](https://github.com/ndmel/2nd_place_recsys_cinema_challenge_2020/blob/main/utils.py). Consulted 2026-11-01; completion/frequency idea reimplemented, no copied predictions.',
+ '[7] Scikit-learn developers, “HistGradientBoostingClassifier,” official API documentation. [Classifier API](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html). Consulted 2026-11-01; installed1.9.1 API checked.')
+ Path('report/report.md').write_text('\n\n'.join(L).replace('\n\n|','\n|').replace('|\n\n','|\n')+'\n')
+ render('report/report.md','report/report.pdf')
+ Path('report/pending_requirements.json').write_text(json.dumps({'status':status,'pending':pending},indent=2)+'\n')
+ Path('results/report_build.json').write_text(json.dumps({'status':status,'pending':pending,'designated_round':'R4','pdf':'report/report.pdf'},indent=2)+'\n')
+ print(status,pending)
+if __name__=='__main__':main()

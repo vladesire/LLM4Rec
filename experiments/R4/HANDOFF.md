@@ -1,3 +1,5 @@
+**Final update: R4 scored user-reported public0.42890/private0.42690 and is designated. Experiments stopped. See root HANDOFF.md. The preparation account below is historical.**
+
 # R4: count-distribution complement to R3
 
 **AWAITING_USER_SCORE.** R3 is the scored incumbent: public 0.43102/private 0.42671, exact user report, screenshot/ID not inspected. Its CSV, configuration and inference model remain unchanged. No upload or remote push was performed.

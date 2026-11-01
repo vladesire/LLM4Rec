@@ -1,10 +1,10 @@
 {
   "round": "R4",
-  "status": "AWAITING_USER_SCORE",
+  "status": "SCORED_USER_REPORTED",
   "csv": "submissions/R4_count_distribution.csv",
   "sha256": "e3e6e7a74d12c3ffb8bc15054b4a5373007d1f1e1eb0e019fbc89c4fa08da2d6",
-  "public_score": null,
-  "private_score": null,
+  "public_score": 0.4289,
+  "private_score": 0.4269,
   "incumbent": "R3",
   "incumbent_private_score": 0.42671,
   "selected": {
@@ -103,7 +103,7 @@
   "command": ".venv/bin/python scripts/verify_r4.py",
   "late_audit_used_for_selection": true,
   "distribution_assumptions": "Beta-binomial, exchangeable independent programme rates; availability is not exposure; pool truncated",
-  "next": "STOP for user R4 scores; only then designate best scored file.",
+  "next": "No further experiments; finalize report and student hand-in.",
   "initial_source_sha256": {
     "run_r4.py": "07e28047d9fa64e64c26c3f0172c76a6e56dccb7ccb6308f9da0f30abcd69291",
     "count_r4.py": "e952d1d1aae9a9011940e338d321c089919f21f1de6aa84fb36c1bbb73b9e7c2"
@@ -118,5 +118,8 @@
   },
   "sampling_reconstruction_verified": true,
   "important_limitation": "Tiny selected gain, bootstrap includes zero; distribution-only lists unstable, final blend stable on first30 checked",
-  "code_commit": "e6255ca692a83c642b99d308768ae0709006f6da"
+  "code_commit": "e6255ca692a83c642b99d308768ae0709006f6da",
+  "score_provenance": "Exact numbers reported by student; original screenshot/submission identifier not yet inspected.",
+  "feedback": "Score: 0.42890; Private score: 0.42690; stop experimenting and finalize.",
+  "incumbent_after_returned_score": "R4"
 }

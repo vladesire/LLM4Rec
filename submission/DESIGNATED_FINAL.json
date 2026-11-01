@@ -1,0 +1,11 @@
+{
+  "designated_round": "R4",
+  "csv": "submissions/R4_count_distribution.csv",
+  "sha256": "e3e6e7a74d12c3ffb8bc15054b4a5373007d1f1e1eb0e019fbc89c4fa08da2d6",
+  "public_score": 0.4289,
+  "private_score": 0.4269,
+  "score_provenance": "Exact numbers reported by student; original screenshot/submission identifier not yet inspected.",
+  "selection": "Largest user-reported private score across actual R0-R4 submissions; R4 gain over R3 is 0.00019, no significance claim.",
+  "original_R0_path_preserved": "submission/final_submission.csv",
+  "code_commit": "e6255ca692a83c642b99d308768ae0709006f6da"
+}
