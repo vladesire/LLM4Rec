@@ -117,5 +117,6 @@
     "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
   },
   "sampling_reconstruction_verified": true,
-  "important_limitation": "Tiny selected gain, bootstrap includes zero; distribution-only lists unstable, final blend stable on first30 checked"
+  "important_limitation": "Tiny selected gain, bootstrap includes zero; distribution-only lists unstable, final blend stable on first30 checked",
+  "code_commit": "e6255ca692a83c642b99d308768ae0709006f6da"
 }
