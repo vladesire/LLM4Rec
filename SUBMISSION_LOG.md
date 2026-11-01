@@ -13,6 +13,6 @@ R1: >=80% continuous-session qualification; personal historical distinct-broadca
 
 Reproduce R1 with `.venv/bin/python scripts/run_r1.py --reproduce`; verify with `.venv/bin/python scripts/verify_r1.py`. The corrected 29 June–27 July audit remains sealed until R4. All development and future Kaggle-driven selection is adaptive.
 
-R1 code commit: pending local commit recording. Exact source/config/contract hashes are already in its manifest.
+R1 code commit: `9c7b3f72f67b4801ae1a1191c8528b4ffd47410b`. This commit contains the implementation and initial R1 evidence; the following metadata commit records its identity. Exact source/config/contract hashes are in the manifest.
 
 Next: wait for the student's R1 public/private scores and comments. A provisional R2 branch is recorded in `experiments/R1/HANDOFF.md`; R2 has not been run or generated. R1 is not designated the final file before its result. After R4 feedback, choose the best actually returned private score among all submissions, with a documented simplicity preference for exact ties.
