@@ -1,6 +1,6 @@
 {
-  "pdf_sha256": "a8226bec6ad54010a1308f26dfce9ff2ed3e3163c88beb4a1b1c22dc450dd144",
-  "markdown_sha256": "d68f33911cc2e38dc0196f5c08ac1bdb9173ec19e29df2a9bf62f575618e7081",
+  "pdf_sha256": "62c3bd1bd806dc64a2c466b354795f30f10fe9b9bb83be19a601edb10e7191bf",
+  "markdown_sha256": "ac94b0b1e408b04aa3d020d97163e2202d7e83d5af9879a2466aa963c501ab2c",
   "total_pages": 6,
   "content_pages_excluding_references": 5,
   "at_most_five_content_pages": true,
@@ -14,7 +14,7 @@
   "pages": [
     {
       "page": 1,
-      "text_characters": 4543,
+      "text_characters": 4492,
       "embedded_images": 0
     },
     {

@@ -6,8 +6,6 @@ Assignment: LLM4Rec/FKN individual exam
 
 GitHub: https://github.com/vladesire/LLM4Rec
 
-**DRAFT: required external/personal evidence pending**
-
 ## Abstract
 
 This study predicts five preferred television programme IDs for each of 1,260 SWEET.TV users from sparse viewing logs and broadcast schedules. It compares popularity, content filtering, implicit matrix factorization and completion-aware behavioral models, then combines a chronological boosted reranker with a small sampled count-distribution ranking. The designated R4 file obtained a user-reported private MAP@5 of 0.42690; its corrected development proxy MAP@5 was 0.271272. Personalized recurring preferences improved the recorded results, while the final distributional addition produced only a very small gain and does not establish reliable superiority.
